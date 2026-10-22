@@ -1,0 +1,10 @@
+lscan: compiled scan unavailable, using torch chunked scan: RuntimeError
+{
+ "trsm 64x64 (current)": 3.02,
+ "block inverse max error vs trsm": 1.430511474609375e-06,
+ "block inverse + matmul": 4.54,
+ "matmul with precomputed inverse only": 0.8,
+ "build A (masked exp + kk^T)": 2.77,
+ "delta_chunk2 forward": 11.35,
+ "delta_chunk2 fwd+bwd": 36.53
+}

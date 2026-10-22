@@ -1,0 +1,15 @@
+{
+ "mode": "dense_small",
+ "seed": 1,
+ "experts": 4,
+ "params_total": 904181,
+ "minutes": 4.8,
+ "ffn_params_total": 84096,
+ "ffn_params_active_per_byte": 84096,
+ "bits_per_byte": {
+  "Python": 1.5124,
+  "JavaScript": 1.0771,
+  "C": 1.832
+ },
+ "bits_per_byte_mean": 1.4738
+}

@@ -1,0 +1,8 @@
+{
+ "torch": "2.11.0+cu128",
+ "cuda_available": true,
+ "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+ "vram_GB": 6.44,
+ "matmul_TFLOPS_fp32": 2.18,
+ "cpu_threads": 10
+}

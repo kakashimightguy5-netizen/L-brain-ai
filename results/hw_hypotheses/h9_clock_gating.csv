@@ -1,0 +1,28 @@
+model,unit,block,idle_block_share,unit_share_of_dense_work,gateable_share_of_all_work
+L6s0,f2 / FFN spikes,1,0.9478,0.1798,0.1704
+L6s0,f2 / FFN spikes,4,0.8142,0.1798,0.1464
+L6s0,f2 / FFN spikes,8,0.6775,0.1798,0.1218
+L6s0,f2 / FFN spikes,16,0.4948,0.1798,0.089
+L6s0,f2 / FFN spikes,32,0.3064,0.1798,0.0551
+L6s0,f2 / FFN spikes,64,0.1627,0.1798,0.0293
+L6s0,f2 / FFN spikes,whole layer,0.0038,0.1798,0.0007
+L6s0,out / state spikes,1,0.4506,0.0899,0.0405
+L6s0,out / state spikes,4,0.0652,0.0899,0.0059
+L6s0,out / state spikes,8,0.0157,0.0899,0.0014
+L6s0,out / state spikes,16,0.0033,0.0899,0.0003
+L6s0,out / state spikes,32,0.0001,0.0899,0.0
+L6s0,out / state spikes,whole layer,0.0,0.0899,0.0
+LEdge,f2 / FFN spikes,1,0.9006,0.1739,0.1566
+LEdge,f2 / FFN spikes,4,0.6703,0.1739,0.1166
+LEdge,f2 / FFN spikes,8,0.4737,0.1739,0.0824
+LEdge,f2 / FFN spikes,16,0.271,0.1739,0.0471
+LEdge,f2 / FFN spikes,32,0.1267,0.1739,0.022
+LEdge,f2 / FFN spikes,64,0.0606,0.1739,0.0105
+LEdge,f2 / FFN spikes,whole layer,0.0049,0.1739,0.0008
+LEdge,out / state spikes,1,0.5272,0.087,0.0458
+LEdge,out / state spikes,4,0.0867,0.087,0.0075
+LEdge,out / state spikes,8,0.0115,0.087,0.001
+LEdge,out / state spikes,16,0.0004,0.087,0.0
+LEdge,out / state spikes,32,0.0,0.087,0.0
+LEdge,out / state spikes,64,0.0,0.087,0.0
+LEdge,out / state spikes,whole layer,0.0,0.087,0.0

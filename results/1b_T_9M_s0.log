@@ -1,0 +1,4 @@
+lscan: compiled scan unavailable, using torch chunked scan: RuntimeError
+T_9M_s0 0 5.817 33s
+T_9M_s0 250 2.21 567s
+T_9M_s0 500 1.643 1004s

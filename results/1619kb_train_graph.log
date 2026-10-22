@@ -1,0 +1,11 @@
+lscan: compiled scan unavailable, using torch chunked scan: RuntimeError
+cuscan self-test max error 1.91e-06 -> ON
+L_eager_fp32 {'ms_per_step': 11644.6, 'mJ_per_token_mean': 63.8202, 'mJ_per_token_above_idle_mean': 8.0992, 'peak_VRAM_GB': 2.38, 'failed': None}
+L_bf16 {'ms_per_step': 20590.7, 'mJ_per_token_mean': 100.6259, 'mJ_per_token_above_idle_mean': 2.0963, 'peak_VRAM_GB': 1.94, 'failed': None}
+L_cudagraph_fp32 {'ms_per_step': 22963.8, 'mJ_per_token_mean': 162.9006, 'mJ_per_token_above_idle_mean': 53.0153, 'peak_VRAM_GB': 0.24, 'failed': None}
+L_cudagraph_bf16 {'ms_per_step': 6182.1, 'mJ_per_token_mean': 35.2873, 'mJ_per_token_above_idle_mean': 5.705, 'peak_VRAM_GB': 0.25, 'failed': None}
+T_eager_fp32 {'ms_per_step': 137669.6, 'mJ_per_token_mean': 742.8956, 'mJ_per_token_above_idle_mean': 84.1252, 'peak_VRAM_GB': 0.8, 'failed': None}
+T_bf16 {'ms_per_step': 228.8, 'mJ_per_token_mean': 1.9107, 'mJ_per_token_above_idle_mean': 0.8157, 'peak_VRAM_GB': 0.6, 'failed': None}
+T_cudagraph_fp32 {'ms_per_step': 458.0, 'mJ_per_token_mean': 4.5233, 'mJ_per_token_above_idle_mean': 2.3316, 'peak_VRAM_GB': 0.24, 'failed': None}
+T_cudagraph_bf16 {'ms_per_step': 227.2, 'mJ_per_token_mean': 2.1091, 'mJ_per_token_above_idle_mean': 1.0219, 'peak_VRAM_GB': 0.26, 'failed': None}
+done

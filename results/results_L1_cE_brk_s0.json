@@ -1,0 +1,44 @@
+{
+ "device": "cuda",
+ "homeo": 1,
+ "name": "cE_brk_s0",
+ "model": "L5",
+ "seed": 0,
+ "steps": 3000,
+ "lam": 0.03,
+ "fuzzy": 1,
+ "block": 0,
+ "params": 938533,
+ "train_minutes": 6.9,
+ "sec_per_step": 0.138,
+ "val_bits_per_byte": 1.3408,
+ "active_neurons_per_layer [state, ffn]": [
+  [
+   0.407,
+   0.101
+  ],
+  [
+   0.492,
+   0.093
+  ],
+  [
+   0.474,
+   0.097
+  ],
+  [
+   0.384,
+   0.092
+  ]
+ ],
+ "copy": {
+  "exact n=120": 0.9479,
+  "exact n=512": 0.9629,
+  "exact n=2048": 0.9528,
+  "typos5% n=120": 0.9326,
+  "typos5% n=512": 0.9168,
+  "typos5% n=2048": 0.8931,
+  "renamed n=120": 0.775,
+  "renamed n=512": 0.8325,
+  "renamed n=2048": 0.8627
+ }
+}

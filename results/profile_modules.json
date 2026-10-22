@@ -1,0 +1,140 @@
+{
+ "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+ "batch": [
+  16,
+  256
+ ],
+ "note": "shares the GPU with other running jobs",
+ "forward_ms": 153.56,
+ "backward_ms": 324.55,
+ "optimizer_ms": 2.42,
+ "forward_ms_by_module_family": {
+  "delta_memory": 80.95,
+  "spiking_block": 39.21
+ },
+ "forward_ms_other_(embeddings,hippocampus_boost,head,loss)": 33.39,
+ "cuda_kernel_total_ms": 371.26,
+ "kernel_launches": 2366,
+ "top_kernels": [
+  {
+   "name": "_ZN2at6native29vectorized_elementwise_kernelILi4ENS0_13BinaryFunctorIfffNS0_15binary_inter",
+   "ms": 41.51,
+   "calls": 161,
+   "pct": 11.2
+  },
+  {
+   "name": "_ZN2at6native29vectorized_elementwise_kernelILi4ENS0_15CUDAFunctor_addIfEESt5arrayIPcLy3EE",
+   "ms": 36.75,
+   "calls": 186,
+   "pct": 9.9
+  },
+  {
+   "name": "_ZN2at6native18elementwise_kernelILi128ELi2EZNS0_22gpu_kernel_impl_nocastINS0_13BinaryFunc",
+   "ms": 30.94,
+   "calls": 193,
+   "pct": 8.3
+  },
+  {
+   "name": "ampere_sgemm_128x128_nn",
+   "ms": 18.98,
+   "calls": 44,
+   "pct": 5.1
+  },
+  {
+   "name": "ampere_sgemm_128x128_nt",
+   "ms": 17.58,
+   "calls": 32,
+   "pct": 4.7
+  },
+  {
+   "name": "_ZN2at6native18elementwise_kernelILi128ELi2EZNS0_22gpu_kernel_impl_nocastIZZZNS0_23direct_",
+   "ms": 16.9,
+   "calls": 155,
+   "pct": 4.6
+  },
+  {
+   "name": "ampere_sgemm_128x128_tn",
+   "ms": 16.22,
+   "calls": 28,
+   "pct": 4.4
+  },
+  {
+   "name": "ampere_sgemm_32x128_tn",
+   "ms": 12.62,
+   "calls": 21,
+   "pct": 3.4
+  },
+  {
+   "name": "ampere_sgemm_128x64_nn",
+   "ms": 11.82,
+   "calls": 21,
+   "pct": 3.2
+  },
+  {
+   "name": "_ZN2at6native18elementwise_kernelILi128ELi2EZNS0_22gpu_kernel_impl_nocastINS0_13BinaryFunc",
+   "ms": 10.64,
+   "calls": 56,
+   "pct": 2.9
+  },
+  {
+   "name": "_ZN2at6native18elementwise_kernelILi128ELi2EZNS0_22gpu_kernel_impl_nocastIZZZNS0_44_GLOBAL",
+   "ms": 10.37,
+   "calls": 24,
+   "pct": 2.8
+  },
+  {
+   "name": "Memcpy DtoD (Device -> Device)",
+   "ms": 9.87,
+   "calls": 43,
+   "pct": 2.7
+  },
+  {
+   "name": "_ZN2at6native13reduce_kernelILi128ELi4ENS0_8ReduceOpIfNS0_14func_wrapper_tIfZNS0_11sum_fun",
+   "ms": 8.59,
+   "calls": 71,
+   "pct": 2.3
+  },
+  {
+   "name": "_Z22batch_trsm_left_kernelIfLi64ELi4ELi3ELb0ELb1ELb1EEv22cublasTrsmBatchParams2IT_ES1_PKS1",
+   "ms": 8.23,
+   "calls": 4,
+   "pct": 2.2
+  },
+  {
+   "name": "_ZN2at6native29vectorized_elementwise_kernelILi4EZZZNS0_15neg_kernel_cudaERNS_18TensorIter",
+   "ms": 8.22,
+   "calls": 44,
+   "pct": 2.2
+  },
+  {
+   "name": "_Z22batch_trsm_left_kernelIfLi64ELi4ELi3ELb0ELb0ELb1EEv22cublasTrsmBatchParams2IT_ES1_PKS1",
+   "ms": 7.91,
+   "calls": 4,
+   "pct": 2.1
+  },
+  {
+   "name": "_ZN2at6native51_GLOBAL__N__67b3c33b_18_DepthwiseConv2d_cu_2ee6150b39conv_depthwise2d_forwa",
+   "ms": 7.36,
+   "calls": 4,
+   "pct": 2.0
+  },
+  {
+   "name": "ampere_sgemm_64x64_tn",
+   "ms": 7.01,
+   "calls": 4,
+   "pct": 1.9
+  },
+  {
+   "name": "ampere_sgemm_128x64_tn",
+   "ms": 6.32,
+   "calls": 9,
+   "pct": 1.7
+  },
+  {
+   "name": "_ZN2at6native29vectorized_elementwise_kernelILi4ENS0_11FillFunctorIfEESt5arrayIPcLy1EEEEvi",
+   "ms": 5.67,
+   "calls": 123,
+   "pct": 1.5
+  }
+ ]
+}

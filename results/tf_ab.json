@@ -1,0 +1,62 @@
+{
+ "t_eager": {
+  "variant": "t_eager",
+  "config": {
+   "comp": 0,
+   "bf16": 0
+  },
+  "params": 1234192,
+  "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "compile_s": 0.4,
+  "ms_per_step_median": 95.19,
+  "kernels_per_step": 342,
+  "mJ_per_token": 0.9103,
+  "mJ_per_token_std": 0.0948,
+  "avg_W": 39.09
+ },
+ "t_comp": {
+  "variant": "t_comp",
+  "config": {
+   "comp": 1,
+   "bf16": 0
+  },
+  "params": 1234192,
+  "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "compile_s": 50.7,
+  "ms_per_step_median": 77.69,
+  "kernels_per_step": 270,
+  "mJ_per_token": 0.8272,
+  "mJ_per_token_std": 0.0454,
+  "avg_W": 42.86
+ },
+ "t_comp_bf16": {
+  "variant": "t_comp_bf16",
+  "config": {
+   "comp": 1,
+   "bf16": 1
+  },
+  "params": 1234192,
+  "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "compile_s": 65.0,
+  "ms_per_step_median": 48.66,
+  "kernels_per_step": 314,
+  "mJ_per_token": 0.4124,
+  "mJ_per_token_std": 0.0427,
+  "avg_W": 34.76
+ },
+ "t_eager_bf16": {
+  "variant": "t_eager_bf16",
+  "config": {
+   "comp": 0,
+   "bf16": 1
+  },
+  "params": 1234192,
+  "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "compile_s": 0.5,
+  "ms_per_step_median": 80.79,
+  "kernels_per_step": 456,
+  "mJ_per_token": 0.7361,
+  "mJ_per_token_std": 0.0896,
+  "avg_W": 36.85
+ }
+}

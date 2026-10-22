@@ -1,0 +1,1 @@
+{"script": "flag_sweep.py", "args": [], "env": {"WAITFOR": "", "SPIKEK": "8", "DM": "352", "DELTAKERN": "0"}, "device": "gpu"}

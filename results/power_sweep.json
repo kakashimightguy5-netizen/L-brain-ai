@@ -1,0 +1,371 @@
+{
+ "gpu_before": {
+  "name": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "power_limit_W": null,
+  "default_power_limit_W": 35.0,
+  "power_limit_range_W": [
+   1.0,
+   55.0
+  ],
+  "sm_clock_max_MHz": 2100,
+  "mem_clock_max_MHz": 5501,
+  "energy_counter_supported": true,
+  "rapl_readable": false,
+  "on_mains": null
+ },
+ "attempts": [
+  {
+   "cmd": "nvidia-smi -pl None",
+   "rc": 1,
+   "out": "Changing power management limit is not supported in current scope for GPU: 00000000:01:00.0.\nAll done."
+  },
+  {
+   "cmd": "nvidia-smi -lgc 405,2100",
+   "rc": 0,
+   "out": "GPU clocks set to \"(gpuClkMin 405, gpuClkMax 2100)\" for GPU 00000000:01:00.0\nAll done."
+  }
+ ],
+ "mode": "lgc",
+ "results": [
+  {
+   "setting": "lgc 2100",
+   "rc": 0,
+   "msg": "GPU clocks set to \"(gpuClkMin 2100, gpuClkMax 2100)\" for GPU 00000000:01:00.0\nAll done.",
+   "clocks_after_set": "1702 MHz, 2100 MHz, [N/A]",
+   "L training (6 steps x 32 x 256)": {
+    "n": 3,
+    "mJ_per_token_mean": 3.7744,
+    "mJ_per_token_std": 0.0904,
+    "mJ_per_token_above_idle_mean": 2.8919,
+    "mJ_per_token_above_idle_std": 0.0894,
+    "seconds_mean": 3.7201,
+    "avg_W_mean": 49.87,
+    "peak_W_max": 51.67,
+    "temp_max_C": 69,
+    "temp_rise_C": 2,
+    "counter_vs_samples_rel_diff_max": 0.027,
+    "throttle_reasons": [
+     "SwPowerCap"
+    ]
+   },
+   "L batch-1 generation (512 bytes)": {
+    "n": 3,
+    "mJ_per_token_mean": 34.2168,
+    "mJ_per_token_std": 3.1198,
+    "mJ_per_token_above_idle_mean": 19.0742,
+    "mJ_per_token_above_idle_std": 3.2679,
+    "seconds_mean": 0.6649,
+    "avg_W_mean": 26.36,
+    "peak_W_max": 38.23,
+    "temp_max_C": 65,
+    "temp_rise_C": -1,
+    "counter_vs_samples_rel_diff_max": 0.1205,
+    "throttle_reasons": []
+   },
+   "Transformer training (6 x 32 x 256)": {
+    "n": 3,
+    "mJ_per_token_mean": 1.2883,
+    "mJ_per_token_std": 0.0569,
+    "mJ_per_token_above_idle_mean": 1.0113,
+    "mJ_per_token_above_idle_std": 0.058,
+    "seconds_mean": 1.1675,
+    "avg_W_mean": 54.24,
+    "peak_W_max": 55.06,
+    "temp_max_C": 70,
+    "temp_rise_C": 1,
+    "counter_vs_samples_rel_diff_max": 0.0607,
+    "throttle_reasons": [
+     "SwPowerCap"
+    ]
+   }
+  },
+  {
+   "setting": "lgc 1800",
+   "rc": 0,
+   "msg": "GPU clocks set to \"(gpuClkMin 1800, gpuClkMax 1800)\" for GPU 00000000:01:00.0\nAll done.",
+   "clocks_after_set": "1702 MHz, 2100 MHz, [N/A]",
+   "L training (6 steps x 32 x 256)": {
+    "n": 3,
+    "mJ_per_token_mean": 3.4407,
+    "mJ_per_token_std": 0.132,
+    "mJ_per_token_above_idle_mean": 2.5576,
+    "mJ_per_token_above_idle_std": 0.1315,
+    "seconds_mean": 3.7225,
+    "avg_W_mean": 45.43,
+    "peak_W_max": 68.63,
+    "temp_max_C": 70,
+    "temp_rise_C": 2,
+    "counter_vs_samples_rel_diff_max": 0.146,
+    "throttle_reasons": [
+     "SwPowerCap"
+    ]
+   },
+   "L batch-1 generation (512 bytes)": {
+    "n": 3,
+    "mJ_per_token_mean": 27.5371,
+    "mJ_per_token_std": 2.8731,
+    "mJ_per_token_above_idle_mean": 13.1211,
+    "mJ_per_token_above_idle_std": 2.5838,
+    "seconds_mean": 0.633,
+    "avg_W_mean": 22.25,
+    "peak_W_max": 27.89,
+    "temp_max_C": 67,
+    "temp_rise_C": -1,
+    "counter_vs_samples_rel_diff_max": 0.2482,
+    "throttle_reasons": []
+   },
+   "Transformer training (6 x 32 x 256)": {
+    "n": 3,
+    "mJ_per_token_mean": 1.1478,
+    "mJ_per_token_std": 0.1418,
+    "mJ_per_token_above_idle_mean": 0.8689,
+    "mJ_per_token_above_idle_std": 0.1406,
+    "seconds_mean": 1.1758,
+    "avg_W_mean": 47.97,
+    "peak_W_max": 58.09,
+    "temp_max_C": 71,
+    "temp_rise_C": 2,
+    "counter_vs_samples_rel_diff_max": 0.2119,
+    "throttle_reasons": [
+     "SwPowerCap"
+    ]
+   }
+  },
+  {
+   "setting": "lgc 1500",
+   "rc": 0,
+   "msg": "GPU clocks set to \"(gpuClkMin 1500, gpuClkMax 1500)\" for GPU 00000000:01:00.0\nAll done.",
+   "clocks_after_set": "1500 MHz, 2100 MHz, [N/A]",
+   "L training (6 steps x 32 x 256)": {
+    "n": 3,
+    "mJ_per_token_mean": 3.1901,
+    "mJ_per_token_std": 0.095,
+    "mJ_per_token_above_idle_mean": 2.2878,
+    "mJ_per_token_above_idle_std": 0.0972,
+    "seconds_mean": 3.8034,
+    "avg_W_mean": 41.23,
+    "peak_W_max": 46.58,
+    "temp_max_C": 69,
+    "temp_rise_C": 1,
+    "counter_vs_samples_rel_diff_max": 0.0831,
+    "throttle_reasons": [
+     "GpuIdle"
+    ]
+   },
+   "L batch-1 generation (512 bytes)": {
+    "n": 3,
+    "mJ_per_token_mean": 28.2591,
+    "mJ_per_token_std": 3.7168,
+    "mJ_per_token_above_idle_mean": 12.7136,
+    "mJ_per_token_above_idle_std": 3.5122,
+    "seconds_mean": 0.6826,
+    "avg_W_mean": 21.17,
+    "peak_W_max": 23.02,
+    "temp_max_C": 65,
+    "temp_rise_C": 0,
+    "counter_vs_samples_rel_diff_max": 0.1815,
+    "throttle_reasons": [
+     "GpuIdle"
+    ]
+   },
+   "Transformer training (6 x 32 x 256)": {
+    "n": 3,
+    "mJ_per_token_mean": 1.1956,
+    "mJ_per_token_std": 0.0424,
+    "mJ_per_token_above_idle_mean": 0.9174,
+    "mJ_per_token_above_idle_std": 0.0434,
+    "seconds_mean": 1.1726,
+    "avg_W_mean": 50.12,
+    "peak_W_max": 55.34,
+    "temp_max_C": 71,
+    "temp_rise_C": 2,
+    "counter_vs_samples_rel_diff_max": 0.0963,
+    "throttle_reasons": [
+     "GpuIdle",
+     "SwPowerCap"
+    ]
+   }
+  },
+  {
+   "setting": "lgc 1200",
+   "rc": 0,
+   "msg": "GPU clocks set to \"(gpuClkMin 1200, gpuClkMax 1200)\" for GPU 00000000:01:00.0\nAll done.",
+   "clocks_after_set": "1200 MHz, 2100 MHz, [N/A]",
+   "L training (6 steps x 32 x 256)": {
+    "n": 3,
+    "mJ_per_token_mean": 2.7854,
+    "mJ_per_token_std": 0.0473,
+    "mJ_per_token_above_idle_mean": 1.8177,
+    "mJ_per_token_above_idle_std": 0.0468,
+    "seconds_mean": 4.0793,
+    "avg_W_mean": 33.56,
+    "peak_W_max": 36.61,
+    "temp_max_C": 66,
+    "temp_rise_C": 1,
+    "counter_vs_samples_rel_diff_max": 0.0502,
+    "throttle_reasons": [
+     "GpuIdle"
+    ]
+   },
+   "L batch-1 generation (512 bytes)": {
+    "n": 3,
+    "mJ_per_token_mean": 25.3014,
+    "mJ_per_token_std": 1.2218,
+    "mJ_per_token_above_idle_mean": 7.4544,
+    "mJ_per_token_above_idle_std": 1.2878,
+    "seconds_mean": 0.7837,
+    "avg_W_mean": 16.53,
+    "peak_W_max": 18.54,
+    "temp_max_C": 63,
+    "temp_rise_C": -1,
+    "counter_vs_samples_rel_diff_max": 0.1264,
+    "throttle_reasons": [
+     "GpuIdle"
+    ]
+   },
+   "Transformer training (6 x 32 x 256)": {
+    "n": 3,
+    "mJ_per_token_mean": 1.0594,
+    "mJ_per_token_std": 0.0466,
+    "mJ_per_token_above_idle_mean": 0.7475,
+    "mJ_per_token_above_idle_std": 0.0466,
+    "seconds_mean": 1.3146,
+    "avg_W_mean": 39.61,
+    "peak_W_max": 54.62,
+    "temp_max_C": 68,
+    "temp_rise_C": 0,
+    "counter_vs_samples_rel_diff_max": 0.1067,
+    "throttle_reasons": [
+     "GpuIdle"
+    ]
+   }
+  },
+  {
+   "setting": "lgc 900",
+   "rc": 0,
+   "msg": "GPU clocks set to \"(gpuClkMin 900, gpuClkMax 900)\" for GPU 00000000:01:00.0\nAll done.",
+   "clocks_after_set": "900 MHz, 2100 MHz, [N/A]",
+   "L training (6 steps x 32 x 256)": {
+    "n": 3,
+    "mJ_per_token_mean": 2.477,
+    "mJ_per_token_std": 0.0696,
+    "mJ_per_token_above_idle_mean": 1.368,
+    "mJ_per_token_above_idle_std": 0.066,
+    "seconds_mean": 4.675,
+    "avg_W_mean": 26.04,
+    "peak_W_max": 31.69,
+    "temp_max_C": 63,
+    "temp_rise_C": -1,
+    "counter_vs_samples_rel_diff_max": 0.0722,
+    "throttle_reasons": [
+     "GpuIdle"
+    ]
+   },
+   "L batch-1 generation (512 bytes)": {
+    "n": 3,
+    "mJ_per_token_mean": 25.8027,
+    "mJ_per_token_std": 1.1847,
+    "mJ_per_token_above_idle_mean": 3.2734,
+    "mJ_per_token_above_idle_std": 1.2136,
+    "seconds_mean": 0.9892,
+    "avg_W_mean": 13.36,
+    "peak_W_max": 15.08,
+    "temp_max_C": 61,
+    "temp_rise_C": -1,
+    "counter_vs_samples_rel_diff_max": 0.1511,
+    "throttle_reasons": [
+     "GpuIdle"
+    ]
+   },
+   "Transformer training (6 x 32 x 256)": {
+    "n": 3,
+    "mJ_per_token_mean": 0.9567,
+    "mJ_per_token_std": 0.0936,
+    "mJ_per_token_above_idle_mean": 0.5659,
+    "mJ_per_token_above_idle_std": 0.0938,
+    "seconds_mean": 1.6476,
+    "avg_W_mean": 28.54,
+    "peak_W_max": 32.63,
+    "temp_max_C": 64,
+    "temp_rise_C": 2,
+    "counter_vs_samples_rel_diff_max": 0.1361,
+    "throttle_reasons": [
+     "GpuIdle"
+    ]
+   }
+  },
+  {
+   "setting": "lgc 600",
+   "rc": 0,
+   "msg": "GPU clocks set to \"(gpuClkMin 600, gpuClkMax 600)\" for GPU 00000000:01:00.0\nAll done.",
+   "clocks_after_set": "600 MHz, 2100 MHz, [N/A]",
+   "L training (6 steps x 32 x 256)": {
+    "n": 3,
+    "mJ_per_token_mean": 2.8522,
+    "mJ_per_token_std": 0.1194,
+    "mJ_per_token_above_idle_mean": 1.3824,
+    "mJ_per_token_above_idle_std": 0.116,
+    "seconds_mean": 6.1954,
+    "avg_W_mean": 22.63,
+    "peak_W_max": 27.03,
+    "temp_max_C": 62,
+    "temp_rise_C": 0,
+    "counter_vs_samples_rel_diff_max": 0.0984,
+    "throttle_reasons": [
+     "GpuIdle"
+    ]
+   },
+   "L batch-1 generation (512 bytes)": {
+    "n": 3,
+    "mJ_per_token_mean": 33.4622,
+    "mJ_per_token_std": 2.1691,
+    "mJ_per_token_above_idle_mean": 1.4154,
+    "mJ_per_token_above_idle_std": 2.2167,
+    "seconds_mean": 1.4072,
+    "avg_W_mean": 12.18,
+    "peak_W_max": 14.08,
+    "temp_max_C": 60,
+    "temp_rise_C": 0,
+    "counter_vs_samples_rel_diff_max": 0.1839,
+    "throttle_reasons": [
+     "GpuIdle"
+    ]
+   },
+   "Transformer training (6 x 32 x 256)": {
+    "n": 3,
+    "mJ_per_token_mean": 1.1252,
+    "mJ_per_token_std": 0.0343,
+    "mJ_per_token_above_idle_mean": 0.5629,
+    "mJ_per_token_above_idle_std": 0.0339,
+    "seconds_mean": 2.37,
+    "avg_W_mean": 23.33,
+    "peak_W_max": 26.35,
+    "temp_max_C": 62,
+    "temp_rise_C": 0,
+    "counter_vs_samples_rel_diff_max": 0.1143,
+    "throttle_reasons": [
+     "GpuIdle"
+    ]
+   }
+  }
+ ],
+ "idle_W": 11.66,
+ "restore": [
+  0,
+  "All done."
+ ],
+ "gpu_after": {
+  "name": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "power_limit_W": null,
+  "default_power_limit_W": 35.0,
+  "power_limit_range_W": [
+   1.0,
+   55.0
+  ],
+  "sm_clock_max_MHz": 2100,
+  "mem_clock_max_MHz": 5501,
+  "energy_counter_supported": true,
+  "rapl_readable": false,
+  "on_mains": null
+ }
+}

@@ -1,0 +1,1 @@
+{"script": "train_L1.py", "args": ["L1TG_s1", "L1TG", "1", "3000", "0.03"], "device": "gpu"}

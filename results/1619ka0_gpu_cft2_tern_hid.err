@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "D:\AI\SpikingBrain-study\L-architecture\code\compress_ft.py", line 52, in <module>
+    opt.zero_grad(); loss.backward(); nn.utils.clip_grad_norm_(st.parameters(), 1.0); opt.step(); sch.step()
+                     ^^^^^^^^^^^^^^^
+  File "D:\AI\SpikingBrain-study\L-architecture\venv\Lib\site-packages\torch\_tensor.py", line 631, in backward
+    torch.autograd.backward(
+  File "D:\AI\SpikingBrain-study\L-architecture\venv\Lib\site-packages\torch\autograd\__init__.py", line 381, in backward
+    _engine_run_backward(
+  File "D:\AI\SpikingBrain-study\L-architecture\venv\Lib\site-packages\torch\autograd\graph.py", line 869, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: element 0 of tensors does not require grad and does not have a grad_fn

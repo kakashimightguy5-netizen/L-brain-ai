@@ -1,0 +1,121 @@
+{
+ "mode": "token",
+ "seed": 2,
+ "experts": 4,
+ "params_total": 1158789,
+ "minutes": 22.8,
+ "ffn_params_total": 336384,
+ "ffn_params_active_per_byte": 84096,
+ "bits_per_byte": {
+  "Python": 1.487,
+  "JavaScript": 1.0643,
+  "C": 1.7815
+ },
+ "bits_per_byte_mean": 1.4443,
+ "routing": {
+  "layer0": {
+   "MI(expert;domain)/H(domain)": 0.0017,
+   "switches_per_1000_bytes": 639.4,
+   "confusion [expert x domain] (share of bytes)": [
+    [
+     0.0922,
+     0.0816,
+     0.0736
+    ],
+    [
+     0.0905,
+     0.088,
+     0.0911
+    ],
+    [
+     0.0777,
+     0.0856,
+     0.0817
+    ],
+    [
+     0.073,
+     0.0782,
+     0.087
+    ]
+   ]
+  },
+  "layer1": {
+   "MI(expert;domain)/H(domain)": 0.0054,
+   "switches_per_1000_bytes": 595.7,
+   "confusion [expert x domain] (share of bytes)": [
+    [
+     0.083,
+     0.0723,
+     0.0954
+    ],
+    [
+     0.0813,
+     0.0788,
+     0.0893
+    ],
+    [
+     0.0751,
+     0.1014,
+     0.0745
+    ],
+    [
+     0.0939,
+     0.0808,
+     0.0742
+    ]
+   ]
+  },
+  "layer2": {
+   "MI(expert;domain)/H(domain)": 0.0092,
+   "switches_per_1000_bytes": 655.7,
+   "confusion [expert x domain] (share of bytes)": [
+    [
+     0.0733,
+     0.0791,
+     0.0968
+    ],
+    [
+     0.0824,
+     0.1023,
+     0.0719
+    ],
+    [
+     0.0939,
+     0.0609,
+     0.0926
+    ],
+    [
+     0.0837,
+     0.091,
+     0.072
+    ]
+   ]
+  },
+  "layer3": {
+   "MI(expert;domain)/H(domain)": 0.0139,
+   "switches_per_1000_bytes": 528.1,
+   "confusion [expert x domain] (share of bytes)": [
+    [
+     0.0812,
+     0.0957,
+     0.0954
+    ],
+    [
+     0.0792,
+     0.0946,
+     0.0883
+    ],
+    [
+     0.0767,
+     0.1023,
+     0.0788
+    ],
+    [
+     0.0962,
+     0.0408,
+     0.0708
+    ]
+   ]
+  }
+ }
+}

@@ -1,0 +1,115 @@
+lscan: compiled scan unavailable, using torch chunked scan: RuntimeError
+cuscan self-test max error 1.91e-06 -> ON
+E_G8_s0 0 4.121 2s gpu_mem_GB 0.61
+E_G8_s0 50 2.644 7s gpu_mem_GB 0.62
+E_G8_s0 100 2.085 12s gpu_mem_GB 0.62
+E_G8_s0 150 1.579 17s gpu_mem_GB 0.62
+E_G8_s0 200 1.78 22s gpu_mem_GB 0.62
+E_G8_s0 250 1.632 27s gpu_mem_GB 0.62
+E_G8_s0 300 1.5 32s gpu_mem_GB 0.62
+E_G8_s0 350 1.423 36s gpu_mem_GB 0.62
+E_G8_s0 400 1.194 41s gpu_mem_GB 0.62
+E_G8_s0 450 1.404 46s gpu_mem_GB 0.62
+E_G8_s0 500 1.143 51s gpu_mem_GB 0.62
+E_G8_s0 550 1.421 56s gpu_mem_GB 0.62
+E_G8_s0 600 1.117 60s gpu_mem_GB 0.62
+E_G8_s0 650 1.326 65s gpu_mem_GB 0.62
+E_G8_s0 700 1.407 70s gpu_mem_GB 0.62
+E_G8_s0 750 1.087 75s gpu_mem_GB 0.62
+E_G8_s0 800 1.102 79s gpu_mem_GB 0.62
+E_G8_s0 850 1.332 84s gpu_mem_GB 0.62
+E_G8_s0 900 1.202 89s gpu_mem_GB 0.62
+E_G8_s0 950 1.179 94s gpu_mem_GB 0.62
+E_G8_s0 1000 1.102 99s gpu_mem_GB 0.62
+E_G8_s0 1050 1.202 103s gpu_mem_GB 0.62
+E_G8_s0 1100 1.094 108s gpu_mem_GB 0.62
+E_G8_s0 1150 1.083 113s gpu_mem_GB 0.62
+E_G8_s0 1200 1.206 118s gpu_mem_GB 0.62
+E_G8_s0 1250 1.079 123s gpu_mem_GB 0.62
+E_G8_s0 1300 1.137 128s gpu_mem_GB 0.62
+E_G8_s0 1350 1.082 133s gpu_mem_GB 0.62
+E_G8_s0 1400 1.084 138s gpu_mem_GB 0.62
+E_G8_s0 1450 1.008 143s gpu_mem_GB 0.62
+E_G8_s0 1500 1.085 147s gpu_mem_GB 0.62
+E_G8_s0 1550 1.117 152s gpu_mem_GB 0.62
+E_G8_s0 1600 0.988 157s gpu_mem_GB 0.62
+E_G8_s0 1650 0.972 162s gpu_mem_GB 0.62
+E_G8_s0 1700 1.16 166s gpu_mem_GB 0.62
+E_G8_s0 1750 1.016 171s gpu_mem_GB 0.62
+E_G8_s0 1800 1.039 176s gpu_mem_GB 0.62
+E_G8_s0 1850 1.093 181s gpu_mem_GB 0.62
+E_G8_s0 1900 0.982 186s gpu_mem_GB 0.62
+E_G8_s0 1950 1.045 191s gpu_mem_GB 0.62
+E_G8_s0 2000 0.978 195s gpu_mem_GB 0.62
+E_G8_s0 2050 1.029 200s gpu_mem_GB 0.62
+E_G8_s0 2100 1.012 205s gpu_mem_GB 0.62
+E_G8_s0 2150 1.147 210s gpu_mem_GB 0.62
+E_G8_s0 2200 0.955 215s gpu_mem_GB 0.62
+E_G8_s0 2250 0.948 219s gpu_mem_GB 0.62
+E_G8_s0 2300 0.947 224s gpu_mem_GB 0.62
+E_G8_s0 2350 1.001 229s gpu_mem_GB 0.62
+E_G8_s0 2400 0.989 234s gpu_mem_GB 0.62
+E_G8_s0 2450 1.066 239s gpu_mem_GB 0.62
+E_G8_s0 2500 0.969 244s gpu_mem_GB 0.62
+E_G8_s0 2550 0.909 248s gpu_mem_GB 0.62
+E_G8_s0 2600 0.901 253s gpu_mem_GB 0.62
+E_G8_s0 2650 0.865 258s gpu_mem_GB 0.62
+E_G8_s0 2700 1.055 263s gpu_mem_GB 0.62
+E_G8_s0 2750 1.031 268s gpu_mem_GB 0.62
+E_G8_s0 2800 0.944 273s gpu_mem_GB 0.62
+E_G8_s0 2850 1.009 277s gpu_mem_GB 0.62
+E_G8_s0 2900 0.909 282s gpu_mem_GB 0.62
+E_G8_s0 2950 1.073 287s gpu_mem_GB 0.62
+E_G8_s0 exact 120 0.9542
+E_G8_s0 exact 512 0.96
+E_G8_s0 exact 2048 0.9521
+E_G8_s0 typos5% 120 0.9347
+E_G8_s0 typos5% 512 0.9193
+E_G8_s0 typos5% 2048 0.8939
+E_G8_s0 renamed 120 0.8113
+E_G8_s0 renamed 512 0.8287
+E_G8_s0 renamed 2048 0.8606
+{
+ "device": "cuda",
+ "homeo": 1,
+ "name": "E_G8_s0",
+ "model": "L5",
+ "seed": 0,
+ "steps": 3000,
+ "lam": 0.03,
+ "fuzzy": 1,
+ "block": 0,
+ "params": 936357,
+ "train_minutes": 4.9,
+ "sec_per_step": 0.097,
+ "val_bits_per_byte": 1.3612,
+ "active_neurons_per_layer [state, ffn]": [
+  [
+   0.401,
+   0.026
+  ],
+  [
+   0.479,
+   0.028
+  ],
+  [
+   0.451,
+   0.03
+  ],
+  [
+   0.366,
+   0.026
+  ]
+ ],
+ "copy": {
+  "exact n=120": 0.9542,
+  "exact n=512": 0.96,
+  "exact n=2048": 0.9521,
+  "typos5% n=120": 0.9347,
+  "typos5% n=512": 0.9193,
+  "typos5% n=2048": 0.8939,
+  "renamed n=120": 0.8113,
+  "renamed n=512": 0.8287,
+  "renamed n=2048": 0.8606
+ }
+}

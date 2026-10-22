@@ -1,0 +1,149 @@
+{
+ "clean": 0.9359,
+ "rows": [
+  {
+   "theta_in_rms": 0.25,
+   "matrices": "f1",
+   "bits_per_byte": 0.9408,
+   "delta_%": 0.52,
+   "zero_input_share": {
+    "f1": 0.102
+   }
+  },
+  {
+   "theta_in_rms": 0.25,
+   "matrices": "inp",
+   "bits_per_byte": 0.9402,
+   "delta_%": 0.46,
+   "zero_input_share": {
+    "inp": 0.132
+   }
+  },
+  {
+   "theta_in_rms": 0.25,
+   "matrices": "qkv",
+   "bits_per_byte": 0.9403,
+   "delta_%": 0.47,
+   "zero_input_share": {
+    "qkv": 0.103
+   }
+  },
+  {
+   "theta_in_rms": 0.25,
+   "matrices": "o",
+   "bits_per_byte": 0.9564,
+   "delta_%": 2.19,
+   "zero_input_share": {
+    "o": 0.433
+   }
+  },
+  {
+   "theta_in_rms": 0.25,
+   "matrices": "f1+inp+qkv+o",
+   "bits_per_byte": 0.9701,
+   "delta_%": 3.65,
+   "zero_input_share": {
+    "qkv": 0.103,
+    "o": 0.441,
+    "inp": 0.133,
+    "f1": 0.102
+   }
+  },
+  {
+   "theta_in_rms": 0.5,
+   "matrices": "f1",
+   "bits_per_byte": 0.9417,
+   "delta_%": 0.63,
+   "zero_input_share": {
+    "f1": 0.202
+   }
+  },
+  {
+   "theta_in_rms": 0.5,
+   "matrices": "inp",
+   "bits_per_byte": 0.9367,
+   "delta_%": 0.08,
+   "zero_input_share": {
+    "inp": 0.262
+   }
+  },
+  {
+   "theta_in_rms": 0.5,
+   "matrices": "qkv",
+   "bits_per_byte": 0.9442,
+   "delta_%": 0.89,
+   "zero_input_share": {
+    "qkv": 0.203
+   }
+  },
+  {
+   "theta_in_rms": 0.5,
+   "matrices": "o",
+   "bits_per_byte": 0.9515,
+   "delta_%": 1.67,
+   "zero_input_share": {
+    "o": 0.641
+   }
+  },
+  {
+   "theta_in_rms": 0.5,
+   "matrices": "f1+inp+qkv+o",
+   "bits_per_byte": 0.9667,
+   "delta_%": 3.29,
+   "zero_input_share": {
+    "qkv": 0.203,
+    "o": 0.64,
+    "inp": 0.262,
+    "f1": 0.202
+   }
+  },
+  {
+   "theta_in_rms": 1.0,
+   "matrices": "f1",
+   "bits_per_byte": 0.9507,
+   "delta_%": 1.58,
+   "zero_input_share": {
+    "f1": 0.392
+   }
+  },
+  {
+   "theta_in_rms": 1.0,
+   "matrices": "inp",
+   "bits_per_byte": 0.982,
+   "delta_%": 4.92,
+   "zero_input_share": {
+    "inp": 0.495
+   }
+  },
+  {
+   "theta_in_rms": 1.0,
+   "matrices": "qkv",
+   "bits_per_byte": 0.9611,
+   "delta_%": 2.69,
+   "zero_input_share": {
+    "qkv": 0.395
+   }
+  },
+  {
+   "theta_in_rms": 1.0,
+   "matrices": "o",
+   "bits_per_byte": 0.9848,
+   "delta_%": 5.22,
+   "zero_input_share": {
+    "o": 0.824
+   }
+  },
+  {
+   "theta_in_rms": 1.0,
+   "matrices": "f1+inp+qkv+o",
+   "bits_per_byte": 1.114,
+   "delta_%": 19.03,
+   "zero_input_share": {
+    "qkv": 0.393,
+    "o": 0.825,
+    "inp": 0.495,
+    "f1": 0.39
+   }
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "device": "cuda",
+ "homeo": 1,
+ "name": "cE_sharetie_s0",
+ "model": "L5",
+ "seed": 0,
+ "steps": 3000,
+ "lam": 0.03,
+ "fuzzy": 1,
+ "block": 0,
+ "params": 557221,
+ "train_minutes": 38.3,
+ "sec_per_step": 0.766,
+ "val_bits_per_byte": 1.552,
+ "active_neurons_per_layer [state, ffn]": [
+  [
+   0.578,
+   0.155
+  ],
+  [
+   0.458,
+   0.145
+  ],
+  [
+   0.209,
+   0.02
+  ],
+  [
+   0.203,
+   0.004
+  ]
+ ],
+ "copy": {
+  "exact n=120": 0.9417,
+  "exact n=512": 0.9531,
+  "exact n=2048": 0.9447,
+  "typos5% n=120": 0.9368,
+  "typos5% n=512": 0.9098,
+  "typos5% n=2048": 0.8814,
+  "renamed n=120": 0.8028,
+  "renamed n=512": 0.8301,
+  "renamed n=2048": 0.846
+ }
+}

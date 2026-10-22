@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "D:\AI\SpikingBrain-study\L-architecture\code\train_L1.py", line 54, in <module>
+    torch.set_rng_state(ck['rng']); print('resumed at step', start, flush=True)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\SpikingBrain-study\L-architecture\venv\Lib\site-packages\torch\random.py", line 19, in set_rng_state
+    default_generator.set_state(new_state)
+TypeError: RNG state must be a torch.ByteTensor

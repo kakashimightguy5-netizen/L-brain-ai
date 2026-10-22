@@ -1,0 +1,50 @@
+{
+ "eager": {
+  "variant": "eager",
+  "config": {
+   "ste": 0,
+   "bf16": 0,
+   "comp": 0
+  },
+  "checkpoint": "LEdge_s0.pt",
+  "eval_windows": "6x1024 second half of py_big_val",
+  "bpb_before": 0.93585,
+  "bpb_after": 0.94095,
+  "ms_per_step": 378.5,
+  "steps": 600,
+  "bpb_before_rel_vs_eager_pct": 0.0,
+  "bpb_after_rel_vs_eager_pct": 0.0
+ },
+ "c_fp32": {
+  "variant": "c_fp32",
+  "config": {
+   "ste": 1,
+   "bf16": 0,
+   "comp": 1
+  },
+  "checkpoint": "LEdge_s0.pt",
+  "eval_windows": "6x1024 second half of py_big_val",
+  "bpb_before": 0.93585,
+  "bpb_after": 0.9353,
+  "ms_per_step": 157.9,
+  "steps": 600,
+  "bpb_before_rel_vs_eager_pct": 0.0,
+  "bpb_after_rel_vs_eager_pct": -0.6
+ },
+ "c_bf16": {
+  "variant": "c_bf16",
+  "config": {
+   "ste": 1,
+   "bf16": 1,
+   "comp": 1
+  },
+  "checkpoint": "LEdge_s0.pt",
+  "eval_windows": "6x1024 second half of py_big_val",
+  "bpb_before": 0.93579,
+  "bpb_after": 0.94185,
+  "ms_per_step": 112.7,
+  "steps": 600,
+  "bpb_before_rel_vs_eager_pct": -0.006,
+  "bpb_after_rel_vs_eager_pct": 0.096
+ }
+}

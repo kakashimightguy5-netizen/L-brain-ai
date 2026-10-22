@@ -1,0 +1,81 @@
+lscan: compiled scan unavailable, using torch chunked scan: RuntimeError
+{
+ "name": "L5E_post3k_s1",
+ "base": "L5_1M_s1.pt",
+ "0 before | full depth": {
+  "bits_per_byte": 1.3533,
+  "compute_used": 1.0
+ },
+ "0 before | gate 0.99": {
+  "bits_per_byte": 1.3533,
+  "compute_used": 1.0
+ },
+ "0 before | gate 0.95": {
+  "bits_per_byte": 1.3533,
+  "compute_used": 1.0
+ },
+ "0 before | gate 0.9": {
+  "bits_per_byte": 1.3533,
+  "compute_used": 1.0
+ },
+ "0 before | gate 0.8": {
+  "bits_per_byte": 1.3781,
+  "compute_used": 0.996
+ }
+}
+L5E_post3k_s1 A 0 2.26 1s
+L5E_post3k_s1 A 250 1.864 294s
+L5E_post3k_s1 A 500 1.997 587s
+L5E_post3k_s1 A 750 1.775 886s
+{
+ "name": "L5E_post3k_s1",
+ "base": "L5_1M_s1.pt",
+ "0 before | full depth": {
+  "bits_per_byte": 1.3533,
+  "compute_used": 1.0
+ },
+ "0 before | gate 0.99": {
+  "bits_per_byte": 1.3533,
+  "compute_used": 1.0
+ },
+ "0 before | gate 0.95": {
+  "bits_per_byte": 1.3533,
+  "compute_used": 1.0
+ },
+ "0 before | gate 0.9": {
+  "bits_per_byte": 1.3533,
+  "compute_used": 1.0
+ },
+ "0 before | gate 0.8": {
+  "bits_per_byte": 1.3781,
+  "compute_used": 0.996
+ },
+ "A frozen model, heads trained | full depth": {
+  "bits_per_byte": 1.3533,
+  "compute_used": 1.0
+ },
+ "A frozen model, heads trained | gate 0.99": {
+  "bits_per_byte": 1.3588,
+  "compute_used": 0.981
+ },
+ "A frozen model, heads trained | gate 0.95": {
+  "bits_per_byte": 1.4073,
+  "compute_used": 0.919
+ },
+ "A frozen model, heads trained | gate 0.9": {
+  "bits_per_byte": 1.4773,
+  "compute_used": 0.884
+ },
+ "A frozen model, heads trained | gate 0.8": {
+  "bits_per_byte": 1.6112,
+  "compute_used": 0.845
+ }
+}
+L5E_post3k_s1 B 0 2.781 5s
+L5E_post3k_s1 B 250 3.142 1206s
+L5E_post3k_s1 B 500 3.048 2425s
+L5E_post3k_s1 B 750 2.634 3430s
+L5E_post3k_s1 B 1000 2.966 3921s
+L5E_post3k_s1 B 1250 2.793 4432s
+L5E_post3k_s1 B 1500 3.101 4950s
+L5E_post3k_s1 B 1750 2.847 5567s

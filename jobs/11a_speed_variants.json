@@ -1,0 +1,1 @@
+{"script": "speed_variants.py", "args": [], "env": {"WAITFOR": "10b_L6_9M.done", "SPIKEK": "8", "DM": "352", "NSTEPS": "30"}, "device": "gpu"}

@@ -1,0 +1,183 @@
+lscan: compiled scan unavailable, using torch chunked scan: RuntimeError
+cuscan self-test max error 1.43e-06 -> ON
+L6_9M_s2 0 4.108 3s gpu_mem_GB 4.40
+L6_9M_s2 50 2.395 35s gpu_mem_GB 4.52
+L6_9M_s2 100 1.841 67s gpu_mem_GB 4.52
+L6_9M_s2 150 1.587 100s gpu_mem_GB 4.52
+L6_9M_s2 200 1.226 132s gpu_mem_GB 4.52
+L6_9M_s2 250 1.254 164s gpu_mem_GB 4.52
+L6_9M_s2 300 1.16 197s gpu_mem_GB 4.52
+L6_9M_s2 350 1.2 229s gpu_mem_GB 4.52
+L6_9M_s2 400 1.026 261s gpu_mem_GB 4.52
+L6_9M_s2 450 1.054 293s gpu_mem_GB 4.52
+L6_9M_s2 500 1.008 325s gpu_mem_GB 4.52
+L6_9M_s2 550 1.068 358s gpu_mem_GB 4.52
+L6_9M_s2 600 0.954 390s gpu_mem_GB 4.52
+L6_9M_s2 650 1.0 422s gpu_mem_GB 4.52
+L6_9M_s2 700 1.065 455s gpu_mem_GB 4.52
+L6_9M_s2 750 0.952 487s gpu_mem_GB 4.52
+L6_9M_s2 800 0.983 519s gpu_mem_GB 4.52
+L6_9M_s2 850 0.952 551s gpu_mem_GB 4.52
+L6_9M_s2 900 0.884 583s gpu_mem_GB 4.52
+L6_9M_s2 950 0.843 614s gpu_mem_GB 4.52
+L6_9M_s2 1000 0.941 646s gpu_mem_GB 4.52
+L6_9M_s2 1050 1.034 677s gpu_mem_GB 4.52
+L6_9M_s2 1100 0.854 709s gpu_mem_GB 4.52
+L6_9M_s2 1150 0.831 740s gpu_mem_GB 4.52
+L6_9M_s2 1200 0.952 772s gpu_mem_GB 4.52
+L6_9M_s2 1250 0.915 804s gpu_mem_GB 4.52
+L6_9M_s2 1300 0.944 836s gpu_mem_GB 4.52
+L6_9M_s2 1350 0.769 867s gpu_mem_GB 4.52
+L6_9M_s2 1400 0.861 899s gpu_mem_GB 4.52
+L6_9M_s2 1450 0.886 930s gpu_mem_GB 4.52
+L6_9M_s2 1500 0.923 962s gpu_mem_GB 4.52
+L6_9M_s2 1550 0.941 993s gpu_mem_GB 4.52
+L6_9M_s2 1600 0.765 1025s gpu_mem_GB 4.52
+L6_9M_s2 1650 0.778 1057s gpu_mem_GB 4.52
+L6_9M_s2 1700 0.799 1088s gpu_mem_GB 4.52
+L6_9M_s2 1750 0.803 1120s gpu_mem_GB 4.52
+L6_9M_s2 1800 0.773 1151s gpu_mem_GB 4.52
+L6_9M_s2 1850 0.825 1183s gpu_mem_GB 4.52
+L6_9M_s2 1900 0.828 1214s gpu_mem_GB 4.52
+L6_9M_s2 1950 0.839 1246s gpu_mem_GB 4.52
+L6_9M_s2 2000 0.834 1278s gpu_mem_GB 4.52
+L6_9M_s2 2050 0.898 1309s gpu_mem_GB 4.52
+L6_9M_s2 2100 0.713 1342s gpu_mem_GB 4.52
+L6_9M_s2 2150 0.751 1373s gpu_mem_GB 4.52
+L6_9M_s2 2200 0.756 1405s gpu_mem_GB 4.52
+L6_9M_s2 2250 0.797 1438s gpu_mem_GB 4.52
+L6_9M_s2 2300 0.701 1469s gpu_mem_GB 4.52
+L6_9M_s2 2350 0.8 1501s gpu_mem_GB 4.52
+L6_9M_s2 2400 0.811 1533s gpu_mem_GB 4.52
+L6_9M_s2 2450 0.711 1564s gpu_mem_GB 4.52
+L6_9M_s2 2500 0.773 1596s gpu_mem_GB 4.52
+L6_9M_s2 2550 0.761 1628s gpu_mem_GB 4.52
+L6_9M_s2 2600 0.759 1660s gpu_mem_GB 4.52
+L6_9M_s2 2650 0.785 1691s gpu_mem_GB 4.52
+L6_9M_s2 2700 0.757 1723s gpu_mem_GB 4.52
+L6_9M_s2 2750 0.805 1755s gpu_mem_GB 4.52
+L6_9M_s2 2800 0.776 1787s gpu_mem_GB 4.52
+L6_9M_s2 2850 0.817 1818s gpu_mem_GB 4.52
+L6_9M_s2 2900 0.764 1851s gpu_mem_GB 4.52
+L6_9M_s2 2950 0.8 1882s gpu_mem_GB 4.52
+L6_9M_s2 3000 0.749 1915s gpu_mem_GB 4.52
+L6_9M_s2 3050 0.784 1947s gpu_mem_GB 4.52
+L6_9M_s2 3100 0.76 1979s gpu_mem_GB 4.52
+L6_9M_s2 3150 0.772 2010s gpu_mem_GB 4.52
+L6_9M_s2 3200 0.7 2042s gpu_mem_GB 4.52
+L6_9M_s2 3250 0.738 2074s gpu_mem_GB 4.52
+L6_9M_s2 3300 0.671 2107s gpu_mem_GB 4.52
+L6_9M_s2 3350 0.72 2138s gpu_mem_GB 4.52
+L6_9M_s2 3400 0.767 2170s gpu_mem_GB 4.52
+L6_9M_s2 3450 0.67 2202s gpu_mem_GB 4.52
+L6_9M_s2 3500 0.799 2234s gpu_mem_GB 4.52
+L6_9M_s2 3550 0.748 2266s gpu_mem_GB 4.52
+L6_9M_s2 3600 0.685 2299s gpu_mem_GB 4.52
+L6_9M_s2 3650 0.731 2331s gpu_mem_GB 4.52
+L6_9M_s2 3700 0.71 2363s gpu_mem_GB 4.52
+L6_9M_s2 3750 0.72 2395s gpu_mem_GB 4.52
+L6_9M_s2 3800 0.69 2427s gpu_mem_GB 4.52
+L6_9M_s2 3850 0.697 2459s gpu_mem_GB 4.52
+L6_9M_s2 3900 0.66 2492s gpu_mem_GB 4.52
+L6_9M_s2 3950 0.742 2523s gpu_mem_GB 4.52
+L6_9M_s2 4000 0.758 2556s gpu_mem_GB 4.52
+L6_9M_s2 4050 0.615 2587s gpu_mem_GB 4.52
+L6_9M_s2 4100 0.623 2620s gpu_mem_GB 4.52
+L6_9M_s2 4150 0.643 2652s gpu_mem_GB 4.52
+L6_9M_s2 4200 0.743 2684s gpu_mem_GB 4.52
+L6_9M_s2 4250 0.716 2717s gpu_mem_GB 4.52
+L6_9M_s2 4300 0.673 2749s gpu_mem_GB 4.52
+L6_9M_s2 4350 0.589 2781s gpu_mem_GB 4.52
+L6_9M_s2 4400 0.71 2813s gpu_mem_GB 4.52
+L6_9M_s2 4450 0.56 2845s gpu_mem_GB 4.52
+L6_9M_s2 4500 0.687 2877s gpu_mem_GB 4.52
+L6_9M_s2 4550 0.779 2909s gpu_mem_GB 4.52
+L6_9M_s2 4600 0.668 2941s gpu_mem_GB 4.52
+L6_9M_s2 4650 0.723 2973s gpu_mem_GB 4.52
+L6_9M_s2 4700 0.599 3005s gpu_mem_GB 4.52
+L6_9M_s2 4750 0.679 3037s gpu_mem_GB 4.52
+L6_9M_s2 4800 0.621 3069s gpu_mem_GB 4.52
+L6_9M_s2 4850 0.721 3101s gpu_mem_GB 4.52
+L6_9M_s2 4900 0.684 3133s gpu_mem_GB 4.52
+L6_9M_s2 4950 0.628 3165s gpu_mem_GB 4.52
+L6_9M_s2 5000 0.633 3197s gpu_mem_GB 4.52
+L6_9M_s2 5050 0.677 3229s gpu_mem_GB 4.52
+L6_9M_s2 5100 0.674 3262s gpu_mem_GB 4.52
+L6_9M_s2 5150 0.726 3294s gpu_mem_GB 4.52
+L6_9M_s2 5200 0.592 3326s gpu_mem_GB 4.52
+L6_9M_s2 5250 0.718 3358s gpu_mem_GB 4.52
+L6_9M_s2 5300 0.64 3391s gpu_mem_GB 4.52
+L6_9M_s2 5350 0.674 3424s gpu_mem_GB 4.52
+L6_9M_s2 5400 0.696 3457s gpu_mem_GB 4.52
+L6_9M_s2 5450 0.609 3490s gpu_mem_GB 4.52
+L6_9M_s2 5500 0.749 3523s gpu_mem_GB 4.52
+L6_9M_s2 5550 0.67 3555s gpu_mem_GB 4.52
+L6_9M_s2 5600 0.672 3587s gpu_mem_GB 4.52
+L6_9M_s2 5650 0.657 3619s gpu_mem_GB 4.52
+L6_9M_s2 5700 0.63 3651s gpu_mem_GB 4.52
+L6_9M_s2 5750 0.723 3682s gpu_mem_GB 4.52
+L6_9M_s2 5800 0.688 3715s gpu_mem_GB 4.52
+L6_9M_s2 5850 0.592 3747s gpu_mem_GB 4.52
+L6_9M_s2 5900 0.653 3779s gpu_mem_GB 4.52
+L6_9M_s2 5950 0.617 3811s gpu_mem_GB 4.52
+L6_9M_s2 exact 120 0.9375
+L6_9M_s2 exact 512 0.9644
+L6_9M_s2 exact 2048 0.9563
+L6_9M_s2 typos5% 120 0.9283
+L6_9M_s2 typos5% 512 0.9118
+L6_9M_s2 typos5% 2048 0.8978
+L6_9M_s2 renamed 120 0.8024
+L6_9M_s2 renamed 512 0.822
+L6_9M_s2 renamed 2048 0.875
+{
+ "device": "cuda",
+ "homeo": 1,
+ "name": "L6_9M_s2",
+ "model": "L6",
+ "seed": 2,
+ "steps": 6000,
+ "lam": 0.01,
+ "fuzzy": 1,
+ "block": 0,
+ "params": 8855973,
+ "train_minutes": 64.1,
+ "sec_per_step": 0.641,
+ "val_bits_per_byte": 1.0209,
+ "active_neurons_per_layer [state, ffn]": [
+  [
+   0.248,
+   0.029
+  ],
+  [
+   0.542,
+   0.034
+  ],
+  [
+   0.603,
+   0.049
+  ],
+  [
+   0.584,
+   0.059
+  ],
+  [
+   0.531,
+   0.063
+  ],
+  [
+   0.491,
+   0.095
+  ]
+ ],
+ "copy": {
+  "exact n=120": 0.9375,
+  "exact n=512": 0.9644,
+  "exact n=2048": 0.9563,
+  "typos5% n=120": 0.9283,
+  "typos5% n=512": 0.9118,
+  "typos5% n=2048": 0.8978,
+  "renamed n=120": 0.8024,
+  "renamed n=512": 0.822,
+  "renamed n=2048": 0.875
+ }
+}

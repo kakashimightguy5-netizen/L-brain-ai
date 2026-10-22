@@ -1,0 +1,29 @@
+Traceback (most recent call last):
+  File "D:\AI\SpikingBrain-study\L-architecture\code\train_L1.py", line 48, in <module>
+    y = x[:, 1:].reshape(-1); lg, states = run(x, True); loss = F.cross_entropy(lg.reshape(-1, 256), y)
+                                           ^^^^^^^^^^^^
+  File "D:\AI\SpikingBrain-study\L-architecture\code\train_L1.py", line 36, in run
+    return m(inp, rec, block=block or None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\SpikingBrain-study\L-architecture\venv\Lib\site-packages\torch\nn\modules\module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\SpikingBrain-study\L-architecture\venv\Lib\site-packages\torch\nn\modules\module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\SpikingBrain-study\L-architecture\code\l5_model.py", line 97, in forward
+    if not s.rhit: return super().forward(x, rec, block)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\SpikingBrain-study\L-architecture\code\l4_model.py", line 55, in forward
+    z = s.fw[i](z); z, _ = l(z); states.append(z)
+        ^^^^^^^^^^
+  File "D:\AI\SpikingBrain-study\L-architecture\venv\Lib\site-packages\torch\nn\modules\module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\SpikingBrain-study\L-architecture\venv\Lib\site-packages\torch\nn\modules\module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\SpikingBrain-study\L-architecture\code\l5_model.py", line 79, in forward
+    q, k, v = z.view(B, T, 3, H, dk).permute(2, 0, 3, 1, 4)
+              ^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: shape '[32, 256, 3, 16, 14]' is invalid for input of size 5701632

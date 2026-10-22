@@ -1,0 +1,5 @@
+# Registered continual exemplar decision repair
+
+Exploratory942-944 splits already inspected. Compare noise-aware likelihood inference on exactly the pixel-space k-center exemplars stored by replay. Start with20/class (200references), then50/class (500references) and100/class (up to1000references). Larger memories are additional resources, not equal-memory wins. Each class is acquired sequentially without future-class access. Final inference chooses all10classes with no task identity. No neural weights are claimed to heal through this lookup.
+
+Validation selects likelihood noise sigma0.1/0.15/0.2/0.25/0.35/0.5 via0.3clean+0.7single-noisy accuracy. Confidence temperature affects calibration but not accuracy; use1. Save references, labels, sigma, test predictions, rawfloat32 reference bytes, compressed checkpoint bytes and exact reload checks. Compare200-reference decision method against replay with the same selected200references; selection algorithm and training input partitions match. Interpret improvement as changing the decision mechanism while keeping exemplar budget, not fixing pure EWC. Store runnable deployment demo.

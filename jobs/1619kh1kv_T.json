@@ -1,0 +1,1 @@
+{"script": "lim_suite.py", "args": ["T", "kv", "1", "3000"], "env": {"SPIKEK": "8", "THREADS": "2", "PYTORCH_NVML_BASED_CUDA_CHECK": "1"}, "device": "gpu"}

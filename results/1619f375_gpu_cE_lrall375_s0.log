@@ -1,0 +1,116 @@
+lscan: compiled scan unavailable, using torch chunked scan: RuntimeError
+LOWRANK dense MACs/token 720896 -> 417792
+cuscan self-test max error 1.91e-06 -> ON
+cE_lrall375_s0 0 4.717 4s gpu_mem_GB 0.61
+cE_lrall375_s0 50 2.683 25s gpu_mem_GB 0.62
+cE_lrall375_s0 100 1.922 47s gpu_mem_GB 0.62
+cE_lrall375_s0 150 1.836 68s gpu_mem_GB 0.62
+cE_lrall375_s0 200 1.595 90s gpu_mem_GB 0.62
+cE_lrall375_s0 250 1.63 111s gpu_mem_GB 0.62
+cE_lrall375_s0 300 1.388 133s gpu_mem_GB 0.62
+cE_lrall375_s0 350 1.411 154s gpu_mem_GB 0.62
+cE_lrall375_s0 400 1.441 176s gpu_mem_GB 0.62
+cE_lrall375_s0 450 1.208 197s gpu_mem_GB 0.62
+cE_lrall375_s0 500 1.246 218s gpu_mem_GB 0.62
+cE_lrall375_s0 550 1.472 240s gpu_mem_GB 0.62
+cE_lrall375_s0 600 1.295 280s gpu_mem_GB 0.62
+cE_lrall375_s0 650 1.376 322s gpu_mem_GB 0.62
+cE_lrall375_s0 700 1.484 364s gpu_mem_GB 0.62
+cE_lrall375_s0 750 1.178 405s gpu_mem_GB 0.62
+cE_lrall375_s0 800 1.265 447s gpu_mem_GB 0.62
+cE_lrall375_s0 850 1.723 489s gpu_mem_GB 0.62
+cE_lrall375_s0 900 1.278 531s gpu_mem_GB 0.62
+cE_lrall375_s0 950 1.209 573s gpu_mem_GB 0.62
+cE_lrall375_s0 1000 1.128 614s gpu_mem_GB 0.62
+cE_lrall375_s0 1050 1.203 657s gpu_mem_GB 0.62
+cE_lrall375_s0 1100 1.011 699s gpu_mem_GB 0.62
+cE_lrall375_s0 1150 1.404 741s gpu_mem_GB 0.62
+cE_lrall375_s0 1200 1.188 783s gpu_mem_GB 0.62
+cE_lrall375_s0 1250 1.118 824s gpu_mem_GB 0.62
+cE_lrall375_s0 1300 1.115 866s gpu_mem_GB 0.62
+cE_lrall375_s0 1350 1.13 908s gpu_mem_GB 0.62
+cE_lrall375_s0 1400 1.059 950s gpu_mem_GB 0.62
+cE_lrall375_s0 1450 1.045 992s gpu_mem_GB 0.62
+cE_lrall375_s0 1500 1.142 1034s gpu_mem_GB 0.62
+cE_lrall375_s0 1550 1.162 1076s gpu_mem_GB 0.62
+cE_lrall375_s0 1600 1.008 1118s gpu_mem_GB 0.62
+cE_lrall375_s0 1650 1.09 1159s gpu_mem_GB 0.62
+cE_lrall375_s0 1700 1.073 1201s gpu_mem_GB 0.62
+cE_lrall375_s0 1750 1.115 1243s gpu_mem_GB 0.62
+cE_lrall375_s0 1800 1.314 1285s gpu_mem_GB 0.62
+cE_lrall375_s0 1850 1.066 1327s gpu_mem_GB 0.62
+cE_lrall375_s0 1900 1.105 1369s gpu_mem_GB 0.62
+cE_lrall375_s0 1950 1.183 1411s gpu_mem_GB 0.62
+cE_lrall375_s0 2000 1.061 1453s gpu_mem_GB 0.62
+cE_lrall375_s0 2050 1.167 1495s gpu_mem_GB 0.62
+cE_lrall375_s0 2100 1.115 1537s gpu_mem_GB 0.62
+cE_lrall375_s0 2150 1.033 1579s gpu_mem_GB 0.62
+cE_lrall375_s0 2200 1.121 1621s gpu_mem_GB 0.62
+cE_lrall375_s0 2250 1.21 1663s gpu_mem_GB 0.62
+cE_lrall375_s0 2300 1.074 1705s gpu_mem_GB 0.62
+cE_lrall375_s0 2350 0.917 1746s gpu_mem_GB 0.62
+cE_lrall375_s0 2400 1.162 1788s gpu_mem_GB 0.62
+cE_lrall375_s0 2450 1.16 1830s gpu_mem_GB 0.62
+cE_lrall375_s0 2500 0.982 1872s gpu_mem_GB 0.62
+cE_lrall375_s0 2550 1.133 1914s gpu_mem_GB 0.62
+cE_lrall375_s0 2600 1.052 1956s gpu_mem_GB 0.62
+cE_lrall375_s0 2650 1.062 1997s gpu_mem_GB 0.62
+cE_lrall375_s0 2700 0.989 2039s gpu_mem_GB 0.62
+cE_lrall375_s0 2750 1.09 2081s gpu_mem_GB 0.62
+cE_lrall375_s0 2800 1.079 2123s gpu_mem_GB 0.62
+cE_lrall375_s0 2850 1.107 2164s gpu_mem_GB 0.62
+cE_lrall375_s0 2900 1.035 2206s gpu_mem_GB 0.62
+cE_lrall375_s0 2950 1.043 2248s gpu_mem_GB 0.62
+cE_lrall375_s0 exact 120 0.9458
+cE_lrall375_s0 exact 512 0.958
+cE_lrall375_s0 exact 2048 0.9537
+cE_lrall375_s0 typos5% 120 0.9389
+cE_lrall375_s0 typos5% 512 0.9188
+cE_lrall375_s0 typos5% 2048 0.8983
+cE_lrall375_s0 renamed 120 0.789
+cE_lrall375_s0 renamed 512 0.8284
+cE_lrall375_s0 renamed 2048 0.8533
+{
+ "device": "cuda",
+ "homeo": 1,
+ "name": "cE_lrall375_s0",
+ "model": "L5",
+ "seed": 0,
+ "steps": 3000,
+ "lam": 0.03,
+ "fuzzy": 1,
+ "block": 0,
+ "params": 633253,
+ "train_minutes": 38.1,
+ "sec_per_step": 0.763,
+ "val_bits_per_byte": 1.4246,
+ "active_neurons_per_layer [state, ffn]": [
+  [
+   0.663,
+   0.116
+  ],
+  [
+   0.668,
+   0.101
+  ],
+  [
+   0.661,
+   0.1
+  ],
+  [
+   0.625,
+   0.104
+  ]
+ ],
+ "copy": {
+  "exact n=120": 0.9458,
+  "exact n=512": 0.958,
+  "exact n=2048": 0.9537,
+  "typos5% n=120": 0.9389,
+  "typos5% n=512": 0.9188,
+  "typos5% n=2048": 0.8983,
+  "renamed n=120": 0.789,
+  "renamed n=512": 0.8284,
+  "renamed n=2048": 0.8533
+ }
+}

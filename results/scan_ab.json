@@ -1,0 +1,81 @@
+{
+ "device": "cuda",
+ "batch": [
+  16,
+  256
+ ],
+ "reps": 5,
+ "steps": 10,
+ "note": "timings share the GPU with any other running job",
+ "scan_kernel_ON_ms_per_step_median": 476.28,
+ "scan_kernel_ON_ms_all": [
+  476.6,
+  474.2,
+  476.3,
+  478.4,
+  476.2
+ ],
+ "scan_log_depth_OFF_ms_per_step_median": 640.36,
+ "scan_log_depth_OFF_ms_all": [
+  638.7,
+  641.1,
+  643.9,
+  636.7,
+  640.4
+ ],
+ "transformer_ms_per_step_median": 101.6,
+ "transformer_ms_all": [
+  102.4,
+  101.5,
+  101.4,
+  101.8,
+  101.6
+ ],
+ "scan_kernel_ON_kernels_per_step": 2365,
+ "scan_log_depth_OFF_kernels_per_step": 3257,
+ "transformer_kernels_per_step": 258,
+ "cuscan_VERIFIED": true,
+ "idle_W": 39.24,
+ "scan_kernel_ON_energy": {
+  "n": 3,
+  "mJ_per_token_mean": 4.374,
+  "mJ_per_token_std": 0.0742,
+  "mJ_per_token_above_idle_mean": -0.1917,
+  "mJ_per_token_above_idle_std": 0.0632,
+  "seconds_mean": 4.7471,
+  "avg_W_mean": 37.59,
+  "peak_W_max": 44.86,
+  "temp_max_C": 72,
+  "temp_rise_C": 0,
+  "counter_vs_samples_rel_diff_max": 0.1195,
+  "throttle_reasons": []
+ },
+ "scan_log_depth_OFF_energy": {
+  "n": 3,
+  "mJ_per_token_mean": 5.9222,
+  "mJ_per_token_std": 0.1565,
+  "mJ_per_token_above_idle_mean": -0.2151,
+  "mJ_per_token_above_idle_std": 0.1274,
+  "seconds_mean": 6.3813,
+  "avg_W_mean": 37.86,
+  "peak_W_max": 46.76,
+  "temp_max_C": 71,
+  "temp_rise_C": -1,
+  "counter_vs_samples_rel_diff_max": 0.1117,
+  "throttle_reasons": []
+ },
+ "transformer_energy": {
+  "n": 3,
+  "mJ_per_token_mean": 0.9561,
+  "mJ_per_token_std": 0.1024,
+  "mJ_per_token_above_idle_mean": -0.0234,
+  "mJ_per_token_above_idle_std": 0.0905,
+  "seconds_mean": 1.0184,
+  "avg_W_mean": 38.28,
+  "peak_W_max": 46.78,
+  "temp_max_C": 71,
+  "temp_rise_C": 0,
+  "counter_vs_samples_rel_diff_max": 0.1768,
+  "throttle_reasons": []
+ }
+}

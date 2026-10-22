@@ -1,0 +1,44 @@
+{
+ "device": "cuda",
+ "homeo": 1,
+ "name": "E_G4_s2",
+ "model": "L5",
+ "seed": 2,
+ "steps": 3000,
+ "lam": 0.03,
+ "fuzzy": 1,
+ "block": 0,
+ "params": 936357,
+ "train_minutes": 27.2,
+ "sec_per_step": 0.543,
+ "val_bits_per_byte": 1.3596,
+ "active_neurons_per_layer [state, ffn]": [
+  [
+   0.405,
+   0.032
+  ],
+  [
+   0.459,
+   0.036
+  ],
+  [
+   0.448,
+   0.037
+  ],
+  [
+   0.37,
+   0.037
+  ]
+ ],
+ "copy": {
+  "exact n=120": 0.9292,
+  "exact n=512": 0.9595,
+  "exact n=2048": 0.9523,
+  "typos5% n=120": 0.9368,
+  "typos5% n=512": 0.9203,
+  "typos5% n=2048": 0.8944,
+  "renamed n=120": 0.7914,
+  "renamed n=512": 0.8293,
+  "renamed n=2048": 0.8615
+ }
+}

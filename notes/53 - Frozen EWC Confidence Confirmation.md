@@ -1,0 +1,3 @@
+# Frozen EWC confidence confirmation
+
+Fresh1142-1146, five runs. Freeze empirical Fisher64, lambda1000, same CNN, five tasks and30epochs/task. Compare standard cross-entropy versus label smoothing0.1. No replay or bias calibration. Hyperparameters frozen from causal diagnosis before fresh test evaluation; choosing this branch after exploratory runs is explicitly disclosed. Both start from identical weights and RNG states, use the same clean/noisy augmentation and old-validation checkpoint criterion. Epoch0 eligible for both. Store tests for both and verify exact reloaded predictions. Expected Fisher variants remain exploratory rather than being promoted on individual test scores.

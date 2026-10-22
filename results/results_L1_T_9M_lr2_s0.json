@@ -1,0 +1,20 @@
+{
+ "device": "cuda",
+ "homeo": 0,
+ "name": "T_9M_lr2_s0",
+ "model": "T",
+ "seed": 0,
+ "steps": 6000,
+ "lam": 0.0,
+ "fuzzy": 1,
+ "block": 0,
+ "params": 9219840,
+ "train_minutes": 55.3,
+ "sec_per_step": 0.553,
+ "val_bits_per_byte": 1.0829,
+ "copy": {
+  "exact n=120": 0.8958,
+  "typos5% n=120": 0.841,
+  "renamed n=120": 0.6698
+ }
+}

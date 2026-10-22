@@ -1,0 +1,75 @@
+{
+ "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+ "idle_W": 11.66,
+ "batch": 1,
+ "tokens_timed_per_point": 512,
+ "GraphStepper_vs_Stepper_max_diff": 0.0,
+ "ctx 256": {
+  "transformer KV-cache (eager)": {
+   "ms_per_token": 3.75,
+   "mJ_per_token_above_idle": 14.31,
+   "kv_cache_MB_used": 4.33
+  },
+  "transformer KV-cache (CUDA graph)": {
+   "ms_per_token": 2.026,
+   "mJ_per_token_above_idle": 25.25,
+   "kv_cache_MB_used": 4.33
+  },
+  "L GraphStepper": {
+   "ms_per_token": 1.366,
+   "mJ_per_token_above_idle": 18.43,
+   "state_MB": 0.456
+  }
+ },
+ "ctx 1024": {
+  "transformer KV-cache (eager)": {
+   "ms_per_token": 4.324,
+   "mJ_per_token_above_idle": 46.3,
+   "kv_cache_MB_used": 17.3
+  },
+  "transformer KV-cache (CUDA graph)": {
+   "ms_per_token": 3.13,
+   "mJ_per_token_above_idle": 38.42,
+   "kv_cache_MB_used": 17.3
+  },
+  "L GraphStepper": {
+   "ms_per_token": 1.287,
+   "mJ_per_token_above_idle": 18.15,
+   "state_MB": 0.456
+  }
+ },
+ "ctx 4096": {
+  "transformer KV-cache (eager)": {
+   "ms_per_token": 8.551,
+   "mJ_per_token_above_idle": 98.66,
+   "kv_cache_MB_used": 69.21
+  },
+  "transformer KV-cache (CUDA graph)": {
+   "ms_per_token": 7.845,
+   "mJ_per_token_above_idle": 97.75,
+   "kv_cache_MB_used": 69.21
+  },
+  "L GraphStepper": {
+   "ms_per_token": 1.305,
+   "mJ_per_token_above_idle": 17.38,
+   "state_MB": 0.456
+  }
+ },
+ "ctx 16384": {
+  "transformer KV-cache (eager)": {
+   "ms_per_token": 27.011,
+   "mJ_per_token_above_idle": 322.44,
+   "kv_cache_MB_used": 276.82
+  },
+  "transformer KV-cache (CUDA graph)": {
+   "ms_per_token": 26.001,
+   "mJ_per_token_above_idle": 327.95,
+   "kv_cache_MB_used": 276.82
+  },
+  "L GraphStepper": {
+   "ms_per_token": 1.307,
+   "mJ_per_token_above_idle": 17.52,
+   "state_MB": 0.456
+  }
+ }
+}

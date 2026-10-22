@@ -1,0 +1,114 @@
+lscan: compiled scan unavailable, using torch chunked scan: RuntimeError
+L1homeo_s1 0 4.414 1s gpu_mem_GB 0.51
+L1homeo_s1 50 2.536 15s gpu_mem_GB 0.53
+L1homeo_s1 100 2.025 29s gpu_mem_GB 0.53
+L1homeo_s1 150 1.659 43s gpu_mem_GB 0.53
+L1homeo_s1 200 1.667 57s gpu_mem_GB 0.53
+L1homeo_s1 250 1.448 71s gpu_mem_GB 0.53
+L1homeo_s1 300 1.415 85s gpu_mem_GB 0.53
+L1homeo_s1 350 1.41 100s gpu_mem_GB 0.53
+L1homeo_s1 400 1.252 114s gpu_mem_GB 0.53
+L1homeo_s1 450 1.293 128s gpu_mem_GB 0.53
+L1homeo_s1 500 1.436 142s gpu_mem_GB 0.53
+L1homeo_s1 550 1.136 156s gpu_mem_GB 0.53
+L1homeo_s1 600 1.2 170s gpu_mem_GB 0.53
+L1homeo_s1 650 1.232 184s gpu_mem_GB 0.53
+L1homeo_s1 700 1.116 198s gpu_mem_GB 0.53
+L1homeo_s1 750 1.184 212s gpu_mem_GB 0.53
+L1homeo_s1 800 1.273 226s gpu_mem_GB 0.53
+L1homeo_s1 850 1.282 240s gpu_mem_GB 0.53
+L1homeo_s1 900 1.173 254s gpu_mem_GB 0.53
+L1homeo_s1 950 1.076 268s gpu_mem_GB 0.53
+L1homeo_s1 1000 1.212 282s gpu_mem_GB 0.53
+L1homeo_s1 1050 1.301 296s gpu_mem_GB 0.53
+L1homeo_s1 1100 1.077 310s gpu_mem_GB 0.53
+L1homeo_s1 1150 1.15 324s gpu_mem_GB 0.53
+L1homeo_s1 1200 1.124 338s gpu_mem_GB 0.53
+L1homeo_s1 1250 1.092 352s gpu_mem_GB 0.53
+L1homeo_s1 1300 1.038 366s gpu_mem_GB 0.53
+L1homeo_s1 1350 1.113 380s gpu_mem_GB 0.53
+L1homeo_s1 1400 1.035 394s gpu_mem_GB 0.53
+L1homeo_s1 1450 1.093 408s gpu_mem_GB 0.53
+L1homeo_s1 1500 1.022 422s gpu_mem_GB 0.53
+L1homeo_s1 1550 1.044 437s gpu_mem_GB 0.53
+L1homeo_s1 1600 1.305 450s gpu_mem_GB 0.53
+L1homeo_s1 1650 1.132 464s gpu_mem_GB 0.53
+L1homeo_s1 1700 1.079 479s gpu_mem_GB 0.53
+L1homeo_s1 1750 1.12 493s gpu_mem_GB 0.53
+L1homeo_s1 1800 1.119 507s gpu_mem_GB 0.53
+L1homeo_s1 1850 1.033 521s gpu_mem_GB 0.53
+L1homeo_s1 1900 0.989 535s gpu_mem_GB 0.53
+L1homeo_s1 1950 1.094 549s gpu_mem_GB 0.53
+L1homeo_s1 2000 0.893 563s gpu_mem_GB 0.53
+L1homeo_s1 2050 1.017 577s gpu_mem_GB 0.53
+L1homeo_s1 2100 1.124 591s gpu_mem_GB 0.53
+L1homeo_s1 2150 1.143 605s gpu_mem_GB 0.53
+L1homeo_s1 2200 0.859 619s gpu_mem_GB 0.53
+L1homeo_s1 2250 0.903 633s gpu_mem_GB 0.53
+L1homeo_s1 2300 0.933 647s gpu_mem_GB 0.53
+L1homeo_s1 2350 0.893 661s gpu_mem_GB 0.53
+L1homeo_s1 2400 1.066 675s gpu_mem_GB 0.53
+L1homeo_s1 2450 0.893 689s gpu_mem_GB 0.53
+L1homeo_s1 2500 0.932 703s gpu_mem_GB 0.53
+L1homeo_s1 2550 1.076 717s gpu_mem_GB 0.53
+L1homeo_s1 2600 1.034 731s gpu_mem_GB 0.53
+L1homeo_s1 2650 1.015 745s gpu_mem_GB 0.53
+L1homeo_s1 2700 0.961 759s gpu_mem_GB 0.53
+L1homeo_s1 2750 0.926 773s gpu_mem_GB 0.53
+L1homeo_s1 2800 1.039 787s gpu_mem_GB 0.53
+L1homeo_s1 2850 1.152 801s gpu_mem_GB 0.53
+L1homeo_s1 2900 0.989 815s gpu_mem_GB 0.53
+L1homeo_s1 2950 0.915 829s gpu_mem_GB 0.53
+L1homeo_s1 exact 120 0.9417
+L1homeo_s1 exact 512 0.959
+L1homeo_s1 exact 2048 0.9508
+L1homeo_s1 typos5% 120 0.9241
+L1homeo_s1 typos5% 512 0.8813
+L1homeo_s1 typos5% 2048 0.8691
+L1homeo_s1 renamed 120 0.8004
+L1homeo_s1 renamed 512 0.8129
+L1homeo_s1 renamed 2048 0.8511
+{
+ "device": "cuda",
+ "homeo": 1,
+ "name": "L1homeo_s1",
+ "model": "L1",
+ "seed": 1,
+ "steps": 3000,
+ "lam": 0.03,
+ "fuzzy": 0,
+ "block": 0,
+ "params": 1136099,
+ "train_minutes": 14.0,
+ "sec_per_step": 0.281,
+ "val_bits_per_byte": 1.3514,
+ "active_neurons_per_layer [state, ffn]": [
+  [
+   0.447,
+   0.08
+  ],
+  [
+   0.513,
+   0.09
+  ],
+  [
+   0.584,
+   0.1
+  ],
+  [
+   0.553,
+   0.109
+  ]
+ ],
+ "copy": {
+  "exact n=120": 0.9417,
+  "exact n=512": 0.959,
+  "exact n=2048": 0.9508,
+  "typos5% n=120": 0.9241,
+  "typos5% n=512": 0.8813,
+  "typos5% n=2048": 0.8691,
+  "renamed n=120": 0.8004,
+  "renamed n=512": 0.8129,
+  "renamed n=2048": 0.8511
+ }
+}

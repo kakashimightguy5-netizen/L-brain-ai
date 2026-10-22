@@ -1,0 +1,33 @@
+{
+ "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+ "params": 8855973,
+ "batch": [
+  32,
+  256
+ ],
+ "plain": {
+  "ms_per_step": 617.3,
+  "max_loss_diff_vs_plain": 0.0,
+  "final_loss": 2.1546
+ },
+ "bf16": {
+  "ms_per_step": 510.0,
+  "max_loss_diff_vs_plain": 0.0687,
+  "final_loss": 2.1179
+ },
+ "graph": {
+  "ms_per_step": 603.0,
+  "max_loss_diff_vs_plain": 0.0842,
+  "final_loss": 2.092
+ },
+ "graph+bf16": {
+  "ms_per_step": 493.6,
+  "max_loss_diff_vs_plain": 0.0728,
+  "final_loss": 2.1005
+ },
+ "forward breakdown ms": {
+  "delta memory (x6)": 118.7,
+  "spiking layer (x6)": 63.3,
+  "total": 214.4
+ }
+}

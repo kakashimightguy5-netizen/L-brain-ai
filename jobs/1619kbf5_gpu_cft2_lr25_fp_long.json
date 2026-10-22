@@ -1,0 +1,1 @@
+{"script": "compress_ft.py", "args": ["0.25", "9000", "all6", "cft2_lr25_fp_long"], "env": {"SPIKEK": "8", "THREADS": "2", "PYTORCH_NVML_BASED_CUDA_CHECK": "1", "QAT": "none", "QAT_MAP": "", "QAT_SKIP": "", "ALPHA_RAMP": "0", "KDT": "1", "HID": "1", "LRN": "5e-4", "UNFREEZE": "1", "SEED": "0", "CKPT_EVERY": "500"}, "device": "gpu"}

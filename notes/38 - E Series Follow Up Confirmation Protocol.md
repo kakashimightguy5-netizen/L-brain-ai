@@ -1,0 +1,11 @@
+# E-series follow-up diagnosis and confirmation protocol
+
+[[37 - E Series Repair Protocol]]
+
+Registered after first repair results, before follow-up fits. First repairs retained even when negative. Five new seeds242–246, same60/20/20digits split recipe. Test population still reused; new partitions are independent experiment seeds, not independent external datasets.
+
+1. EWC+replay must calibrate its own regularization. Reusing a large lambda chosen without replay can freeze the model despite storedexamples. Train candidatesλ0/10/1000/100000with corrected per-example Fisher and20/classreplay, select on final all-classvalidation only. Compare same-init replay(lambda0); retain lambda0 if EWC adds no value. Do not claim EWC by itself is repaired.
+2. Sleep diagnosis: previous protected run distilled the old teacher on corrected errors (teaches the old wrong answer), and corrupted already noisy errors again (mismatch). Repair: error CE on original noisy corrections; clean-buffer CE and teacherKL ONLY on cleananchors; augment only original cleanbuffer. Equalbatch32errors/32cleananchors, additional32syntheticnoisyclean-bufferexamples at .35.30epochs;lr.0003/.001/.003 and cleananchorweight1/3 selected by independent validation, guard cleanaccuracy loss<=2points, fallbackoriginalmodelallowed. Compare no healing, original sleep and protected sequential edits on samebase, samecorrections. Native training not confused with fullSpikingBrain fine-tuning.
+3. Compression diagnosis: arbitrary fixed IDs do not naturally describe trained weights; random factorization wastes training recovering structure. Compare rank5andrank8 lowrank networks initialized from the training-only teacher's truncatedSVD, with300CE+KLdistillation updates and validation checkpointing. Also test rank5pluslearned-code genomic residual(d2,gh8), separate weight-generating residual decoder, alpha.01trainable. This is explicitly a HYBRID genome+factorization model. Compare with rank5ablation and nearbudgetrank8. Report actual filebytes; generated matrices not persisted, full teacher used offline only. No claim nonlinear genome advantage unless data support it.
+
+All tests reproduced after reload. Failed improvements remain in tables. Native no-healing, naïve fine-tuning and no-feedback secondguess remain controls rather than targets whose definitions silently change.

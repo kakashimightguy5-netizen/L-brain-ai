@@ -1,0 +1,114 @@
+[
+ {
+  "policy": "float32",
+  "bits_per_byte": 0.9848,
+  "share_low_precision": 0.0,
+  "modelled_weight_traffic_vs_8bit": 1.0,
+  "note": ""
+ },
+ {
+  "policy": "all 8-bit (int8 pc)",
+  "bits_per_byte": 0.9857,
+  "share_low_precision": 0.0,
+  "modelled_weight_traffic_vs_8bit": 1.0,
+  "note": ""
+ },
+ {
+  "policy": "all 4-bit (mx4 pow2 B32)",
+  "bits_per_byte": 1.0077,
+  "share_low_precision": 1.0,
+  "modelled_weight_traffic_vs_8bit": 0.5,
+  "note": ""
+ },
+ {
+  "policy": "all 4-bit (int4 pc)",
+  "bits_per_byte": 1.0405,
+  "share_low_precision": 1.0,
+  "modelled_weight_traffic_vs_8bit": 0.5,
+  "note": ""
+ },
+ {
+  "policy": "confidence-gated (mx4), target 25% low",
+  "bits_per_byte": 0.9935,
+  "share_low_precision": 0.4001,
+  "modelled_weight_traffic_vs_8bit": 0.7999,
+  "note": "thr=0.9935 fitted on CAL"
+ },
+ {
+  "policy": "random control (mx4), 25% low",
+  "bits_per_byte": 0.9908,
+  "share_low_precision": 0.2492,
+  "modelled_weight_traffic_vs_8bit": 0.8754,
+  "note": ""
+ },
+ {
+  "policy": "confidence-gated (int4), target 25% low",
+  "bits_per_byte": 0.9942,
+  "share_low_precision": 0.3879,
+  "modelled_weight_traffic_vs_8bit": 0.8061,
+  "note": "thr=0.9935 fitted on CAL"
+ },
+ {
+  "policy": "random control (int4), 25% low",
+  "bits_per_byte": 0.9939,
+  "share_low_precision": 0.2492,
+  "modelled_weight_traffic_vs_8bit": 0.8754,
+  "note": ""
+ },
+ {
+  "policy": "confidence-gated (mx4), target 50% low",
+  "bits_per_byte": 0.9956,
+  "share_low_precision": 0.6492,
+  "modelled_weight_traffic_vs_8bit": 0.6754,
+  "note": "thr=0.8682 fitted on CAL"
+ },
+ {
+  "policy": "random control (mx4), 50% low",
+  "bits_per_byte": 0.9947,
+  "share_low_precision": 0.4998,
+  "modelled_weight_traffic_vs_8bit": 0.7501,
+  "note": ""
+ },
+ {
+  "policy": "confidence-gated (int4), target 50% low",
+  "bits_per_byte": 1.0085,
+  "share_low_precision": 0.6398,
+  "modelled_weight_traffic_vs_8bit": 0.6801,
+  "note": "thr=0.8682 fitted on CAL"
+ },
+ {
+  "policy": "random control (int4), 50% low",
+  "bits_per_byte": 1.0086,
+  "share_low_precision": 0.4998,
+  "modelled_weight_traffic_vs_8bit": 0.7501,
+  "note": ""
+ },
+ {
+  "policy": "confidence-gated (mx4), target 75% low",
+  "bits_per_byte": 1.0046,
+  "share_low_precision": 0.8419,
+  "modelled_weight_traffic_vs_8bit": 0.5791,
+  "note": "thr=0.4667 fitted on CAL"
+ },
+ {
+  "policy": "random control (mx4), 75% low",
+  "bits_per_byte": 1.0062,
+  "share_low_precision": 0.748,
+  "modelled_weight_traffic_vs_8bit": 0.626,
+  "note": ""
+ },
+ {
+  "policy": "confidence-gated (int4), target 75% low",
+  "bits_per_byte": 1.0222,
+  "share_low_precision": 0.8342,
+  "modelled_weight_traffic_vs_8bit": 0.5829,
+  "note": "thr=0.4667 fitted on CAL"
+ },
+ {
+  "policy": "random control (int4), 75% low",
+  "bits_per_byte": 1.0205,
+  "share_low_precision": 0.748,
+  "modelled_weight_traffic_vs_8bit": 0.626,
+  "note": ""
+ }
+]

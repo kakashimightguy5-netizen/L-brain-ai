@@ -1,0 +1,31 @@
+D:\AI\SpikingBrain-study\L-architecture\venv\Lib\site-packages\torch\profiler\profiler.py:224: UserWarning: Warning: Profiler clears events at the end of each cycle.Only events from the current cycle will be reported.To keep events across cycles, set acc_events=True.
+  _warn_once(
+Traceback (most recent call last):
+  File "D:\AI\SpikingBrain-study\L-architecture\code\l_bench.py", line 84, in <module>
+    fwd(m, kind, x); times.clear(); torch.cuda.synchronize(); t0 = time.time()
+    ^^^^^^^^^^^^^^^
+  File "D:\AI\SpikingBrain-study\L-architecture\code\l_bench.py", line 25, in fwd
+    return m(inp)[0] if kind == 'T' else m(inp, fastmem.hippo_batch(inp))[0]
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\SpikingBrain-study\L-architecture\venv\Lib\site-packages\torch\nn\modules\module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\SpikingBrain-study\L-architecture\venv\Lib\site-packages\torch\nn\modules\module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\SpikingBrain-study\L-architecture\code\l5_model.py", line 105, in forward
+    if not s.rhit: return super().forward(x, rec, block)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\SpikingBrain-study\L-architecture\code\l4_model.py", line 55, in forward
+    z = s.fw[i](z); z, _ = l(z); states.append(z)
+        ^^^^^^^^^^
+  File "D:\AI\SpikingBrain-study\L-architecture\venv\Lib\site-packages\torch\nn\modules\module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\SpikingBrain-study\L-architecture\venv\Lib\site-packages\torch\nn\modules\module.py", line 1885, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "D:\AI\SpikingBrain-study\L-architecture\venv\Lib\site-packages\torch\nn\modules\module.py", line 1833, in inner
+    result = forward_call(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: DeltaMemory.forward() takes 2 positional arguments but 3 were given

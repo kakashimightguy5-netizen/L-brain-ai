@@ -1,0 +1,198 @@
+{
+ "gpu": {
+  "name": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "power_limit_W": null,
+  "default_power_limit_W": 35.0,
+  "power_limit_range_W": [
+   1.0,
+   55.0
+  ],
+  "sm_clock_max_MHz": 2100,
+  "mem_clock_max_MHz": 5501,
+  "energy_counter_supported": true,
+  "rapl_readable": false,
+  "on_mains": null
+ },
+ "torch": "2.11.0+cu128",
+ "batch": [
+  16,
+  256
+ ],
+ "labels": "MEASURED",
+ "idle_W": 19.6,
+ "L_eager_fp32": {
+  "n": 3,
+  "mJ_per_token_mean": 63.8202,
+  "mJ_per_token_std": 7.6943,
+  "mJ_per_token_above_idle_mean": 8.0992,
+  "mJ_per_token_above_idle_std": 0.5084,
+  "seconds_mean": 116.4456,
+  "avg_W_mean": 22.47,
+  "peak_W_max": 36.47,
+  "temp_max_C": 63,
+  "temp_rise_C": -1,
+  "counter_vs_samples_rel_diff_max": 0.0429,
+  "throttle_reasons": [],
+  "ms_per_step": 11644.6,
+  "peak_VRAM_GB": 2.38,
+  "first_losses": [
+   2.9704,
+   3.0413,
+   2.9641
+  ]
+ },
+ "L_bf16": {
+  "n": 3,
+  "mJ_per_token_mean": 100.6259,
+  "mJ_per_token_std": 137.9222,
+  "mJ_per_token_above_idle_mean": 2.0963,
+  "mJ_per_token_above_idle_std": 1.3763,
+  "seconds_mean": 205.9068,
+  "avg_W_mean": 24.27,
+  "peak_W_max": 46.34,
+  "temp_max_C": 67,
+  "temp_rise_C": 7,
+  "counter_vs_samples_rel_diff_max": 0.1151,
+  "throttle_reasons": [
+   "GpuIdle",
+   "SwPowerCap"
+  ],
+  "ms_per_step": 20590.7,
+  "peak_VRAM_GB": 1.94,
+  "first_losses": [
+   2.9702,
+   3.0415,
+   2.9642
+  ]
+ },
+ "L_cudagraph_fp32": {
+  "n": 3,
+  "mJ_per_token_mean": 162.9006,
+  "mJ_per_token_std": 1.4337,
+  "mJ_per_token_above_idle_mean": 53.0153,
+  "mJ_per_token_above_idle_std": 1.3036,
+  "seconds_mean": 229.6379,
+  "avg_W_mean": 29.06,
+  "peak_W_max": 44.3,
+  "temp_max_C": 65,
+  "temp_rise_C": -1,
+  "counter_vs_samples_rel_diff_max": 0.0302,
+  "throttle_reasons": [],
+  "ms_per_step": 22963.8,
+  "peak_VRAM_GB": 0.24,
+  "first_losses": [
+   2.863,
+   2.9566,
+   2.8931
+  ]
+ },
+ "L_cudagraph_bf16": {
+  "n": 3,
+  "mJ_per_token_mean": 35.2873,
+  "mJ_per_token_std": 7.2233,
+  "mJ_per_token_above_idle_mean": 5.705,
+  "mJ_per_token_above_idle_std": 0.2403,
+  "seconds_mean": 61.8208,
+  "avg_W_mean": 23.55,
+  "peak_W_max": 52.78,
+  "temp_max_C": 62,
+  "temp_rise_C": -1,
+  "counter_vs_samples_rel_diff_max": 0.0837,
+  "throttle_reasons": [
+   "SwPowerCap"
+  ],
+  "ms_per_step": 6182.1,
+  "peak_VRAM_GB": 0.25,
+  "first_losses": [
+   2.8629,
+   2.9565,
+   2.8932
+  ]
+ },
+ "T_eager_fp32": {
+  "n": 3,
+  "mJ_per_token_mean": 742.8956,
+  "mJ_per_token_std": 508.4512,
+  "mJ_per_token_above_idle_mean": 84.1252,
+  "mJ_per_token_above_idle_std": 49.9147,
+  "seconds_mean": 1376.6958,
+  "avg_W_mean": 22.21,
+  "peak_W_max": 66.46,
+  "temp_max_C": 62,
+  "temp_rise_C": 5,
+  "counter_vs_samples_rel_diff_max": 0.0298,
+  "throttle_reasons": [
+   "SwPowerCap"
+  ],
+  "ms_per_step": 137669.6,
+  "peak_VRAM_GB": 0.8,
+  "first_losses": [
+   3.4524,
+   3.5574,
+   3.4684
+  ]
+ },
+ "T_bf16": {
+  "n": 3,
+  "mJ_per_token_mean": 1.9107,
+  "mJ_per_token_std": 0.1659,
+  "mJ_per_token_above_idle_mean": 0.8157,
+  "mJ_per_token_above_idle_std": 0.1609,
+  "seconds_mean": 2.2883,
+  "avg_W_mean": 34.19,
+  "peak_W_max": 40.4,
+  "temp_max_C": 61,
+  "temp_rise_C": 1,
+  "counter_vs_samples_rel_diff_max": 0.1406,
+  "throttle_reasons": [],
+  "ms_per_step": 228.8,
+  "peak_VRAM_GB": 0.6,
+  "first_losses": [
+   3.4524,
+   3.557,
+   3.4683
+  ]
+ },
+ "T_cudagraph_fp32": {
+  "n": 3,
+  "mJ_per_token_mean": 4.5233,
+  "mJ_per_token_std": 0.0063,
+  "mJ_per_token_above_idle_mean": 2.3316,
+  "mJ_per_token_above_idle_std": 0.0178,
+  "seconds_mean": 4.5801,
+  "avg_W_mean": 40.45,
+  "peak_W_max": 40.78,
+  "temp_max_C": 63,
+  "temp_rise_C": 1,
+  "counter_vs_samples_rel_diff_max": 0.008,
+  "throttle_reasons": [],
+  "ms_per_step": 458.0,
+  "peak_VRAM_GB": 0.24,
+  "first_losses": [
+   3.2967,
+   3.4276,
+   3.3519
+  ]
+ },
+ "T_cudagraph_bf16": {
+  "n": 3,
+  "mJ_per_token_mean": 2.1091,
+  "mJ_per_token_std": 0.0061,
+  "mJ_per_token_above_idle_mean": 1.0219,
+  "mJ_per_token_above_idle_std": 0.0098,
+  "seconds_mean": 2.2719,
+  "avg_W_mean": 38.02,
+  "peak_W_max": 37.89,
+  "temp_max_C": 62,
+  "temp_rise_C": 0,
+  "counter_vs_samples_rel_diff_max": 0.0144,
+  "throttle_reasons": [],
+  "ms_per_step": 227.2,
+  "peak_VRAM_GB": 0.26,
+  "first_losses": [
+   3.2968,
+   3.4274,
+   3.3518
+  ]
+ }
+}

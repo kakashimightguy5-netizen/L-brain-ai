@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "D:\AI\SpikingBrain-study\L-architecture\code\serve_bench.py", line 19, in <module>
+    m = L5E2().to(dev).eval(); m.load_state_dict(torch.load(ck if os.path.exists(ck) else os.path.join(OUT, ck), map_location=dev))
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\SpikingBrain-study\L-architecture\venv\Lib\site-packages\torch\serialization.py", line 1530, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\SpikingBrain-study\L-architecture\venv\Lib\site-packages\torch\serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\SpikingBrain-study\L-architecture\venv\Lib\site-packages\torch\serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\AI\\SpikingBrain-study\\L-architecture\\results\\L5E_post3k_s2.pt'

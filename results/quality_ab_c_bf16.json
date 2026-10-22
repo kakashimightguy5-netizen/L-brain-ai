@@ -1,0 +1,14 @@
+{
+ "variant": "c_bf16",
+ "config": {
+  "ste": 1,
+  "bf16": 1,
+  "comp": 1
+ },
+ "checkpoint": "LEdge_s0.pt",
+ "eval_windows": "6x1024 second half of py_big_val",
+ "bpb_before": 0.93579,
+ "bpb_after": 0.94185,
+ "ms_per_step": 112.7,
+ "steps": 600
+}

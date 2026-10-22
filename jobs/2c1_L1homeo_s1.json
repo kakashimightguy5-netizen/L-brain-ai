@@ -1,0 +1,1 @@
+{"script": "train_L1.py", "args": ["L1homeo_s1", "L1", "1", "3000", "0.03", "0"], "env": {"HOMEO": "1"}, "device": "gpu"}

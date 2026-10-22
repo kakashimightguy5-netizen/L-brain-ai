@@ -1,0 +1,1 @@
+{"script": "hwh_traces.py", "args": ["L6_9M_s2.pt", "L6s2"], "env": {"SPIKEK": "8", "DELTAKERN": "0", "SPIKE_MASK": "0", "FASTMEM": "1", "RECORD": "0", "SPIKE_GROUPS": "1", "QAT": "none", "QAT_B": "32", "LOWRANK": "0", "QUICK": "0", "L5E_GPU": "1", "ARCH": "L6", "WAITFOR": "15v_hwh_L6s1.done"}, "device": "gpu"}

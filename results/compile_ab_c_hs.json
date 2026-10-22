@@ -1,0 +1,33 @@
+{
+ "variant": "c_hs",
+ "config": {
+  "ste": 1,
+  "scan": "hs",
+  "bf16": 0,
+  "comp": 1
+ },
+ "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+ "batch": [
+  16,
+  256
+ ],
+ "note": "shares the GPU with other running jobs",
+ "compile_s": 40.6,
+ "init_loss": 5.70128,
+ "max_logit_diff_vs_eager": 0.045879870653152466,
+ "grad_cosine_vs_eager": 1.0001314878463745,
+ "ms_per_step_median": 303.3,
+ "ms_all": [
+  299.7,
+  306.8,
+  302.2,
+  303.3,
+  305.7
+ ],
+ "kernels_per_step": 1189,
+ "mJ_per_token": 2.7875,
+ "mJ_per_token_std": 0.1852,
+ "avg_W": 37.45,
+ "throttle": [],
+ "last_loss": 0.2975
+}

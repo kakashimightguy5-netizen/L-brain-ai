@@ -1,0 +1,20 @@
+lscan: compiled scan unavailable, using torch chunked scan: RuntimeError
+idle 11.08 {'name': 'NVIDIA GeForce RTX 3050 6GB Laptop GPU', 'power_limit_W': None, 'default_power_limit_W': 35.0, 'power_limit_range_W': [1.0, 55.0], 'sm_clock_max_MHz': 2100, 'mem_clock_max_MHz': 5501, 'energy_counter_supported': True, 'rapl_readable': False, 'on_mains': None}
+L-6 9M (GraphStepper) {'bits_per_byte': 0.8721, 'top1_acc': 0.832, 'tokens_per_repeat': 3072, 'n': 5, 'mJ_per_token_mean': 30.8408, 'mJ_per_token_std': 0.6516, 'mJ_per_token_above_idle_mean': 16.6469, 'mJ_per_token_above_idle_std': 0.6171, 'seconds_mean': 3.9354, 'avg_W_mean': 24.08, 'peak_W_max': 26.88, 'temp_max_C': 61, 'temp_rise_C': 4, 'counter_vs_samples_rel_diff_max': 0.0927, 'throttle_reasons': [], 'mJ_per_correct_byte': 37.0669, 'mJ_per_correct_byte_above_idle': 20.0075, 'J_per_1000_output_bytes': 30.841, 'ms_per_token': 1.281}
+Transformer 9M (KV cache, CUDA graph) {'bits_per_byte': 0.9134, 'top1_acc': 0.8298, 'tokens_per_repeat': 3072, 'n': 5, 'mJ_per_token_mean': 29.0576, 'mJ_per_token_std': 1.2109, 'mJ_per_token_above_idle_mean': 16.6176, 'mJ_per_token_above_idle_std': 1.1868, 'seconds_mean': 3.4491, 'avg_W_mean': 25.88, 'peak_W_max': 28.89, 'temp_max_C': 62, 'temp_rise_C': 1, 'counter_vs_samples_rel_diff_max': 0.095, 'throttle_reasons': [], 'mJ_per_correct_byte': 35.0196, 'mJ_per_correct_byte_above_idle': 20.0272, 'J_per_1000_output_bytes': 29.058, 'ms_per_token': 1.123}
+ctx 256 | batch 1 {'L': 11.0609, 'T': 26.0422}
+ctx 256 | batch 4 {'L': 2.693, 'T': 12.8871}
+ctx 256 | batch 16 {'L': 2.1395, 'T': 11.7266}
+ctx 256 | batch 64 {'L': 1.7417, 'T': 11.3774}
+ctx 2048 | batch 1 {'L': 17.2875, 'T': 50.3219}
+ctx 2048 | batch 4 {'L': 5.2062, 'T': 27.9672}
+ctx 2048 | batch 16 {'L': 2.5443, 'T': 28.9117}
+ctx 2048 | batch 64 {'L': 1.7871, 'T': 27.5794}
+ctx 16384 | batch 1 {'L': 15.8531, 'T': 303.3063}
+ctx 16384 | batch 4 {'L': 4.9102, 'T': 177.6465}
+ctx 16384 | batch 16 {'L': 2.8712, 'T': 'skipped (KV cache > 3.5 GB of the 6 GB card)'}
+ctx 16384 | batch 64 {'L': 1.7064, 'T': 'skipped (KV cache > 3.5 GB of the 6 GB card)'}
+cuscan self-test max error 1.91e-06 -> ON
+train L {'n': 5, 'mJ_per_token_mean': 3.548, 'mJ_per_token_std': 0.1217, 'mJ_per_token_above_idle_mean': 2.7183, 'mJ_per_token_above_idle_std': 0.1221, 'seconds_mean': 6.1348, 'avg_W_mean': 47.38, 'peak_W_max': 53.92, 'temp_max_C': 72, 'temp_rise_C': 3, 'counter_vs_samples_rel_diff_max': 0.0891, 'throttle_reasons': ['SwPowerCap'], 'ms_per_step': 613.5, 'peak_VRAM_GB': 6.66}
+train T {'n': 5, 'mJ_per_token_mean': 1.2449, 'mJ_per_token_std': 0.0514, 'mJ_per_token_above_idle_mean': 0.9792, 'mJ_per_token_above_idle_std': 0.0509, 'seconds_mean': 1.9651, 'avg_W_mean': 51.9, 'peak_W_max': 56.27, 'temp_max_C': 74, 'temp_rise_C': 1, 'counter_vs_samples_rel_diff_max': 0.0684, 'throttle_reasons': ['SwPowerCap'], 'ms_per_step': 196.5, 'peak_VRAM_GB': 1.6}
+done

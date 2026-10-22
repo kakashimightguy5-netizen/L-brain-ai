@@ -1,0 +1,170 @@
+{
+ "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+ "batch": [
+  16,
+  256
+ ],
+ "T_ms_per_microbatch": 291.4,
+ "L5_old_ms_per_microbatch": 957.6,
+ "L5_newdelta_only_ms": 873.5,
+ "L5_new_ms_per_microbatch": 716.3,
+ "one_delta_memory_ms": 31.2,
+ "one_delta_memory_old_ms": 49.6,
+ "one_spiking_layer_ms": 20.1,
+ "hippo_python_cpu_ms": 11.8,
+ "hippo_gpu_ms": 10.1,
+ "traj_python_cpu_ms": 230.5,
+ "traj_gpu_ms": 8.6,
+ "top_ops [name, gpu_ms, cpu_ms, calls]": [
+  [
+   "cudaLaunchKernel",
+   0.0,
+   114.9,
+   3290
+  ],
+  [
+   "aten::mul",
+   58.8,
+   45.1,
+   625
+  ],
+  [
+   "aten::mm",
+   41.1,
+   14.0,
+   108
+  ],
+  [
+   "autograd::engine::evaluate_function: MulBackward0",
+   38.6,
+   41.8,
+   145
+  ],
+  [
+   "aten::bmm",
+   34.4,
+   19.4,
+   186
+  ],
+  [
+   "autograd::engine::evaluate_function: AddmmBackward0",
+   29.8,
+   21.8,
+   45
+  ],
+  [
+   "MulBackward0",
+   29.4,
+   20.5,
+   145
+  ],
+  [
+   "_ZN2at6native18elementwise_kernelILi128ELi2EZNS0_22gpu_kernel_impl_nocastINS0_13BinaryFunctorIfffNS0_15binary_internal10MulFunctorIfEEEEEEvRNS_18TensorIteratorBaseERKT_EUliE_EEviT1_",
+   29.1,
+   0.0,
+   319
+  ],
+  [
+   "aten::copy_",
+   27.3,
+   19.9,
+   335
+  ],
+  [
+   "AddmmBackward0",
+   27.3,
+   15.1,
+   45
+  ],
+  [
+   "_ZN2at6native29vectorized_elementwise_kernelILi4ENS0_13BinaryFunctorIfffNS0_15binary_internal10MulFunctorIfEEEESt5arrayIPcLy3EEEEviT0_T1_",
+   26.7,
+   0.0,
+   207
+  ],
+  [
+   "_ZN2at6native29vectorized_elementwise_kernelILi4ENS0_15CUDAFunctor_addIfEESt5arrayIPcLy3EEEEviT0_T1_",
+   25.2,
+   0.0,
+   423
+  ],
+  [
+   "_ZN2at6native18elementwise_kernelILi128ELi2EZNS0_22gpu_kernel_impl_nocastIZZZNS0_23direct_copy_kernel_cudaERNS_18TensorIteratorBaseEENKUlvE1_clEvENKUlvE5_clEvEUlfE_EEvS4_RKT_EUliE_EEviT1_",
+   21.9,
+   0.0,
+   235
+  ],
+  [
+   "aten::add_",
+   21.7,
+   21.7,
+   356
+  ],
+  [
+   "aten::matmul",
+   21.6,
+   21.1,
+   78
+  ],
+  [
+   "autograd::engine::evaluate_function: BmmBackward0",
+   21.1,
+   15.7,
+   60
+  ],
+  [
+   "BmmBackward0",
+   21.1,
+   14.0,
+   60
+  ],
+  [
+   "aten::linear",
+   18.2,
+   15.7,
+   51
+  ],
+  [
+   "aten::clone",
+   18.1,
+   13.6,
+   147
+  ],
+  [
+   "autograd::engine::evaluate_function: DivBackward0",
+   17.1,
+   10.2,
+   25
+  ],
+  [
+   "DivBackward0",
+   16.4,
+   8.2,
+   25
+  ],
+  [
+   "_ZN7cutlass7Kernel2I42cutlass_80_simt_sgemm_128x32_8x5_nt_align1EEvNT_6ParamsE",
+   15.3,
+   0.0,
+   30
+  ],
+  [
+   "aten::div",
+   15.1,
+   10.3,
+   141
+  ],
+  [
+   "cudaDeviceSynchronize",
+   0.0,
+   14.8,
+   26
+  ],
+  [
+   "aten::addmm",
+   13.7,
+   11.3,
+   45
+  ]
+ ]
+}

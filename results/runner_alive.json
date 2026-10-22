@@ -1,0 +1,8 @@
+{
+    "time":  "2026-10-22T11:45:29.1507462+05:30",
+    "running":  [
+                    "1500f0_gpu_cft6_T_fp128_s0",
+                    "1500f1_gpu_cft6_T_tern192_s0",
+                    "1500g0_gpu_cft5_mixA_wide192_s0"
+                ]
+}

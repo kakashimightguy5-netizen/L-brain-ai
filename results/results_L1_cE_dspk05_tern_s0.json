@@ -1,0 +1,44 @@
+{
+ "device": "cuda",
+ "homeo": 1,
+ "name": "cE_dspk05_tern_s0",
+ "model": "L5",
+ "seed": 0,
+ "steps": 3000,
+ "lam": 0.03,
+ "fuzzy": 1,
+ "block": 0,
+ "params": 936373,
+ "train_minutes": 30.9,
+ "sec_per_step": 0.619,
+ "val_bits_per_byte": 1.4754,
+ "active_neurons_per_layer [state, ffn]": [
+  [
+   0.444,
+   0.097
+  ],
+  [
+   0.464,
+   0.11
+  ],
+  [
+   0.431,
+   0.117
+  ],
+  [
+   0.411,
+   0.136
+  ]
+ ],
+ "copy": {
+  "exact n=120": 0.9417,
+  "exact n=512": 0.9604,
+  "exact n=2048": 0.9531,
+  "typos5% n=120": 0.941,
+  "typos5% n=512": 0.9263,
+  "typos5% n=2048": 0.8978,
+  "renamed n=120": 0.7842,
+  "renamed n=512": 0.8357,
+  "renamed n=2048": 0.8562
+ }
+}

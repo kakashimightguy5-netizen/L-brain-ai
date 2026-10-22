@@ -1,0 +1,11 @@
+{
+ "torch": "2.11.0+cu128",
+ "cuda": true,
+ "triton": "3.6.0",
+ "eager_ms": 10.061111450195312,
+ "eager_kernels": 75,
+ "max_abs_err": 0.0,
+ "compiled_ms": 1.0935115814208984,
+ "compiled_kernels": 11,
+ "compile_ok": true
+}

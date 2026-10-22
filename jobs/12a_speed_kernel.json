@@ -1,0 +1,1 @@
+{"script": "speed_kernel.py", "args": [], "env": {"WAITFOR": "", "SPIKEK": "8", "DM": "352", "NSTEPS": "30", "PNAME": "speed_kernel"}, "device": "gpu"}

@@ -1,0 +1,52 @@
+{
+ "device": "cuda",
+ "homeo": 1,
+ "name": "L6_9M_s2",
+ "model": "L6",
+ "seed": 2,
+ "steps": 6000,
+ "lam": 0.01,
+ "fuzzy": 1,
+ "block": 0,
+ "params": 8855973,
+ "train_minutes": 64.1,
+ "sec_per_step": 0.641,
+ "val_bits_per_byte": 1.0209,
+ "active_neurons_per_layer [state, ffn]": [
+  [
+   0.248,
+   0.029
+  ],
+  [
+   0.542,
+   0.034
+  ],
+  [
+   0.603,
+   0.049
+  ],
+  [
+   0.584,
+   0.059
+  ],
+  [
+   0.531,
+   0.063
+  ],
+  [
+   0.491,
+   0.095
+  ]
+ ],
+ "copy": {
+  "exact n=120": 0.9375,
+  "exact n=512": 0.9644,
+  "exact n=2048": 0.9563,
+  "typos5% n=120": 0.9283,
+  "typos5% n=512": 0.9118,
+  "typos5% n=2048": 0.8978,
+  "renamed n=120": 0.8024,
+  "renamed n=512": 0.822,
+  "renamed n=2048": 0.875
+ }
+}

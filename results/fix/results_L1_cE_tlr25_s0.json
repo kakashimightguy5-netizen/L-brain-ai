@@ -1,0 +1,44 @@
+{
+ "device": "cpu",
+ "homeo": 1,
+ "name": "cE_tlr25_s0",
+ "model": "L5",
+ "seed": 0,
+ "steps": 3000,
+ "lam": 0.03,
+ "fuzzy": 1,
+ "block": 0,
+ "params": 608677,
+ "train_minutes": 36.0,
+ "sec_per_step": 0.72,
+ "val_bits_per_byte": 1.6038,
+ "active_neurons_per_layer [state, ffn]": [
+  [
+   0.557,
+   0.142
+  ],
+  [
+   0.659,
+   0.111
+  ],
+  [
+   0.66,
+   0.119
+  ],
+  [
+   0.626,
+   0.144
+  ]
+ ],
+ "copy": {
+  "exact n=120": 0.9417,
+  "exact n=512": 0.9507,
+  "exact n=2048": 0.9495,
+  "typos5% n=120": 0.9452,
+  "typos5% n=512": 0.9088,
+  "typos5% n=2048": 0.8819,
+  "renamed n=120": 0.7957,
+  "renamed n=512": 0.8261,
+  "renamed n=2048": 0.8517
+ }
+}

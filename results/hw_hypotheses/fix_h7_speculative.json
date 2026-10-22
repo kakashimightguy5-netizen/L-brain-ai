@@ -1,0 +1,40 @@
+{
+ "all 8-bit": {
+  "bits_per_byte": 0.9356,
+  "redo_share": 0.0,
+  "weight_traffic_vs_8bit": 1.0
+ },
+ "all 4-bit (mx4 pow2)": {
+  "bits_per_byte": 0.9566,
+  "redo_share": 0.0,
+  "weight_traffic_vs_8bit": 0.5
+ },
+ "speculative, target redo 10%": {
+  "thr_fitted_on_CAL": 0.2288,
+  "bits_per_byte": 0.9539,
+  "redo_share": 0.0475,
+  "weight_traffic_vs_8bit": 0.5475,
+  "delta_vs_8bit_%": 1.96
+ },
+ "speculative, target redo 20%": {
+  "thr_fitted_on_CAL": 0.371,
+  "bits_per_byte": 0.9467,
+  "redo_share": 0.1058,
+  "weight_traffic_vs_8bit": 0.6058,
+  "delta_vs_8bit_%": 1.19
+ },
+ "speculative, target redo 30%": {
+  "thr_fitted_on_CAL": 0.5219,
+  "bits_per_byte": 0.9421,
+  "redo_share": 0.168,
+  "weight_traffic_vs_8bit": 0.668,
+  "delta_vs_8bit_%": 0.7
+ },
+ "speculative, target redo 50%": {
+  "thr_fitted_on_CAL": 0.8487,
+  "bits_per_byte": 0.9428,
+  "redo_share": 0.3315,
+  "weight_traffic_vs_8bit": 0.8315,
+  "delta_vs_8bit_%": 0.78
+ }
+}

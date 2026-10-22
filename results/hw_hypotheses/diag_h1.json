@@ -1,0 +1,96 @@
+{
+ "L6s0": {
+  "MAC_share_per_layer_%": {
+   "qkv (dense)": 27.3,
+   "o (dense)": 9.1,
+   "inp (dense)": 18.2,
+   "f1 (dense)": 18.2,
+   "out (event-capable)": 9.1,
+   "f2 (event-capable)": 18.2
+  },
+  "max_possible_saving_if_event_layers_were_100%_idle": 0.273,
+  "actual_event_unit_saving (1 - fired share)": 0.782,
+  "variance_of_events_explained_by_input_byte_R2": 0.143,
+  "spearman(events residual after byte, loss)": -0.107,
+  "spearman(events, loss) raw": 0.006,
+  "per_layer_firing_easy_vs_hard": {
+   "L0": {
+    "state_easy": 0.4158,
+    "state_hard": 0.3453,
+    "ffn_easy": 0.0327,
+    "ffn_hard": 0.0323
+   },
+   "L1": {
+    "state_easy": 0.5689,
+    "state_hard": 0.525,
+    "ffn_easy": 0.0299,
+    "ffn_hard": 0.035
+   },
+   "L2": {
+    "state_easy": 0.6189,
+    "state_hard": 0.6015,
+    "ffn_easy": 0.0347,
+    "ffn_hard": 0.0502
+   },
+   "L3": {
+    "state_easy": 0.6222,
+    "state_hard": 0.5915,
+    "ffn_easy": 0.0448,
+    "ffn_hard": 0.0599
+   },
+   "L4": {
+    "state_easy": 0.6005,
+    "state_hard": 0.5756,
+    "ffn_easy": 0.0527,
+    "ffn_hard": 0.0655
+   },
+   "L5": {
+    "state_easy": 0.5529,
+    "state_hard": 0.5249,
+    "ffn_easy": 0.0827,
+    "ffn_hard": 0.0995
+   }
+  }
+ },
+ "LEdge": {
+  "MAC_share_per_layer_%": {
+   "qkv (dense)": 27.3,
+   "o (dense)": 9.1,
+   "inp (dense)": 18.2,
+   "f1 (dense)": 18.2,
+   "out (event-capable)": 9.1,
+   "f2 (event-capable)": 18.2
+  },
+  "max_possible_saving_if_event_layers_were_100%_idle": 0.273,
+  "actual_event_unit_saving (1 - fired share)": 0.776,
+  "variance_of_events_explained_by_input_byte_R2": 0.356,
+  "spearman(events residual after byte, loss)": 0.01,
+  "spearman(events, loss) raw": 0.194,
+  "per_layer_firing_easy_vs_hard": {
+   "L0": {
+    "state_easy": 0.4724,
+    "state_hard": 0.4243,
+    "ffn_easy": 0.1056,
+    "ffn_hard": 0.1103
+   },
+   "L1": {
+    "state_easy": 0.5084,
+    "state_hard": 0.488,
+    "ffn_easy": 0.079,
+    "ffn_hard": 0.1101
+   },
+   "L2": {
+    "state_easy": 0.5098,
+    "state_hard": 0.4541,
+    "ffn_easy": 0.0813,
+    "ffn_hard": 0.1156
+   },
+   "L3": {
+    "state_easy": 0.4751,
+    "state_hard": 0.4317,
+    "ffn_easy": 0.0765,
+    "ffn_hard": 0.1069
+   }
+  }
+ }
+}

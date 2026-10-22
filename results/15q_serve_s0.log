@@ -1,0 +1,74 @@
+lscan: compiled scan unavailable, using torch chunked scan: RuntimeError
+cal {'policy': {'tau_instinct': 2.0, 'tau_halt': 0.995, 'recall_bypass': False}, 'bits': 1.404501523649845, 'work': 0.9599557518959045}
+cal {'policy': {'tau_instinct': 2.0, 'tau_halt': 0.995, 'recall_bypass': True}, 'bits': 1.4272308574752584, 'work': 0.9353992342948914}
+cal {'policy': {'tau_instinct': 0.995, 'tau_halt': 0.995, 'recall_bypass': False}, 'bits': 1.4848957706000263, 'work': 0.9182227849960327}
+cal {'policy': {'tau_instinct': 0.995, 'tau_halt': 0.995, 'recall_bypass': True}, 'bits': 1.4928240041451581, 'work': 0.9039428234100342}
+cal {'policy': {'tau_instinct': 0.98, 'tau_halt': 0.995, 'recall_bypass': False}, 'bits': 1.5379217698774017, 'work': 0.8944276571273804}
+cal {'policy': {'tau_instinct': 0.98, 'tau_halt': 0.995, 'recall_bypass': True}, 'bits': 1.5413187519678118, 'work': 0.8841515183448792}
+cal {'policy': {'tau_instinct': 0.95, 'tau_halt': 0.995, 'recall_bypass': False}, 'bits': 1.5948923985731174, 'work': 0.875370442867279}
+cal {'policy': {'tau_instinct': 0.95, 'tau_halt': 0.995, 'recall_bypass': True}, 'bits': 1.5947005925185624, 'work': 0.8679234981536865}
+cal {'policy': {'tau_instinct': 0.9, 'tau_halt': 0.995, 'recall_bypass': False}, 'bits': 1.635746037148207, 'work': 0.8591691255569458}
+cal {'policy': {'tau_instinct': 0.9, 'tau_halt': 0.995, 'recall_bypass': True}, 'bits': 1.6350846661622853, 'work': 0.8526030778884888}
+cal {'policy': {'tau_instinct': 2.0, 'tau_halt': 0.99, 'recall_bypass': False}, 'bits': 1.4157169233276576, 'work': 0.9414989948272705}
+cal {'policy': {'tau_instinct': 2.0, 'tau_halt': 0.99, 'recall_bypass': True}, 'bits': 1.436068882574133, 'work': 0.9235752820968628}
+cal {'policy': {'tau_instinct': 0.995, 'tau_halt': 0.99, 'recall_bypass': False}, 'bits': 1.4893261321749862, 'work': 0.90812087059021}
+cal {'policy': {'tau_instinct': 0.995, 'tau_halt': 0.99, 'recall_bypass': True}, 'bits': 1.4957616772779478, 'work': 0.8972039818763733}
+cal {'policy': {'tau_instinct': 0.98, 'tau_halt': 0.99, 'recall_bypass': False}, 'bits': 1.5391436335590045, 'work': 0.8861273527145386}
+cal {'policy': {'tau_instinct': 0.98, 'tau_halt': 0.99, 'recall_bypass': True}, 'bits': 1.5447441010835314, 'work': 0.8788005113601685}
+cal {'policy': {'tau_instinct': 0.95, 'tau_halt': 0.99, 'recall_bypass': False}, 'bits': 1.5988162019725465, 'work': 0.8685912489891052}
+cal {'policy': {'tau_instinct': 0.95, 'tau_halt': 0.99, 'recall_bypass': True}, 'bits': 1.5988221579431428, 'work': 0.8633196353912354}
+cal {'policy': {'tau_instinct': 0.9, 'tau_halt': 0.99, 'recall_bypass': False}, 'bits': 1.6402159261913796, 'work': 0.853257417678833}
+cal {'policy': {'tau_instinct': 0.9, 'tau_halt': 0.99, 'recall_bypass': True}, 'bits': 1.6383362825633678, 'work': 0.8490535020828247}
+cal {'policy': {'tau_instinct': 2.0, 'tau_halt': 0.98, 'recall_bypass': False}, 'bits': 1.432935243732469, 'work': 0.9178401231765747}
+cal {'policy': {'tau_instinct': 2.0, 'tau_halt': 0.98, 'recall_bypass': True}, 'bits': 1.4472723568927197, 'work': 0.9051079750061035}
+cal {'policy': {'tau_instinct': 0.995, 'tau_halt': 0.98, 'recall_bypass': False}, 'bits': 1.491029471445515, 'work': 0.8925224542617798}
+cal {'policy': {'tau_instinct': 0.995, 'tau_halt': 0.98, 'recall_bypass': True}, 'bits': 1.499902367702271, 'work': 0.8843013048171997}
+cal {'policy': {'tau_instinct': 0.98, 'tau_halt': 0.98, 'recall_bypass': False}, 'bits': 1.5475326938644138, 'work': 0.8743853569030762}
+cal {'policy': {'tau_instinct': 0.98, 'tau_halt': 0.98, 'recall_bypass': True}, 'bits': 1.5528390161137848, 'work': 0.8688333630561829}
+cal {'policy': {'tau_instinct': 0.95, 'tau_halt': 0.98, 'recall_bypass': False}, 'bits': 1.6051580260062295, 'work': 0.8580501079559326}
+cal {'policy': {'tau_instinct': 0.95, 'tau_halt': 0.98, 'recall_bypass': True}, 'bits': 1.6092487693223008, 'work': 0.8536593914031982}
+cal {'policy': {'tau_instinct': 0.9, 'tau_halt': 0.98, 'recall_bypass': False}, 'bits': 1.645169702826704, 'work': 0.8441439867019653}
+cal {'policy': {'tau_instinct': 0.9, 'tau_halt': 0.98, 'recall_bypass': True}, 'bits': 1.6460308090554256, 'work': 0.8412477970123291}
+cal {'policy': {'tau_instinct': 2.0, 'tau_halt': 0.95, 'recall_bypass': False}, 'bits': 1.477618799666611, 'work': 0.8770087957382202}
+cal {'policy': {'tau_instinct': 2.0, 'tau_halt': 0.95, 'recall_bypass': True}, 'bits': 1.4873648247505464, 'work': 0.8703218698501587}
+cal {'policy': {'tau_instinct': 0.995, 'tau_halt': 0.95, 'recall_bypass': False}, 'bits': 1.5180192943255557, 'work': 0.8620069622993469}
+cal {'policy': {'tau_instinct': 0.995, 'tau_halt': 0.95, 'recall_bypass': True}, 'bits': 1.5241418284152206, 'work': 0.8575889468193054}
+cal {'policy': {'tau_instinct': 0.98, 'tau_halt': 0.95, 'recall_bypass': False}, 'bits': 1.5693469413711743, 'work': 0.8482331037521362}
+cal {'policy': {'tau_instinct': 0.98, 'tau_halt': 0.95, 'recall_bypass': True}, 'bits': 1.572328432049543, 'work': 0.8457238674163818}
+cal {'policy': {'tau_instinct': 0.95, 'tau_halt': 0.95, 'recall_bypass': False}, 'bits': 1.6241585009134298, 'work': 0.8353804349899292}
+cal {'policy': {'tau_instinct': 0.95, 'tau_halt': 0.95, 'recall_bypass': True}, 'bits': 1.6255549346959135, 'work': 0.8333516716957092}
+cal {'policy': {'tau_instinct': 0.9, 'tau_halt': 0.95, 'recall_bypass': False}, 'bits': 1.6637851151416272, 'work': 0.8243029713630676}
+cal {'policy': {'tau_instinct': 0.9, 'tau_halt': 0.95, 'recall_bypass': True}, 'bits': 1.6624145458634971, 'work': 0.8231149911880493}
+cal {'policy': {'tau_instinct': 2.0, 'tau_halt': 0.9, 'recall_bypass': False}, 'bits': 1.554627057554616, 'work': 0.8366174697875977}
+cal {'policy': {'tau_instinct': 2.0, 'tau_halt': 0.9, 'recall_bypass': True}, 'bits': 1.5577656592185316, 'work': 0.8333072662353516}
+cal {'policy': {'tau_instinct': 0.995, 'tau_halt': 0.9, 'recall_bypass': False}, 'bits': 1.5753602309783443, 'work': 0.82935631275177}
+cal {'policy': {'tau_instinct': 0.995, 'tau_halt': 0.9, 'recall_bypass': True}, 'bits': 1.577802975010881, 'work': 0.827460765838623}
+cal {'policy': {'tau_instinct': 0.98, 'tau_halt': 0.9, 'recall_bypass': False}, 'bits': 1.6087018145403909, 'work': 0.8210813999176025}
+cal {'policy': {'tau_instinct': 0.98, 'tau_halt': 0.9, 'recall_bypass': True}, 'bits': 1.6085962027146623, 'work': 0.8200936317443848}
+cal {'policy': {'tau_instinct': 0.95, 'tau_halt': 0.9, 'recall_bypass': False}, 'bits': 1.6584050887937276, 'work': 0.811765193939209}
+cal {'policy': {'tau_instinct': 0.95, 'tau_halt': 0.9, 'recall_bypass': True}, 'bits': 1.658477007827618, 'work': 0.8108841776847839}
+cal {'policy': {'tau_instinct': 0.9, 'tau_halt': 0.9, 'recall_bypass': False}, 'bits': 1.6916094444863763, 'work': 0.8020884990692139}
+cal {'policy': {'tau_instinct': 0.9, 'tau_halt': 0.9, 'recall_bypass': True}, 'bits': 1.692004669784728, 'work': 0.8013543486595154}
+cal {'policy': {'tau_instinct': 2.0, 'tau_halt': 0.8, 'recall_bypass': False}, 'bits': 1.6979959437960495, 'work': 0.7847901582717896}
+cal {'policy': {'tau_instinct': 2.0, 'tau_halt': 0.8, 'recall_bypass': True}, 'bits': 1.69769350712369, 'work': 0.7841092944145203}
+cal {'policy': {'tau_instinct': 0.995, 'tau_halt': 0.8, 'recall_bypass': False}, 'bits': 1.702545397548036, 'work': 0.7819867134094238}
+cal {'policy': {'tau_instinct': 0.995, 'tau_halt': 0.8, 'recall_bypass': True}, 'bits': 1.702264516654734, 'work': 0.7817464470863342}
+cal {'policy': {'tau_instinct': 0.98, 'tau_halt': 0.8, 'recall_bypass': False}, 'bits': 1.7193766314854348, 'work': 0.7788767218589783}
+cal {'policy': {'tau_instinct': 0.98, 'tau_halt': 0.8, 'recall_bypass': True}, 'bits': 1.718214815775963, 'work': 0.7787564992904663}
+cal {'policy': {'tau_instinct': 0.95, 'tau_halt': 0.8, 'recall_bypass': False}, 'bits': 1.7454810744243612, 'work': 0.7734307050704956}
+cal {'policy': {'tau_instinct': 0.95, 'tau_halt': 0.8, 'recall_bypass': True}, 'bits': 1.7449702713959945, 'work': 0.7733772993087769}
+cal {'policy': {'tau_instinct': 0.9, 'tau_halt': 0.8, 'recall_bypass': False}, 'bits': 1.7751921637349128, 'work': 0.7673842310905457}
+cal {'policy': {'tau_instinct': 0.9, 'tau_halt': 0.8, 'recall_bypass': True}, 'bits': 1.7748119122431956, 'work': 0.7672507762908936}
+eval full {'policy': {'tau_instinct': 2.0, 'tau_halt': 2.0}, 'cap_layers': None, 'bits_per_byte': 0.9292, 'top1_acc': 0.8394, 'bits_easy_bytes': 0.0045, 'bits_hard_bytes': 4.2134, 'work_vs_full_GPU_MACs (MODELLED)': 1.0, 'work_easy': 1.0, 'work_hard': 1.0, 'layers_full_mean': 4.0, 'instinct_share': 0.0, 'flag_share': 0.1472, 'flag_precision (flagged bytes that are wrong)': 0.6708, 'SPARK_MACs_per_byte (MODELLED, event-driven)': 767962, 'SPARK_nJ_per_byte (ESTIMATED)': 1136.58, 'SPARK_nJ_easy': 1134.0, 'SPARK_nJ_hard': 1137.41}
+eval high {'policy': {'tau_instinct': 2.0, 'tau_halt': 0.995, 'recall_bypass': False}, 'cap_layers': None, 'bits_per_byte': 0.9361, 'top1_acc': 0.8391, 'bits_easy_bytes': 0.0066, 'bits_hard_bytes': 4.2304, 'work_vs_full_GPU_MACs (MODELLED)': 0.9061, 'work_easy': 0.8237, 'work_hard': 0.9975, 'layers_full_mean': 3.137, 'instinct_share': 0.0, 'flag_share': 0.1481, 'flag_precision (flagged bytes that are wrong)': 0.6546, 'SPARK_MACs_per_byte (MODELLED, event-driven)': 718928, 'SPARK_nJ_per_byte (ESTIMATED)': 1064.01, 'SPARK_nJ_easy': 998.52, 'SPARK_nJ_hard': 1134.78}
+eval balanced {'policy': {'tau_instinct': 2.0, 'tau_halt': 0.99, 'recall_bypass': False}, 'cap_layers': None, 'bits_per_byte': 0.9405, 'top1_acc': 0.838, 'bits_easy_bytes': 0.0081, 'bits_hard_bytes': 4.2404, 'work_vs_full_GPU_MACs (MODELLED)': 0.8724, 'work_easy': 0.7723, 'work_hard': 0.9915, 'layers_full_mean': 2.829, 'instinct_share': 0.0, 'flag_share': 0.1483, 'flag_precision (flagged bytes that are wrong)': 0.6584, 'SPARK_MACs_per_byte (MODELLED, event-driven)': 701180, 'SPARK_nJ_per_byte (ESTIMATED)': 1037.75, 'SPARK_nJ_easy': 958.5, 'SPARK_nJ_hard': 1130.04}
+eval low {'policy': {'tau_instinct': 2.0, 'tau_halt': 0.98, 'recall_bypass': True}, 'cap_layers': None, 'bits_per_byte': 0.9898, 'top1_acc': 0.8326, 'bits_easy_bytes': 0.0183, 'bits_hard_bytes': 4.3708, 'work_vs_full_GPU_MACs (MODELLED)': 0.8062, 'work_easy': 0.7203, 'work_hard': 0.938, 'layers_full_mean': 2.223, 'instinct_share': 0.4166, 'flag_share': 0.1488, 'flag_precision (flagged bytes that are wrong)': 0.6563, 'SPARK_MACs_per_byte (MODELLED, event-driven)': 666190, 'SPARK_nJ_per_byte (ESTIMATED)': 985.96, 'SPARK_nJ_easy': 918.06, 'SPARK_nJ_hard': 1088.24}
+eval balanced + energy cap 0.85 of full work {'policy': {'tau_instinct': 2.0, 'tau_halt': 0.99, 'recall_bypass': False}, 'cap_layers': 0.85, 'bits_per_byte': 1.1539, 'top1_acc': 0.8015, 'bits_easy_bytes': 0.0418, 'bits_hard_bytes': 4.6025, 'work_vs_full_GPU_MACs (MODELLED)': 0.7427, 'work_easy': 0.7118, 'work_hard': 0.7794, 'layers_full_mean': 1.642, 'instinct_share': 0.0, 'flag_share': 0.2028, 'flag_precision (flagged bytes that are wrong)': 0.6616, 'SPARK_MACs_per_byte (MODELLED, event-driven)': 632623, 'SPARK_nJ_per_byte (ESTIMATED)': 936.28, 'SPARK_nJ_easy': 911.08, 'SPARK_nJ_hard': 964.84}
+eval full + energy cap 0.75 of full work {'policy': {'tau_instinct': 2.0, 'tau_halt': 2.0}, 'cap_layers': 0.75, 'bits_per_byte': 1.3251, 'top1_acc': 0.7715, 'bits_easy_bytes': 0.1065, 'bits_hard_bytes': 4.8051, 'work_vs_full_GPU_MACs (MODELLED)': 0.6723, 'work_easy': 0.6723, 'work_hard': 0.6723, 'layers_full_mean': 1.0, 'instinct_share': 0.0, 'flag_share': 0.2441, 'flag_precision (flagged bytes that are wrong)': 0.695, 'SPARK_MACs_per_byte (MODELLED, event-driven)': 594865, 'SPARK_nJ_per_byte (ESTIMATED)': 880.4, 'SPARK_nJ_easy': 880.08, 'SPARK_nJ_hard': 879.64}
+energy full {'n': 5, 'mJ_per_token_mean': 137.5545, 'mJ_per_token_std': 4.7724, 'mJ_per_token_above_idle_mean': 56.9664, 'mJ_per_token_above_idle_std': 1.348, 'seconds_mean': 29.3673, 'avg_W_mean': 9.59, 'peak_W_max': 10.37, 'temp_max_C': 56, 'temp_rise_C': 1, 'counter_vs_samples_rel_diff_max': 0.0547, 'throttle_reasons': ['GpuIdle']}
+energy high {'n': 5, 'mJ_per_token_mean': 137.3163, 'mJ_per_token_std': 5.817, 'mJ_per_token_above_idle_mean': 56.1813, 'mJ_per_token_above_idle_std': 1.5854, 'seconds_mean': 29.5666, 'avg_W_mean': 9.52, 'peak_W_max': 10.22, 'temp_max_C': 56, 'temp_rise_C': 0, 'counter_vs_samples_rel_diff_max': 0.0489, 'throttle_reasons': ['GpuIdle']}
+energy balanced {'n': 5, 'mJ_per_token_mean': 146.0316, 'mJ_per_token_std': 13.3834, 'mJ_per_token_above_idle_mean': 61.0413, 'mJ_per_token_above_idle_std': 6.919, 'seconds_mean': 30.9715, 'avg_W_mean': 9.65, 'peak_W_max': 10.27, 'temp_max_C': 59, 'temp_rise_C': 4, 'counter_vs_samples_rel_diff_max': 0.0443, 'throttle_reasons': ['GpuIdle']}
+energy low {'n': 5, 'mJ_per_token_mean': 126.2257, 'mJ_per_token_std': 3.1614, 'mJ_per_token_above_idle_mean': 52.5131, 'mJ_per_token_above_idle_std': 1.5874, 'seconds_mean': 26.8618, 'avg_W_mean': 9.62, 'peak_W_max': 10.39, 'temp_max_C': 58, 'temp_rise_C': -1, 'counter_vs_samples_rel_diff_max': 0.0557, 'throttle_reasons': ['GpuIdle']}
+energy balanced + energy cap 0.85 of full work {'n': 5, 'mJ_per_token_mean': 128.4242, 'mJ_per_token_std': 5.8683, 'mJ_per_token_above_idle_mean': 52.6812, 'mJ_per_token_above_idle_std': 1.9557, 'seconds_mean': 27.6018, 'avg_W_mean': 9.53, 'peak_W_max': 10.24, 'temp_max_C': 58, 'temp_rise_C': -1, 'counter_vs_samples_rel_diff_max': 0.0509, 'throttle_reasons': ['GpuIdle']}
+energy full + energy cap 0.75 of full work {'n': 5, 'mJ_per_token_mean': 116.4003, 'mJ_per_token_std': 2.6231, 'mJ_per_token_above_idle_mean': 47.1363, 'mJ_per_token_above_idle_std': 0.8472, 'seconds_mean': 25.2407, 'avg_W_mean': 9.44, 'peak_W_max': 10.2, 'temp_max_C': 57, 'temp_rise_C': 1, 'counter_vs_samples_rel_diff_max': 0.0437, 'throttle_reasons': ['GpuIdle']}
+done

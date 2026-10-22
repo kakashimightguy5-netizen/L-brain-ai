@@ -1,0 +1,10 @@
+lscan: compiled scan unavailable, using torch chunked scan: RuntimeError
+STUDENT_D 128 fresh init (wider student, KD from teacher)
+cuscan self-test failed -> OFF: RuntimeError('element 0 of tensors does not require grad and does not have a grad_fn')
+cft5_fp_fresh128_s2 params 936357 teacher 0.8897 svd-init 4.679
+cft5_fp_fresh128_s2 step 2000 bpb 0.9802 +10.16% 1347s
+cft5_fp_fresh128_s2 step 4000 bpb 0.9358 +5.18% 2736s
+cft5_fp_fresh128_s2 step 6000 bpb 0.8898 +0.00% 4095s
+cft5_fp_fresh128_s2 step 8000 bpb 0.8638 -2.91% 5450s
+cft5_fp_fresh128_s2 step 10000 bpb 0.8563 -3.76% 6792s
+cft5_fp_fresh128_s2 step 12000 bpb 0.8507 -4.39% 7890s

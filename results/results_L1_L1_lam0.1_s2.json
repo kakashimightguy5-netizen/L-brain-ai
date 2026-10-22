@@ -1,0 +1,46 @@
+{
+ "device": "cuda",
+ "homeo": 0,
+ "name": "L1_lam0.1_s2",
+ "model": "L1",
+ "seed": 2,
+ "steps": 3000,
+ "lam": 0.1,
+ "fuzzy": 1,
+ "block": 0,
+ "params": 1218661,
+ "train_minutes": 15.5,
+ "sec_per_step": 0.309,
+ "val_bits_per_byte": 1.3884,
+ "active_neurons_per_layer [state, ffn]": [
+  [
+   0.31,
+   0.058
+  ],
+  [
+   0.415,
+   0.074
+  ],
+  [
+   0.339,
+   0.059
+  ],
+  [
+   0.298,
+   0.055
+  ]
+ ],
+ "copy": {
+  "exact n=120": 0.9354,
+  "exact n=512": 0.957,
+  "exact n=2048": 0.9486,
+  "typos5% n=120": 0.92,
+  "typos5% n=512": 0.8827,
+  "typos5% n=2048": 0.8627,
+  "renamed n=120": 0.8081,
+  "renamed n=512": 0.8237,
+  "renamed n=2048": 0.8577,
+  "typos5% n=512 (fuzzy OFF)": 0.8936,
+  "renamed n=512 (fuzzy OFF)": 0.7975
+ }
+}

@@ -1,0 +1,9 @@
+# E3 perception repair confirmation protocol
+
+[[37 - E Series Repair Protocol]] · [[38 - E Series Follow Up Confirmation Protocol]]
+
+The calibrated loop still trails its own one-step readout and masked CPU halting has overhead. Additional loops alone are not a repair for input corruption. Five fresh seeds342–346, same60/20/20digits partitioning. Train clean teacher60epochs; a residual-free64→128→64sigmoid denoiser learns corrupted→clean training pairs plus classification through frozen cleanteacher,60epochs. Noise sampled uniformly0–.65independently every batch. Loss CE+0.5pixelMSE; noisy validation checkpointing. Same noisy augmentation schedule/updatebudget used for one-pass native robust classifier, initialized from samecleanteacher. This uses existing traininglabels and cleanpixels as prior training supervision, no new test/onlinefeedback.
+
+Evaluate freshmixed-noise0–.7test plusfixed.35test. A confidence gate chooses cheap rawteacher prediction or denoiser→teacher only, calibrated on independentmixed validation to stay within.5pointof alwaysdenoisedaccuracy while maximizing earlycoverage. Report accuracy, earlyfraction, actual CPUbatchlatency and parameters. The gated path first runs rawteacher on everyone, so cannot claim compute savings by omitting that cost. Warmed5timingrepeats, report workloadenvironmentlimits. Compare robustonepassbaseline to decide whether denoising/gating is useful. No hallucinated restoration of lostpixels or intrinsic truth guarantee.
+
+Audit discovered the E2 exactmemorycontrol's floatdistance equality threshold misses identical savedqueries due numerical cancellation. Replace equality detection by exact float32rowbyte keys; recompute control only, preserve original result snapshot andscript. This fixes implementation, not generalization. Allcorrectionqueries mustbe recovered100%; untouchedtests still usebaseunlessexactkeyexists.

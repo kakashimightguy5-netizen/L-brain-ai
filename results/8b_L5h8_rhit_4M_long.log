@@ -1,0 +1,7 @@
+lscan: compiled scan unavailable, using torch chunked scan: RuntimeError
+cuscan self-test max error 1.91e-06 -> ON
+G_L5h8_rhit_4M_long_s0 0 4.562 11s gpu_mem_GB 3.09
+G_L5h8_rhit_4M_long_s0 50 2.716 112s gpu_mem_GB 3.17
+G_L5h8_rhit_4M_long_s0 100 2.032 250s gpu_mem_GB 3.17
+G_L5h8_rhit_4M_long_s0 150 1.664 397s gpu_mem_GB 3.17
+stopped by request

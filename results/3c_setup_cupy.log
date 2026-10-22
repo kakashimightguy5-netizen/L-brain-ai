@@ -1,0 +1,14 @@
+Collecting cupy-cuda12x
+  Downloading cupy_cuda12x-14.2.0-cp312-cp312-win_amd64.whl.metadata (2.8 kB)
+Requirement already satisfied: numpy<2.6,>=2.0 in D:\AI\SpikingBrain-study\L-architecture\venv\Lib\site-packages (from cupy-cuda12x) (2.5.3)
+Collecting cuda-pathfinder==1.*,>=1.3.4 (from cupy-cuda12x)
+  Downloading cuda_pathfinder-1.8.3-py3-none-any.whl.metadata (1.9 kB)
+Downloading cupy_cuda12x-14.2.0-cp312-cp312-win_amd64.whl (98.8 MB)
+   ---------------------------------------- 98.8/98.8 MB 3.5 MB/s  0:00:28
+Downloading cuda_pathfinder-1.8.3-py3-none-any.whl (62 kB)
+Installing collected packages: cuda-pathfinder, cupy-cuda12x
+
+Successfully installed cuda-pathfinder-1.8.3 cupy-cuda12x-14.2.0
+ 
+cuscan self-test failed -> OFF: BufferError("Can't export tensors that require gradient, use tensor.detach()")
+{"cupy_available": true, "error": null, "verified": false, "log_depth_scan_ms_fwd_bwd_32x256x384": 152.94, "gpu_kernel_ms_fwd_bwd_32x256x384": 146.68}

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "D:\AI\SpikingBrain-study\L-architecture\code\flag_sweep.py", line 31, in <module>
+    if 'losses' in v: v['max_loss_diff_vs_reference'] = round(max(abs(a - b) for a, b in zip(v['losses'], ref['losses'])), 5); v['final_loss'] = round(v['losses'][-1], 4); del v['losses']
+                                                                                                          ~~~^^^^^^^^^^
+KeyError: 'losses'

@@ -1,0 +1,1 @@
+{"script": "train_L5E.py", "args": ["L5E_post3k_s2", "2", "1000", "3000"], "env": {"SPIKEK": "8", "DELTAKERN": "0", "SPIKE_MASK": "0", "FASTMEM": "1", "RECORD": "0", "SPIKE_GROUPS": "1", "QAT": "none", "QAT_B": "32", "LOWRANK": "0", "QUICK": "0", "L5E_GPU": "1", "ARCH": "L6", "BASE": "L5_1M_s2.pt", "WAITFOR": "15o_L5E_s1.done"}, "device": "gpu"}

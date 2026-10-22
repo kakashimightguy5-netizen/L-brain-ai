@@ -1,0 +1,183 @@
+lscan: compiled scan unavailable, using torch chunked scan: RuntimeError
+cuscan self-test max error 1.91e-06 -> ON
+G2_L5h8_rhit_4M_long_s0 0 4.562 3s gpu_mem_GB 3.09
+G2_L5h8_rhit_4M_long_s0 50 2.716 25s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 100 2.033 47s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 150 1.673 70s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 200 1.46 92s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 250 1.48 114s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 300 1.26 137s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 350 1.216 159s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 400 1.148 181s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 450 1.01 203s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 500 1.007 225s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 550 1.042 248s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 600 1.01 270s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 650 1.066 292s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 700 0.954 316s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 750 1.066 338s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 800 0.972 360s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 850 1.002 382s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 900 0.981 404s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 950 0.998 426s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 1000 1.071 449s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 1050 0.953 471s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 1100 0.88 493s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 1150 0.9 515s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 1200 0.825 537s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 1250 0.95 559s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 1300 0.987 581s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 1350 0.968 604s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 1400 0.849 626s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 1450 1.062 648s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 1500 0.873 670s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 1550 1.041 692s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 1600 0.839 714s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 1650 0.851 737s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 1700 0.866 759s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 1750 0.802 781s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 1800 0.872 803s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 1850 0.829 825s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 1900 0.852 847s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 1950 0.756 870s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 2000 0.795 892s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 2050 0.883 914s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 2100 0.814 936s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 2150 0.867 958s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 2200 0.812 981s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 2250 0.841 1003s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 2300 0.783 1025s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 2350 0.799 1047s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 2400 0.925 1069s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 2450 0.8 1091s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 2500 0.8 1114s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 2550 0.743 1136s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 2600 0.703 1158s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 2650 0.885 1180s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 2700 0.827 1202s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 2750 0.874 1224s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 2800 0.822 1246s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 2850 0.82 1269s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 2900 0.87 1291s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 2950 0.878 1313s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 3000 0.798 1335s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 3050 0.907 1357s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 3100 0.915 1379s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 3150 0.798 1402s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 3200 0.776 1424s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 3250 0.853 1446s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 3300 0.727 1468s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 3350 0.781 1490s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 3400 0.727 1513s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 3450 0.785 1535s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 3500 0.8 1557s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 3550 0.733 1579s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 3600 0.714 1601s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 3650 0.741 1623s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 3700 0.768 1646s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 3750 0.796 1668s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 3800 0.782 1690s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 3850 0.789 1712s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 3900 0.71 1735s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 3950 0.707 1757s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 4000 0.816 1779s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 4050 0.826 1801s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 4100 0.757 1823s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 4150 0.753 1845s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 4200 0.777 1868s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 4250 0.71 1890s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 4300 0.712 1912s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 4350 0.771 1934s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 4400 0.683 1956s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 4450 0.723 1978s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 4500 0.728 2001s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 4550 0.757 2023s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 4600 0.682 2045s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 4650 0.684 2067s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 4700 0.838 2090s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 4750 0.786 2112s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 4800 0.702 2134s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 4850 0.64 2156s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 4900 0.682 2178s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 4950 0.703 2200s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 5000 0.704 2223s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 5050 0.693 2245s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 5100 0.729 2267s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 5150 0.744 2289s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 5200 0.719 2311s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 5250 0.701 2333s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 5300 0.7 2355s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 5350 0.7 2377s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 5400 0.702 2400s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 5450 0.792 2422s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 5500 0.702 2444s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 5550 0.694 2466s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 5600 0.724 2488s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 5650 0.764 2511s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 5700 0.664 2533s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 5750 0.602 2555s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 5800 0.666 2577s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 5850 0.686 2599s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 5900 0.679 2622s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 5950 0.701 2644s gpu_mem_GB 3.17
+G2_L5h8_rhit_4M_long_s0 exact 120 0.9396
+G2_L5h8_rhit_4M_long_s0 exact 512 0.9575
+G2_L5h8_rhit_4M_long_s0 exact 2048 0.954
+G2_L5h8_rhit_4M_long_s0 typos5% 120 0.941
+G2_L5h8_rhit_4M_long_s0 typos5% 512 0.9223
+G2_L5h8_rhit_4M_long_s0 typos5% 2048 0.9017
+G2_L5h8_rhit_4M_long_s0 renamed 120 0.7771
+G2_L5h8_rhit_4M_long_s0 renamed 512 0.8196
+G2_L5h8_rhit_4M_long_s0 renamed 2048 0.873
+{
+ "device": "cuda",
+ "homeo": 1,
+ "name": "G2_L5h8_rhit_4M_long_s0",
+ "model": "L5",
+ "seed": 0,
+ "steps": 6000,
+ "lam": 0.01,
+ "fuzzy": 1,
+ "block": 0,
+ "params": 3971269,
+ "train_minutes": 44.4,
+ "sec_per_step": 0.444,
+ "val_bits_per_byte": 1.0691,
+ "active_neurons_per_layer [state, ffn]": [
+  [
+   0.262,
+   0.047
+  ],
+  [
+   0.527,
+   0.043
+  ],
+  [
+   0.607,
+   0.068
+  ],
+  [
+   0.644,
+   0.079
+  ],
+  [
+   0.645,
+   0.092
+  ],
+  [
+   0.58,
+   0.114
+  ]
+ ],
+ "copy": {
+  "exact n=120": 0.9396,
+  "exact n=512": 0.9575,
+  "exact n=2048": 0.954,
+  "typos5% n=120": 0.941,
+  "typos5% n=512": 0.9223,
+  "typos5% n=2048": 0.9017,
+  "renamed n=120": 0.7771,
+  "renamed n=512": 0.8196,
+  "renamed n=2048": 0.873
+ }
+}

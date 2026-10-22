@@ -1,0 +1,9 @@
+lscan: compiled scan unavailable, using torch chunked scan: RuntimeError
+cuscan self-test failed -> OFF: RuntimeError('element 0 of tensors does not require grad and does not have a grad_fn')
+cft_lr375 params 633253 teacher 0.9359 svd-init 1.2043
+cft_lr375 step 500 bpb 0.9859 +5.35% 343s
+cft_lr375 step 1000 bpb 0.9696 +3.60% 676s
+cft_lr375 step 1500 bpb 0.9561 +2.16% 1015s
+cft_lr375 step 2000 bpb 0.9495 +1.46% 1354s
+cft_lr375 step 2500 bpb 0.9485 +1.35% 1693s
+cft_lr375 step 3000 bpb 0.949 +1.41% 2033s

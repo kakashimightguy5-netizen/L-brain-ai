@@ -1,0 +1,4 @@
+lscan: compiled scan unavailable, using torch chunked scan: RuntimeError
+cuscan self-test failed -> OFF: BufferError("Can't export tensors that require gradient, use tensor.detach()")
+L2_9M_lam0_s1 0 3.708 24s gpu_mem_GB 3.45
+stopped by request

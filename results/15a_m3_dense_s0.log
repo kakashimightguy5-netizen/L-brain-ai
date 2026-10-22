@@ -1,0 +1,29 @@
+lscan: compiled scan unavailable, using torch chunked scan: RuntimeError
+cuscan self-test max error 1.91e-06 -> ON
+dense 0 0 4.591 1s
+dense 0 250 1.74 27s
+dense 0 500 1.411 59s
+dense 0 750 1.203 86s
+dense 0 1000 1.178 112s
+dense 0 1250 1.161 137s
+dense 0 1500 1.087 167s
+dense 0 1750 1.021 193s
+dense 0 2000 1.116 218s
+dense 0 2250 1.036 244s
+dense 0 2500 1.084 270s
+dense 0 2750 1.001 297s
+{
+ "mode": "dense",
+ "seed": 0,
+ "experts": 4,
+ "params_total": 1154741,
+ "minutes": 5.5,
+ "ffn_params_total": 334656,
+ "ffn_params_active_per_byte": 334656,
+ "bits_per_byte": {
+  "Python": 1.4761,
+  "JavaScript": 1.0315,
+  "C": 1.7785
+ },
+ "bits_per_byte_mean": 1.4287
+}

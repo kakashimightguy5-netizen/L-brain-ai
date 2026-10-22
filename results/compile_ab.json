@@ -1,0 +1,165 @@
+{
+ "eager": {
+  "variant": "eager",
+  "config": {
+   "ste": 0,
+   "scan": "cuscan",
+   "bf16": 0,
+   "comp": 0
+  },
+  "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "batch": [
+   16,
+   256
+  ],
+  "note": "shares the GPU with other running jobs",
+  "compile_s": 1.1,
+  "init_loss": 5.70128,
+  "ms_per_step_median": 477.65,
+  "ms_all": [
+   476.6,
+   477.6,
+   479.2,
+   472.9,
+   479.1
+  ],
+  "kernels_per_step": 2365,
+  "mJ_per_token": 4.218,
+  "mJ_per_token_std": 0.1591,
+  "avg_W": 36.09,
+  "throttle": [],
+  "last_loss": 0.2726
+ },
+ "c_cuscan": {
+  "variant": "c_cuscan",
+  "config": {
+   "ste": 1,
+   "scan": "cuscan",
+   "bf16": 0,
+   "comp": 1
+  },
+  "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "batch": [
+   16,
+   256
+  ],
+  "note": "shares the GPU with other running jobs",
+  "compile_s": 131.4,
+  "init_loss": 5.70128,
+  "max_logit_diff_vs_eager": 0.045879870653152466,
+  "grad_cosine_vs_eager": 1.000131607055664,
+  "ms_per_step_median": 277.96,
+  "ms_all": [
+   278.5,
+   279.3,
+   276.9,
+   276.2,
+   278.0
+  ],
+  "kernels_per_step": 1133,
+  "mJ_per_token": 2.6171,
+  "mJ_per_token_std": 0.1047,
+  "avg_W": 38.45,
+  "throttle": [],
+  "last_loss": 0.2968
+ },
+ "c_hs": {
+  "variant": "c_hs",
+  "config": {
+   "ste": 1,
+   "scan": "hs",
+   "bf16": 0,
+   "comp": 1
+  },
+  "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "batch": [
+   16,
+   256
+  ],
+  "note": "shares the GPU with other running jobs",
+  "compile_s": 40.6,
+  "init_loss": 5.70128,
+  "max_logit_diff_vs_eager": 0.045879870653152466,
+  "grad_cosine_vs_eager": 1.0001314878463745,
+  "ms_per_step_median": 303.3,
+  "ms_all": [
+   299.7,
+   306.8,
+   302.2,
+   303.3,
+   305.7
+  ],
+  "kernels_per_step": 1189,
+  "mJ_per_token": 2.7875,
+  "mJ_per_token_std": 0.1852,
+  "avg_W": 37.45,
+  "throttle": [],
+  "last_loss": 0.2975
+ },
+ "c_cuscan_bf16": {
+  "variant": "c_cuscan_bf16",
+  "config": {
+   "ste": 1,
+   "scan": "cuscan",
+   "bf16": 1,
+   "comp": 1
+  },
+  "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "batch": [
+   16,
+   256
+  ],
+  "note": "shares the GPU with other running jobs",
+  "compile_s": 185.5,
+  "init_loss": 5.70118,
+  "max_logit_diff_vs_eager": 0.09482508897781372,
+  "grad_cosine_vs_eager": 0.9999947547912598,
+  "ms_per_step_median": 192.16,
+  "ms_all": [
+   191.2,
+   194.4,
+   190.8,
+   192.2,
+   192.5
+  ],
+  "kernels_per_step": 1298,
+  "mJ_per_token": 1.828,
+  "mJ_per_token_std": 0.1272,
+  "avg_W": 38.55,
+  "throttle": [],
+  "last_loss": 0.287
+ },
+ "c_hs_bf16": {
+  "variant": "c_hs_bf16",
+  "config": {
+   "ste": 1,
+   "scan": "hs",
+   "bf16": 1,
+   "comp": 1
+  },
+  "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "batch": [
+   16,
+   256
+  ],
+  "note": "shares the GPU with other running jobs",
+  "compile_s": 33.6,
+  "init_loss": 5.70118,
+  "max_logit_diff_vs_eager": 0.11521469056606293,
+  "grad_cosine_vs_eager": 0.9999653100967407,
+  "ms_per_step_median": 207.82,
+  "ms_all": [
+   208.9,
+   208.6,
+   207.5,
+   207.8,
+   206.9
+  ],
+  "kernels_per_step": 1338,
+  "mJ_per_token": 1.9715,
+  "mJ_per_token_std": 0.0787,
+  "avg_W": 38.61,
+  "throttle": [],
+  "last_loss": 0.303
+ }
+}

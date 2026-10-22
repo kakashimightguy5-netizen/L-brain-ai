@@ -1,0 +1,1 @@
+{"script": "train_L1.py", "args": ["L2_1M_lam0_s0", "L1TG", "0", "6000", "0"], "env": {"DM": "160", "NL": "4", "BS": "32", "SEQ": "256", "LR": "1e-3", "HOMEO": "1", "CKPT": "1"}, "device": "gpu"}

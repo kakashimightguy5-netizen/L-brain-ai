@@ -1,0 +1,5 @@
+# Registered replay repair and confirmation
+
+Three-run diagnosis on 942-944 found that strictly single-observation robust training improved over the averaged-observation schedule. Confirm that direction on fresh1042-1046 splits using the same paired initial weights and 30 clean epochs, 60 mixed-observation versus 60 single-observation robust epochs, then another60 single-observation epochs. No model selected by test accuracy.
+
+Repair the replay system on942-944 (exploratory follow-up, already inspected tests): same CNN initialization, five tasks, 30 epochs/task, 20 exemplars/class selected by pixel-space k-center as before. Compare prior replay saved in root-cause study against single-observation noise training with .1-.5 corruption and .25clean/.75noisy loss. Then add uniform-class sampling with replacement, preserving the same number of minibatches. Both changes are tested separately. No old-task identity at inference, no extra test observations. Save clean/noisy performance, validation histories, checkpoints and exact reloaded predictions. This is an engineering repair through replay, not a pure-EWC fix.

@@ -1,0 +1,93 @@
+{
+ "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+ "batch": [
+  16,
+  256
+ ],
+ "reps": 5,
+ "steps": 10,
+ "note": "timings share the GPU with any other running job",
+ "eager_fp32_ms_per_step_median": 476.52,
+ "eager_fp32_ms_all": [
+  476.6,
+  475.8,
+  476.5,
+  477.1,
+  476.3
+ ],
+ "graph_fp32_ms_per_step_median": 431.26,
+ "graph_fp32_ms_all": [
+  430.6,
+  431.3,
+  431.6,
+  430.6,
+  431.8
+ ],
+ "eager_bf16_ms_per_step_median": 431.84,
+ "eager_bf16_ms_all": [
+  434.1,
+  430.5,
+  431.2,
+  434.2,
+  431.8
+ ],
+ "graph_bf16_ms_per_step_median": 366.51,
+ "graph_bf16_ms_all": [
+  365.4,
+  367.5,
+  366.5,
+  367.4,
+  366.5
+ ],
+ "transformer_eager_fp32_ms_per_step_median": 102.04,
+ "transformer_eager_fp32_ms_all": [
+  102.0,
+  101.0,
+  100.9,
+  102.1,
+  102.1
+ ],
+ "eager_fp32_last_loss": 2.7132,
+ "graph_fp32_last_loss": 2.3825,
+ "eager_bf16_last_loss": 2.5877,
+ "graph_bf16_last_loss": 2.4809,
+ "idle_W": 39.12,
+ "idle_note": "invalid for above-idle energy if other jobs were running",
+ "eager_fp32_energy": {
+  "mJ_per_token_mean": 4.4749,
+  "mJ_per_token_std": 0.0423,
+  "avg_W_mean": 38.24,
+  "seconds_mean": 4.7753,
+  "throttle_reasons": []
+ },
+ "graph_fp32_energy": {
+  "mJ_per_token_mean": 3.9408,
+  "mJ_per_token_std": 0.131,
+  "avg_W_mean": 37.4,
+  "seconds_mean": 4.2999,
+  "throttle_reasons": []
+ },
+ "eager_bf16_energy": {
+  "mJ_per_token_mean": 4.1628,
+  "mJ_per_token_std": 0.0798,
+  "avg_W_mean": 39.32,
+  "seconds_mean": 4.3188,
+  "throttle_reasons": []
+ },
+ "graph_bf16_energy": {
+  "mJ_per_token_mean": 3.3009,
+  "mJ_per_token_std": 0.0853,
+  "avg_W_mean": 36.88,
+  "seconds_mean": 3.6515,
+  "throttle_reasons": []
+ },
+ "transformer_eager_fp32_energy": {
+  "mJ_per_token_mean": 0.947,
+  "mJ_per_token_std": 0.046,
+  "avg_W_mean": 37.73,
+  "seconds_mean": 1.0241,
+  "throttle_reasons": [
+   "SwPowerCap"
+  ]
+ }
+}

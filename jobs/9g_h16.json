@@ -1,0 +1,1 @@
+{"script": "train_L1.py", "args": ["G3_L5h16_4M_long_s0", "L5", "0", "6000", "0.01"], "env": {"DM": "232", "NL": "6", "BS": "32", "SEQ": "256", "LR": "2e-3", "HOMEO": "1", "CKPT": "1", "RESUME": "1", "ACC": "1", "CONV": "4", "HEADS": "16", "SPIKEK": "4", "RHIT": "0", "TSIGN": "0", "COLPOS": "0", "FASTMEM": "1", "DELTA_V": "2", "WAITFOR": "9f_layout.done"}, "device": "gpu"}

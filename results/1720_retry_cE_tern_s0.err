@@ -1,0 +1,9 @@
+W1010 05:14:07.167000 24432 Lib\site-packages\torch\utils\cpp_extension.py:140] No CUDA runtime is found, using CUDA_HOME='C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5'
+Traceback (most recent call last):
+  File "D:\AI\SpikingBrain-study\L-architecture\code\train_L1.py", line 53, in <module>
+    ck = torch.load(RES, map_location=DEV); m.load_state_dict(ck['m']); opt.load_state_dict(ck['opt']); sch.load_state_dict(ck['sch']); start = ck['it'] + 1
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\SpikingBrain-study\L-architecture\venv\Lib\site-packages\torch\nn\modules\module.py", line 2639, in load_state_dict
+    raise RuntimeError(
+RuntimeError: Error(s) in loading state_dict for L5Model:
+	Missing key(s) in state_dict: "cfemb.weight". 

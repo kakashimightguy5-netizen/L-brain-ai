@@ -1,0 +1,5 @@
+lscan: compiled scan unavailable, using torch chunked scan: RuntimeError
+DENSE_SPIKE wrapped 16 matrices
+resumed at step 200
+cE_dspk05_s0 200 1.794 1s 
+cE_dspk05_s0 250 1.66 50s 

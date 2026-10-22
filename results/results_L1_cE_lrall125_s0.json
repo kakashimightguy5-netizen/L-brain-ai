@@ -1,0 +1,44 @@
+{
+ "device": "cuda",
+ "homeo": 1,
+ "name": "cE_lrall125_s0",
+ "model": "L5",
+ "seed": 0,
+ "steps": 3000,
+ "lam": 0.03,
+ "fuzzy": 1,
+ "block": 0,
+ "params": 354725,
+ "train_minutes": 38.0,
+ "sec_per_step": 0.759,
+ "val_bits_per_byte": 1.5954,
+ "active_neurons_per_layer [state, ffn]": [
+  [
+   0.703,
+   0.179
+  ],
+  [
+   0.708,
+   0.155
+  ],
+  [
+   0.685,
+   0.147
+  ],
+  [
+   0.684,
+   0.149
+  ]
+ ],
+ "copy": {
+  "exact n=120": 0.95,
+  "exact n=512": 0.9575,
+  "exact n=2048": 0.9498,
+  "typos5% n=120": 0.9452,
+  "typos5% n=512": 0.9173,
+  "typos5% n=2048": 0.8884,
+  "renamed n=120": 0.7925,
+  "renamed n=512": 0.8244,
+  "renamed n=2048": 0.8462
+ }
+}

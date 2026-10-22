@@ -1,0 +1,38 @@
+{
+ "reference": {
+  "ms_per_step": 670.8,
+  "peak_VRAM_GB": 4.661,
+  "max_loss_diff_vs_reference": 0.0,
+  "final_loss": 2.5107
+ },
+ "reference (repeat, measures GPU non-determinism)": {
+  "ms_per_step": 646.9,
+  "peak_VRAM_GB": 4.655,
+  "max_loss_diff_vs_reference": 6e-05,
+  "final_loss": 2.5106
+ },
+ "SPIKE_MASK=1": {
+  "ms_per_step": 639.1,
+  "peak_VRAM_GB": 4.498,
+  "max_loss_diff_vs_reference": 8e-05,
+  "final_loss": 2.5106
+ },
+ "SCAN_MODE=hs": {
+  "ms_per_step": 867.0,
+  "peak_VRAM_GB": 5.747,
+  "max_loss_diff_vs_reference": 0.00016,
+  "final_loss": 2.5105
+ },
+ "bf16 autocast": {
+  "ms_per_step": 543.2,
+  "peak_VRAM_GB": 3.722,
+  "max_loss_diff_vs_reference": 0.00104,
+  "final_loss": 2.5108
+ },
+ "SPIKE_MASK=1 + bf16": {
+  "ms_per_step": 556.1,
+  "peak_VRAM_GB": 3.569,
+  "max_loss_diff_vs_reference": 0.00108,
+  "final_loss": 2.5108
+ }
+}

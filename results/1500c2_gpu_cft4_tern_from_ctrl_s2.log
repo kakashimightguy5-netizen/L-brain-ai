@@ -1,0 +1,10 @@
+lscan: compiled scan unavailable, using torch chunked scan: RuntimeError
+QAT ternary on 33 matrices
+cuscan self-test failed -> OFF: RuntimeError('element 0 of tensors does not require grad and does not have a grad_fn')
+cft4_tern_from_ctrl_s2 params 936357 teacher 0.8897 svd-init 1.7632
+cft4_tern_from_ctrl_s2 step 1000 bpb 0.9035 +1.55% 765s
+cft4_tern_from_ctrl_s2 step 2000 bpb 0.9189 +3.28% 1529s
+cft4_tern_from_ctrl_s2 step 3000 bpb 0.9884 +11.09% 2295s
+cft4_tern_from_ctrl_s2 step 4000 bpb 0.9907 +11.35% 3058s
+cft4_tern_from_ctrl_s2 step 5000 bpb 0.9741 +9.49% 3822s
+cft4_tern_from_ctrl_s2 step 6000 bpb 0.9327 +4.83% 4573s

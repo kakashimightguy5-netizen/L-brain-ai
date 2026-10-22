@@ -1,0 +1,1 @@
+{"script": "longctx.py", "args": [], "env": {"WAITFOR": "14c_L6_9M_s2.done", "SPIKEK": "8", "DELTAKERN": "0"}, "device": "gpu"}

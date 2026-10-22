@@ -1,0 +1,14 @@
+lscan: compiled scan unavailable, using torch chunked scan: RuntimeError
+L5 hop2 params 936357
+1333 loss 1.8642 1280s
+lscan: compiled scan unavailable, using torch chunked scan: RuntimeError
+L5 hop2 params 936357
+RESUMED at 1700
+2666 loss 1.5348 1112s
+lscan: compiled scan unavailable, using torch chunked scan: RuntimeError
+L5 hop2 params 936357
+RESUMED at 3400
+lscan: compiled scan unavailable, using torch chunked scan: RuntimeError
+L5 hop2 params 936357
+RESUMED at 3800
+3999 loss 1.3111 350s

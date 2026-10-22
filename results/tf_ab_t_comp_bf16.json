@@ -1,0 +1,15 @@
+{
+ "variant": "t_comp_bf16",
+ "config": {
+  "comp": 1,
+  "bf16": 1
+ },
+ "params": 1234192,
+ "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+ "compile_s": 65.0,
+ "ms_per_step_median": 48.66,
+ "kernels_per_step": 314,
+ "mJ_per_token": 0.4124,
+ "mJ_per_token_std": 0.0427,
+ "avg_W": 34.76
+}

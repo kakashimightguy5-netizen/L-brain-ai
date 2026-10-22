@@ -1,0 +1,7 @@
+{
+ "cupy_available": true,
+ "error": null,
+ "verified": true,
+ "log_depth_scan_ms_fwd_bwd_32x256x384": 152.41,
+ "gpu_kernel_ms_fwd_bwd_32x256x384": 5.52
+}

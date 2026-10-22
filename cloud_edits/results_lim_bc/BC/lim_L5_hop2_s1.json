@@ -1,0 +1,1 @@
+{"model": "L5", "task": "hop2", "seed": 1, "steps": 8000, "params": 936357, "acc": {"chains1": 1.0, "chains2": 0.4531, "chains4": 0.3906, "chains8": 0.3125, "chains16": 0.1875, "chains32": 0.125}}

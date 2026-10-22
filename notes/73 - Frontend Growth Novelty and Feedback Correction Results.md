@@ -1,0 +1,33 @@
+# 73 - Frontend Growth Novelty and Feedback Correction Results
+
+The prototype added React nodes after learning six HTML/CSS topics. All six original node records stayed byte-identical, their pinned facts/examples stayed identical, and all 24 old-question decision checks passed across the two later stages. All 36 old HTML/CSS executable cases still passed after growth and feedback correction. This is a small immutable retrieval-and-template system; no neural weights were trained and no general frontend programming competence is established.
+
+| Stage | Known-query correct retrieval | Direct example execution | Automatic routing + execution |
+|---|---:|---:|---:|
+|HTML/CSS only|10/12|36/36|30/36|
+|React added; deliberately faulty counter|18/20|54/60|48/60|
+|Verified correction appended|18/20|60/60|54/60|
+
+Question scores measure selecting the correct curated node, not judging the truth of a generated answer. In the deliberately faulty stage, counter questions retrieve the intended but wrong injected lesson; the retrieval score must not be called factual correctness. Final known-query acceptance is 18/20, with all 18 accepted questions choosing the correct node. Two known questions were held for clarification, so end-to-end success is 54/60 rather than 60/60. There were no wrong accepted known-query answers in this set, but the small set is not a broad accuracy claim.
+
+Novelty: all 8 held-out React questions were rejected or clarified before React lessons were added (6 new-node proposals,2 clarification requests). After learning React, all 8 retrieved the intended nodes. All 10 held-out unsupported-topic questions were rejected or clarified after growth. Ambiguous requests were correctly held for clarification in 3/4 cases; the generic request “I need a button for the page” was too confidently assigned to the non-submit HTML button lesson. That ambiguity weakness remains.
+
+The two missed known paraphrases are “What does an img alt description do?” and “Make a flexbox place its child at the middle of both axes.” They were held for clarification, not answered from the wrong node. Held-out failures were not used to change aliases or thresholds. External user questions and more difficult mixed HTML/CSS/React requests are needed for a credible next evaluation.
+
+Router: fixed word/character hashing and cosine matching to frozen example query prototypes. No vocabulary/IDF or old prototypes are retrained when nodes are appended. Development-only threshold selection chose 0.25 with margin 0.03. This is a lexical novelty heuristic, not a neural semantic model or learned biological novelty detector. Creation still requires a supplied reviewed lesson; unfamiliar questions do not fabricate new knowledge.
+
+Feedback correction: the React counter failure was injected deliberately, not discovered in naturally acquired code. Its original version changes a local state variable without scheduling a new rendered value. A feedback-provided candidate uses React state updates and was reviewed against [official useState documentation](https://react.dev/reference/react/useState). A broken candidate failed both development cases and was rejected. Missing provenance and unverifiable “passed” assertions were also rejected. The verified candidate passed both development cases and all 6 held-out counter cases; the original failed all 6. The correction is a new linked version, react_counter_v 2; the pinned injected original remains accessible as react_counter_v 1.
+
+This correction mechanism validates behavior against explicit tests and relies on trusted external feedback plus manually reviewed provenance. It does not invent repair code autonomously or generally verify semantic truth. A source URL alone does not prove a lesson true; tests cover only the implemented expectations. The system deliberately exposes the original counter as injected faulty knowledge when queried by version.
+
+Execution: real React and ReactDOM state/event rendering in jsdom; HTML control/label association, alt strings, non-submit button type, CSS computed declarations, list rendering, conditional visibility, props text and counter clicks. Six extra independent element-tree checks confirmed stable list keys when item order changed. Parameter values include quoting/markup-like text, empty text, non-ASCII text, varied widths/padding, initial values and repeated clicks. jsdom does not establish physical layout, full browser accessibility or security correctness. Templates were manually authored and parameterized; arbitrary code generation or open-ended skill learning was not tested.
+
+Integrity recovery: isolated corrupted knowledge was restored from a trusted snapshot. Recovery refused when live and backup were both damaged. All 11 active nodes and their snapshots passed a final SHA 256 check. The trusted manifest remains an assumption. Duplicate topics cannot overwrite existing records; feedback corrections must follow the stored version lineage.
+
+Experiment handling: the first initialization stopped before evaluation on a missing helper import. The error log and original partial records were preserved. The corrected harness used an isolated new session. All lesson fixtures, routing/correction choices and development verification were frozen before the held-out evaluation. The dataset is small and authored by the experiment designer; it is not an independently collected blinded benchmark.
+
+Runtime: {"node": "v 24.20.0", "react": "19.3.0", "reactDom": "19.3.0", "jsdom": "30.1.2"}. Node/Python existing C: executables were read/executed; every new file, dependency, npm cache, temporary artifact, log and archive is on D:. package-lock.json records exact dependency resolution.
+
+Live library: D:\AI\SpikingBrain-study\experiments\frontend-learning\runs\5 d 8 ffec 55 f 834350 b 50 c 409644 c 07 e 97\library. Runnable entry: frontend-learning/try_frontend_brain.py. Ask a question, use --categories to see frontend groups, --topic for explicit retrieval, and --version for pinned originals. Unsupported requests propose a new reviewed lesson or ask for clarification. There is no general language model in this interface.
+
+Next priority: use independent human-written queries, improve semantic routing and ambiguity detection, and add external coding exercises that differ from the taught templates. Preserve the current held-out failures as historical results; do not silently tune and re-report them.

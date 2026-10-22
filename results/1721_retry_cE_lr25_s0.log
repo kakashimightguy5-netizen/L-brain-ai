@@ -1,0 +1,5 @@
+lscan: compiled scan unavailable, using torch chunked scan: RuntimeError
+LOWRANK dense MACs/token 524288 -> 196608
+cE_lr25_s0 0 4.738 1s 
+cE_lr25_s0 50 2.576 44s 
+cE_lr25_s0 100 1.951 87s 

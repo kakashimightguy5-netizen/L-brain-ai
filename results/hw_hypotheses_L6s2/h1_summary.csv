@@ -1,0 +1,2 @@
+model,tokens,events_per_token_mean,events_p5,events_p95,events_dynamic_range_p95_over_p5,spearman_events_vs_loss,spearman_events_vs_confidence,events_hardest_over_easiest_decile,work_fraction_of_dense_mean,work_hardest_over_easiest_decile,dense_share_of_work,loss_hardest_over_easiest_decile,est_energy_nJ_per_token_mean,est_energy_nJ_dense_ref
+L6s2,50000.0,1395.1954,1178.0,1598.0,1.3565,0.0059,0.0031,1.0167,0.7896,1.0012,0.9248,6371.3335,9662.3469,12236.3085

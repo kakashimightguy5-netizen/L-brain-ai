@@ -1,0 +1,29 @@
+Traceback (most recent call last):
+  File "D:\AI\SpikingBrain-study\L-architecture\code\train_L1.py", line 33, in <module>
+    m.train(); x = batch(tr); y = x[:, 1:].reshape(-1); lg, states = run(x, True); loss = F.cross_entropy(lg.reshape(-1, 256), y)
+                                                                     ^^^^^^^^^^^^
+  File "D:\AI\SpikingBrain-study\L-architecture\code\train_L1.py", line 28, in run
+    return m(inp, rec, block=block or None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\SpikingBrain-study\L-architecture\venv\Lib\site-packages\torch\nn\modules\module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\SpikingBrain-study\L-architecture\venv\Lib\site-packages\torch\nn\modules\module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\SpikingBrain-study\L-architecture\code\l1_model.py", line 114, in forward
+    z, _ = l(z); states.append(z)
+           ^^^^
+  File "D:\AI\SpikingBrain-study\L-architecture\venv\Lib\site-packages\torch\nn\modules\module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\SpikingBrain-study\L-architecture\venv\Lib\site-packages\torch\nn\modules\module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\SpikingBrain-study\L-architecture\code\l1_model.py", line 21, in forward
+    h, hT = s.scan(a, b, h0); th = s.theta.abs().clamp(min=0.05)
+            ^^^^^^^^^^^^^^^^
+  File "D:\AI\SpikingBrain-study\L-architecture\code\l1_model.py", line 17, in scan
+    if b.is_cuda or not lscan.AVAILABLE: return M0.LLayer.scan_hs(a, b, h0)   # log-depth parallel scan   # exact chunked scan (GPU-friendly)
+                                                ^^^^^^^^^^^^^^^^^
+AttributeError: type object 'LLayer' has no attribute 'scan_hs'

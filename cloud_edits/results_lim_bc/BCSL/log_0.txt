@@ -1,0 +1,9 @@
+lscan: compiled scan unavailable, using torch chunked scan: RuntimeError
+L5 hop2 params 936357
+1333 loss 0.8388 859s
+2666 loss 0.0029 1709s
+3999 loss 0.0014 2565s
+5332 loss 1.0065 3405s
+6665 loss 1.2481 4244s
+7998 loss 0.9925 5102s
+{"model": "L5", "task": "hop2", "seed": 0, "steps": 8000, "params": 936357, "acc": {"chains1": 1.0, "chains2": 0.5469, "chains4": 0.4219, "chains8": 0.3281, "chains16": 0.2031, "chains32": 0.1094}}

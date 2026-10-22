@@ -1,0 +1,10 @@
+lscan: compiled scan unavailable, using torch chunked scan: RuntimeError
+QAT_MAP {'int8': 16, 'ternary': 8}
+cuscan self-test failed -> OFF: RuntimeError('element 0 of tensors does not require grad and does not have a grad_fn')
+cft2_tern_hid_b params 936357 teacher 0.9359 svd-init 1.1023
+cft2_tern_hid_b step 1000 bpb 0.9473 +1.23% 730s
+cft2_tern_hid_b step 2000 bpb 0.9466 +1.15% 1461s
+cft2_tern_hid_b step 3000 bpb 0.9367 +0.09% 2191s
+cft2_tern_hid_b step 4000 bpb 0.929 -0.73% 2921s
+cft2_tern_hid_b step 5000 bpb 0.9256 -1.10% 3652s
+cft2_tern_hid_b step 6000 bpb 0.9065 -3.13% 4354s

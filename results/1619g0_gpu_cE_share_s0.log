@@ -1,0 +1,116 @@
+lscan: compiled scan unavailable, using torch chunked scan: RuntimeError
+SHARE_LAYERS saved params 346368
+cuscan self-test max error 1.91e-06 -> ON
+cE_share_s0 0 4.225 3s gpu_mem_GB 0.59
+cE_share_s0 50 2.662 45s gpu_mem_GB 0.60
+cE_share_s0 100 2.151 87s gpu_mem_GB 0.60
+cE_share_s0 150 1.649 129s gpu_mem_GB 0.60
+cE_share_s0 200 1.85 171s gpu_mem_GB 0.60
+cE_share_s0 250 1.699 213s gpu_mem_GB 0.60
+cE_share_s0 300 1.557 255s gpu_mem_GB 0.60
+cE_share_s0 350 1.467 297s gpu_mem_GB 0.60
+cE_share_s0 400 1.256 339s gpu_mem_GB 0.60
+cE_share_s0 450 1.455 381s gpu_mem_GB 0.60
+cE_share_s0 500 1.19 423s gpu_mem_GB 0.60
+cE_share_s0 550 1.493 465s gpu_mem_GB 0.60
+cE_share_s0 600 1.174 507s gpu_mem_GB 0.60
+cE_share_s0 650 1.387 549s gpu_mem_GB 0.60
+cE_share_s0 700 1.457 591s gpu_mem_GB 0.60
+cE_share_s0 750 1.126 633s gpu_mem_GB 0.60
+cE_share_s0 800 1.145 676s gpu_mem_GB 0.60
+cE_share_s0 850 1.371 717s gpu_mem_GB 0.60
+cE_share_s0 900 1.247 759s gpu_mem_GB 0.60
+cE_share_s0 950 1.215 801s gpu_mem_GB 0.60
+cE_share_s0 1000 1.135 844s gpu_mem_GB 0.60
+cE_share_s0 1050 1.242 885s gpu_mem_GB 0.60
+cE_share_s0 1100 1.144 927s gpu_mem_GB 0.60
+cE_share_s0 1150 1.133 969s gpu_mem_GB 0.60
+cE_share_s0 1200 1.257 1011s gpu_mem_GB 0.60
+cE_share_s0 1250 1.135 1053s gpu_mem_GB 0.60
+cE_share_s0 1300 1.189 1096s gpu_mem_GB 0.60
+cE_share_s0 1350 1.139 1138s gpu_mem_GB 0.60
+cE_share_s0 1400 1.117 1180s gpu_mem_GB 0.60
+cE_share_s0 1450 1.047 1222s gpu_mem_GB 0.60
+cE_share_s0 1500 1.135 1264s gpu_mem_GB 0.60
+cE_share_s0 1550 1.154 1306s gpu_mem_GB 0.60
+cE_share_s0 1600 1.034 1348s gpu_mem_GB 0.60
+cE_share_s0 1650 1.004 1390s gpu_mem_GB 0.60
+cE_share_s0 1700 1.207 1432s gpu_mem_GB 0.60
+cE_share_s0 1750 1.071 1474s gpu_mem_GB 0.60
+cE_share_s0 1800 1.083 1516s gpu_mem_GB 0.60
+cE_share_s0 1850 1.149 1558s gpu_mem_GB 0.60
+cE_share_s0 1900 1.002 1600s gpu_mem_GB 0.60
+cE_share_s0 1950 1.083 1642s gpu_mem_GB 0.60
+cE_share_s0 2000 1.027 1684s gpu_mem_GB 0.60
+cE_share_s0 2050 1.061 1726s gpu_mem_GB 0.60
+cE_share_s0 2100 1.044 1768s gpu_mem_GB 0.60
+cE_share_s0 2150 1.182 1810s gpu_mem_GB 0.60
+cE_share_s0 2200 0.99 1852s gpu_mem_GB 0.60
+cE_share_s0 2250 0.974 1894s gpu_mem_GB 0.60
+cE_share_s0 2300 0.967 1936s gpu_mem_GB 0.60
+cE_share_s0 2350 1.036 1978s gpu_mem_GB 0.60
+cE_share_s0 2400 1.021 2020s gpu_mem_GB 0.60
+cE_share_s0 2450 1.114 2060s gpu_mem_GB 0.60
+cE_share_s0 2500 1.009 2084s gpu_mem_GB 0.60
+cE_share_s0 2550 0.945 2105s gpu_mem_GB 0.60
+cE_share_s0 2600 0.935 2127s gpu_mem_GB 0.60
+cE_share_s0 2650 0.888 2148s gpu_mem_GB 0.60
+cE_share_s0 2700 1.103 2170s gpu_mem_GB 0.60
+cE_share_s0 2750 1.064 2191s gpu_mem_GB 0.60
+cE_share_s0 2800 0.973 2213s gpu_mem_GB 0.60
+cE_share_s0 2850 1.055 2234s gpu_mem_GB 0.60
+cE_share_s0 2900 0.947 2256s gpu_mem_GB 0.60
+cE_share_s0 2950 1.113 2277s gpu_mem_GB 0.60
+cE_share_s0 exact 120 0.9479
+cE_share_s0 exact 512 0.9585
+cE_share_s0 exact 2048 0.9495
+cE_share_s0 typos5% 120 0.9347
+cE_share_s0 typos5% 512 0.9173
+cE_share_s0 typos5% 2048 0.8892
+cE_share_s0 renamed 120 0.7954
+cE_share_s0 renamed 512 0.8275
+cE_share_s0 renamed 2048 0.8521
+{
+ "device": "cuda",
+ "homeo": 1,
+ "name": "cE_share_s0",
+ "model": "L5",
+ "seed": 0,
+ "steps": 3000,
+ "lam": 0.03,
+ "fuzzy": 1,
+ "block": 0,
+ "params": 589989,
+ "train_minutes": 38.3,
+ "sec_per_step": 0.766,
+ "val_bits_per_byte": 1.4171,
+ "active_neurons_per_layer [state, ffn]": [
+  [
+   0.36,
+   0.086
+  ],
+  [
+   0.387,
+   0.082
+  ],
+  [
+   0.383,
+   0.077
+  ],
+  [
+   0.355,
+   0.067
+  ]
+ ],
+ "copy": {
+  "exact n=120": 0.9479,
+  "exact n=512": 0.9585,
+  "exact n=2048": 0.9495,
+  "typos5% n=120": 0.9347,
+  "typos5% n=512": 0.9173,
+  "typos5% n=2048": 0.8892,
+  "renamed n=120": 0.7954,
+  "renamed n=512": 0.8275,
+  "renamed n=2048": 0.8521
+ }
+}

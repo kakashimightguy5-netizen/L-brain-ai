@@ -1,0 +1,61 @@
+lscan: compiled scan unavailable, using torch chunked scan: RuntimeError
+graph equivalence 0.0
+256 {'transformer KV-cache': {'ms_per_token': 9.258, 'mJ_per_token_above_idle': -13.49, 'kv_cache_MB_used': 4.33}, 'L GraphStepper': {'ms_per_token': 1.378, 'mJ_per_token_above_idle': -0.79, 'state_MB': 0.456}}
+1024 {'transformer KV-cache': {'ms_per_token': 9.396, 'mJ_per_token_above_idle': 54.5, 'kv_cache_MB_used': 17.3}, 'L GraphStepper': {'ms_per_token': 1.286, 'mJ_per_token_above_idle': 11.42, 'state_MB': 0.456}}
+4096 {'transformer KV-cache': {'ms_per_token': 8.741, 'mJ_per_token_above_idle': 122.15, 'kv_cache_MB_used': 69.21}, 'L GraphStepper': {'ms_per_token': 1.289, 'mJ_per_token_above_idle': 14.18, 'state_MB': 0.456}}
+16384 {'transformer KV-cache': {'ms_per_token': 25.433, 'mJ_per_token_above_idle': 518.11, 'kv_cache_MB_used': 276.82}, 'L GraphStepper': {'ms_per_token': 1.349, 'mJ_per_token_above_idle': 14.29, 'state_MB': 0.456}}
+{
+ "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+ "idle_W": 11.49,
+ "batch": 1,
+ "tokens_timed_per_point": 64,
+ "GraphStepper_vs_Stepper_max_diff": 0.0,
+ "ctx 256": {
+  "transformer KV-cache": {
+   "ms_per_token": 9.258,
+   "mJ_per_token_above_idle": -13.49,
+   "kv_cache_MB_used": 4.33
+  },
+  "L GraphStepper": {
+   "ms_per_token": 1.378,
+   "mJ_per_token_above_idle": -0.79,
+   "state_MB": 0.456
+  }
+ },
+ "ctx 1024": {
+  "transformer KV-cache": {
+   "ms_per_token": 9.396,
+   "mJ_per_token_above_idle": 54.5,
+   "kv_cache_MB_used": 17.3
+  },
+  "L GraphStepper": {
+   "ms_per_token": 1.286,
+   "mJ_per_token_above_idle": 11.42,
+   "state_MB": 0.456
+  }
+ },
+ "ctx 4096": {
+  "transformer KV-cache": {
+   "ms_per_token": 8.741,
+   "mJ_per_token_above_idle": 122.15,
+   "kv_cache_MB_used": 69.21
+  },
+  "L GraphStepper": {
+   "ms_per_token": 1.289,
+   "mJ_per_token_above_idle": 14.18,
+   "state_MB": 0.456
+  }
+ },
+ "ctx 16384": {
+  "transformer KV-cache": {
+   "ms_per_token": 25.433,
+   "mJ_per_token_above_idle": 518.11,
+   "kv_cache_MB_used": 276.82
+  },
+  "L GraphStepper": {
+   "ms_per_token": 1.349,
+   "mJ_per_token_above_idle": 14.29,
+   "state_MB": 0.456
+  }
+ }
+}

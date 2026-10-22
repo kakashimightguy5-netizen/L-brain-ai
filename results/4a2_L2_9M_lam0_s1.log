@@ -1,0 +1,20 @@
+lscan: compiled scan unavailable, using torch chunked scan: RuntimeError
+cuscan self-test max error 1.91e-06 -> ON
+L2_9M_lam0_s1b 0 3.708 5s gpu_mem_GB 2.32
+L2_9M_lam0_s1b 50 2.189 76s gpu_mem_GB 2.46
+L2_9M_lam0_s1b 100 1.902 150s gpu_mem_GB 2.46
+L2_9M_lam0_s1b 150 1.577 220s gpu_mem_GB 2.46
+L2_9M_lam0_s1b 200 1.568 293s gpu_mem_GB 2.46
+L2_9M_lam0_s1b 250 1.442 364s gpu_mem_GB 2.46
+L2_9M_lam0_s1b 300 1.381 437s gpu_mem_GB 2.46
+L2_9M_lam0_s1b 350 1.217 507s gpu_mem_GB 2.46
+L2_9M_lam0_s1b 400 1.28 581s gpu_mem_GB 2.46
+L2_9M_lam0_s1b 450 1.224 651s gpu_mem_GB 2.46
+L2_9M_lam0_s1b 500 1.169 721s gpu_mem_GB 2.46
+L2_9M_lam0_s1b 550 1.025 789s gpu_mem_GB 2.46
+L2_9M_lam0_s1b 600 1.044 861s gpu_mem_GB 2.46
+L2_9M_lam0_s1b 650 0.993 935s gpu_mem_GB 2.46
+L2_9M_lam0_s1b 700 1.114 1007s gpu_mem_GB 2.46
+L2_9M_lam0_s1b 750 1.035 1081s gpu_mem_GB 2.46
+L2_9M_lam0_s1b 800 1.013 1151s gpu_mem_GB 2.46
+L2_9M_lam0_s1b 850 0.937 1222s gpu_mem_GB 2.46

@@ -1,0 +1,15 @@
+{
+ "variant": "t_eager",
+ "config": {
+  "comp": 0,
+  "bf16": 0
+ },
+ "params": 1234192,
+ "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+ "compile_s": 0.4,
+ "ms_per_step_median": 95.19,
+ "kernels_per_step": 342,
+ "mJ_per_token": 0.9103,
+ "mJ_per_token_std": 0.0948,
+ "avg_W": 39.09
+}

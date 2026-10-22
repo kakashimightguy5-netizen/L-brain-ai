@@ -1,0 +1,47 @@
+{
+ "device": "cuda",
+ "homeo": 0,
+ "name": "L1TG_s0",
+ "model": "L1TG",
+ "seed": 0,
+ "steps": 3000,
+ "lam": 0.03,
+ "fuzzy": 1,
+ "block": 0,
+ "params": 1178021,
+ "train_minutes": 15.5,
+ "sec_per_step": 0.31,
+ "val_bits_per_byte": 1.3486,
+ "active_neurons_per_layer [state, ffn]": [
+  [
+   0.332,
+   0.071
+  ],
+  [
+   0.556,
+   0.087
+  ],
+  [
+   0.58,
+   0.098
+  ],
+  [
+   0.561,
+   0.108
+  ]
+ ],
+ "copy": {
+  "exact n=120": 0.9375,
+  "exact n=512": 0.9585,
+  "exact n=2048": 0.9513,
+  "typos5% n=120": 0.9368,
+  "typos5% n=512": 0.9168,
+  "typos5% n=2048": 0.8972,
+  "renamed n=120": 0.7781,
+  "renamed n=512": 0.8294,
+  "renamed n=2048": 0.859,
+  "exact n=512 (trajectory OFF)": 0.9351,
+  "typos5% n=512 (trajectory OFF)": 0.8424,
+  "renamed n=512 (trajectory OFF)": 0.7803
+ }
+}

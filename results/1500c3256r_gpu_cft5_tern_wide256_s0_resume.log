@@ -1,0 +1,9 @@
+lscan: compiled scan unavailable, using torch chunked scan: RuntimeError
+STUDENT_D 256 fresh init (wider student, KD from teacher)
+QAT ternary on 33 matrices
+cuscan self-test failed -> OFF: RuntimeError('element 0 of tensors does not require grad and does not have a grad_fn')
+cft5_tern_wide256_s0 params 3314213 teacher 0.8936 svd-init 4.1374
+cft5_tern_wide256_s0 RESUMED at step 7500
+cft5_tern_wide256_s0 step 8000 bpb 0.8255 -7.62% 546s
+cft5_tern_wide256_s0 step 10000 bpb 0.8009 -10.37% 2713s
+cft5_tern_wide256_s0 step 12000 bpb 0.7863 -12.00% 4885s

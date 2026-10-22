@@ -1,0 +1,115 @@
+lscan: compiled scan unavailable, using torch chunked scan: RuntimeError
+cuscan self-test max error 1.91e-06 -> ON
+E_G4_s1 0 4.13 1s gpu_mem_GB 0.61
+E_G4_s1 50 2.825 7s gpu_mem_GB 0.62
+E_G4_s1 100 1.997 11s gpu_mem_GB 0.62
+E_G4_s1 150 1.569 16s gpu_mem_GB 0.62
+E_G4_s1 200 1.725 21s gpu_mem_GB 0.62
+E_G4_s1 250 1.787 26s gpu_mem_GB 0.62
+E_G4_s1 300 1.402 31s gpu_mem_GB 0.62
+E_G4_s1 350 1.586 36s gpu_mem_GB 0.62
+E_G4_s1 400 1.492 41s gpu_mem_GB 0.62
+E_G4_s1 450 1.415 46s gpu_mem_GB 0.62
+E_G4_s1 500 1.252 51s gpu_mem_GB 0.62
+E_G4_s1 550 1.277 56s gpu_mem_GB 0.62
+E_G4_s1 600 1.246 61s gpu_mem_GB 0.62
+E_G4_s1 650 1.291 66s gpu_mem_GB 0.62
+E_G4_s1 700 1.167 72s gpu_mem_GB 0.62
+E_G4_s1 750 1.172 77s gpu_mem_GB 0.62
+E_G4_s1 800 1.276 82s gpu_mem_GB 0.62
+E_G4_s1 850 1.264 86s gpu_mem_GB 0.62
+E_G4_s1 900 1.164 91s gpu_mem_GB 0.62
+E_G4_s1 950 1.22 97s gpu_mem_GB 0.62
+E_G4_s1 1000 1.124 102s gpu_mem_GB 0.62
+E_G4_s1 1050 1.105 107s gpu_mem_GB 0.62
+E_G4_s1 1100 1.083 113s gpu_mem_GB 0.62
+E_G4_s1 1150 1.148 117s gpu_mem_GB 0.62
+E_G4_s1 1200 1.104 122s gpu_mem_GB 0.62
+E_G4_s1 1250 1.22 127s gpu_mem_GB 0.62
+E_G4_s1 1300 1.16 133s gpu_mem_GB 0.62
+E_G4_s1 1350 1.003 138s gpu_mem_GB 0.62
+E_G4_s1 1400 1.071 143s gpu_mem_GB 0.62
+E_G4_s1 1450 1.15 148s gpu_mem_GB 0.62
+E_G4_s1 1500 0.926 153s gpu_mem_GB 0.62
+E_G4_s1 1550 0.952 159s gpu_mem_GB 0.62
+E_G4_s1 1600 1.098 164s gpu_mem_GB 0.62
+E_G4_s1 1650 1.146 170s gpu_mem_GB 0.62
+E_G4_s1 1700 0.962 175s gpu_mem_GB 0.62
+E_G4_s1 1750 1.044 180s gpu_mem_GB 0.62
+E_G4_s1 1800 0.974 185s gpu_mem_GB 0.62
+E_G4_s1 1850 1.095 189s gpu_mem_GB 0.62
+E_G4_s1 1900 1.058 195s gpu_mem_GB 0.62
+E_G4_s1 1950 1.027 200s gpu_mem_GB 0.62
+E_G4_s1 2000 1.242 205s gpu_mem_GB 0.62
+E_G4_s1 2050 0.978 210s gpu_mem_GB 0.62
+E_G4_s1 2100 1.065 215s gpu_mem_GB 0.62
+E_G4_s1 2150 0.89 219s gpu_mem_GB 0.62
+E_G4_s1 2200 0.983 224s gpu_mem_GB 0.62
+E_G4_s1 2250 1.067 229s gpu_mem_GB 0.62
+E_G4_s1 2300 0.967 235s gpu_mem_GB 0.62
+E_G4_s1 2350 1.091 239s gpu_mem_GB 0.62
+E_G4_s1 2400 1.156 244s gpu_mem_GB 0.62
+E_G4_s1 2450 1.03 250s gpu_mem_GB 0.62
+E_G4_s1 2500 1.102 255s gpu_mem_GB 0.62
+E_G4_s1 2550 0.989 260s gpu_mem_GB 0.62
+E_G4_s1 2600 1.0 267s gpu_mem_GB 0.62
+E_G4_s1 2650 0.903 275s gpu_mem_GB 0.62
+E_G4_s1 2700 0.983 281s gpu_mem_GB 0.62
+E_G4_s1 2750 0.942 286s gpu_mem_GB 0.62
+E_G4_s1 2800 0.986 291s gpu_mem_GB 0.62
+E_G4_s1 2850 1.059 297s gpu_mem_GB 0.62
+E_G4_s1 2900 0.791 302s gpu_mem_GB 0.62
+E_G4_s1 2950 1.009 307s gpu_mem_GB 0.62
+E_G4_s1 exact 120 0.9479
+E_G4_s1 exact 512 0.9604
+E_G4_s1 exact 2048 0.951
+E_G4_s1 typos5% 120 0.9368
+E_G4_s1 typos5% 512 0.9173
+E_G4_s1 typos5% 2048 0.8961
+E_G4_s1 renamed 120 0.7912
+E_G4_s1 renamed 512 0.8312
+E_G4_s1 renamed 2048 0.8649
+{
+ "device": "cuda",
+ "homeo": 1,
+ "name": "E_G4_s1",
+ "model": "L5",
+ "seed": 1,
+ "steps": 3000,
+ "lam": 0.03,
+ "fuzzy": 1,
+ "block": 0,
+ "params": 936357,
+ "train_minutes": 5.2,
+ "sec_per_step": 0.104,
+ "val_bits_per_byte": 1.3655,
+ "active_neurons_per_layer [state, ffn]": [
+  [
+   0.401,
+   0.032
+  ],
+  [
+   0.455,
+   0.032
+  ],
+  [
+   0.454,
+   0.031
+  ],
+  [
+   0.408,
+   0.033
+  ]
+ ],
+ "copy": {
+  "exact n=120": 0.9479,
+  "exact n=512": 0.9604,
+  "exact n=2048": 0.951,
+  "typos5% n=120": 0.9368,
+  "typos5% n=512": 0.9173,
+  "typos5% n=2048": 0.8961,
+  "renamed n=120": 0.7912,
+  "renamed n=512": 0.8312,
+  "renamed n=2048": 0.8649
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "variant": "c_cuscan",
+ "config": {
+  "ste": 1,
+  "scan": "cuscan",
+  "bf16": 0,
+  "comp": 1
+ },
+ "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+ "batch": [
+  16,
+  256
+ ],
+ "note": "shares the GPU with other running jobs",
+ "compile_s": 131.4,
+ "init_loss": 5.70128,
+ "max_logit_diff_vs_eager": 0.045879870653152466,
+ "grad_cosine_vs_eager": 1.000131607055664,
+ "ms_per_step_median": 277.96,
+ "ms_all": [
+  278.5,
+  279.3,
+  276.9,
+  276.2,
+  278.0
+ ],
+ "kernels_per_step": 1133,
+ "mJ_per_token": 2.6171,
+ "mJ_per_token_std": 0.1047,
+ "avg_W": 38.45,
+ "throttle": [],
+ "last_loss": 0.2968
+}

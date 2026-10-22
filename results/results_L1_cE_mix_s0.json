@@ -1,0 +1,44 @@
+{
+ "device": "cuda",
+ "homeo": 1,
+ "name": "cE_mix_s0",
+ "model": "L5",
+ "seed": 0,
+ "steps": 3000,
+ "lam": 0.03,
+ "fuzzy": 1,
+ "block": 0,
+ "params": 953125,
+ "train_minutes": 28.6,
+ "sec_per_step": 0.572,
+ "val_bits_per_byte": 1.3417,
+ "active_neurons_per_layer [state, ffn]": [
+  [
+   0.39,
+   0.089
+  ],
+  [
+   0.485,
+   0.099
+  ],
+  [
+   0.472,
+   0.103
+  ],
+  [
+   0.377,
+   0.101
+  ]
+ ],
+ "copy": {
+  "exact n=120": 0.9458,
+  "exact n=512": 0.9619,
+  "exact n=2048": 0.9536,
+  "typos5% n=120": 0.9369,
+  "typos5% n=512": 0.9183,
+  "typos5% n=2048": 0.8965,
+  "renamed n=120": 0.7989,
+  "renamed n=512": 0.82,
+  "renamed n=2048": 0.8616
+ }
+}

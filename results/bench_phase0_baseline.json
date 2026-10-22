@@ -1,0 +1,171 @@
+{
+ "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+ "tag": "phase0_baseline",
+ "d": 352,
+ "layers": 6,
+ "note": "all numbers measured on this machine in this run",
+ "idle_W": 11.64,
+ "L": {
+  "params": 8855973,
+  "train": {
+   "batch": 32,
+   "ms_per_step": 617.0,
+   "tokens_per_s": 13277,
+   "peak_VRAM_GB": 4.66,
+   "kernel_launches_per_step": 3361,
+   "energy": {
+    "seconds": 12.53,
+    "tokens": 163840,
+    "J_power_samples": 586.37,
+    "J_counter": 613.03,
+    "mJ_per_token_total": 3.5789,
+    "mJ_per_token_above_idle": 2.6885,
+    "avg_W": 46.8
+   }
+  },
+  "forward_breakdown_ms": {
+   "fast-weight memory": 115.8,
+   "membrane+spikes+FFN layer": 64.6,
+   "hippocampus index": 11.0,
+   "trajectory replay": 11.0,
+   "model forward total (incl. replay)": 204.0
+  },
+  "firing": {
+   "batch 1": [
+    {
+     "state_active": 0.7261,
+     "ffn_active": 0.2439,
+     "ffn_union_over_batch_per_token": null
+    },
+    {
+     "state_active": 0.7085,
+     "ffn_active": 0.2733,
+     "ffn_union_over_batch_per_token": null
+    },
+    {
+     "state_active": 0.7144,
+     "ffn_active": 0.2243,
+     "ffn_union_over_batch_per_token": null
+    },
+    {
+     "state_active": 0.7158,
+     "ffn_active": 0.2055,
+     "ffn_union_over_batch_per_token": null
+    },
+    {
+     "state_active": 0.7235,
+     "ffn_active": 0.2344,
+     "ffn_union_over_batch_per_token": null
+    },
+    {
+     "state_active": 0.7396,
+     "ffn_active": 0.1248,
+     "ffn_union_over_batch_per_token": null
+    }
+   ],
+   "batch 32": [
+    {
+     "state_active": 0.7131,
+     "ffn_active": 0.261,
+     "ffn_union_over_batch_per_token": 0.9652
+    },
+    {
+     "state_active": 0.6985,
+     "ffn_active": 0.2279,
+     "ffn_union_over_batch_per_token": 0.9616
+    },
+    {
+     "state_active": 0.7061,
+     "ffn_active": 0.1899,
+     "ffn_union_over_batch_per_token": 0.9009
+    },
+    {
+     "state_active": 0.7073,
+     "ffn_active": 0.1735,
+     "ffn_union_over_batch_per_token": 0.8494
+    },
+    {
+     "state_active": 0.7225,
+     "ffn_active": 0.181,
+     "ffn_union_over_batch_per_token": 0.8643
+    },
+    {
+     "state_active": 0.7377,
+     "ffn_active": 0.0818,
+     "ffn_union_over_batch_per_token": 0.5661
+    }
+   ]
+  },
+  "inference_full_window": {
+   "batch 1": {
+    "tokens_per_s": 1438,
+    "mJ_per_token_above_idle": 7.205,
+    "mJ_per_token_total": 15.2831
+   },
+   "batch 8": {
+    "tokens_per_s": 10039,
+    "mJ_per_token_above_idle": 0.4612,
+    "mJ_per_token_total": 1.618
+   },
+   "batch 64": {
+    "tokens_per_s": 39961,
+    "mJ_per_token_above_idle": 0.9464,
+    "mJ_per_token_total": 1.2377
+   }
+  },
+  "inference_token_by_token": {
+   "batch 1": {
+    "tokens_per_s": 18,
+    "ms_per_step": 55.78,
+    "mJ_per_token_above_idle": -7.0809
+   },
+   "batch 8": {
+    "tokens_per_s": 152,
+    "ms_per_step": 52.5,
+    "mJ_per_token_above_idle": -10.643
+   },
+   "batch 64": {
+    "tokens_per_s": 892,
+    "ms_per_step": 71.72,
+    "mJ_per_token_above_idle": -0.2646
+   }
+  }
+ },
+ "T": {
+  "params": 9219840,
+  "train": {
+   "batch": 32,
+   "ms_per_step": 193.7,
+   "tokens_per_s": 42295,
+   "peak_VRAM_GB": 1.68,
+   "kernel_launches_per_step": 288,
+   "energy": {
+    "seconds": 3.86,
+    "tokens": 163840,
+    "J_power_samples": 191.63,
+    "J_counter": 209.2,
+    "mJ_per_token_total": 1.1696,
+    "mJ_per_token_above_idle": 0.895,
+    "avg_W": 49.6
+   }
+  },
+  "inference_full_window": {
+   "batch 1": {
+    "tokens_per_s": 25600,
+    "mJ_per_token_above_idle": 1.4216,
+    "mJ_per_token_total": 1.8857
+   },
+   "batch 8": {
+    "tokens_per_s": 136533,
+    "mJ_per_token_above_idle": 0.2658,
+    "mJ_per_token_total": 0.3527
+   },
+   "batch 64": {
+    "tokens_per_s": 146286,
+    "mJ_per_token_above_idle": 0.2658,
+    "mJ_per_token_total": 0.3457
+   }
+  }
+ },
+ "wall_plug": "For a wall-plug check: read the meter (W) at idle for 1 min, then during each phase above; energy = (W_load - W_idle) x seconds."
+}

@@ -1,0 +1,135 @@
+lscan: compiled scan unavailable, using torch chunked scan: RuntimeError
+cuscan self-test max error 1.43e-06 -> ON
+segment 2 0 4.654 3s
+segment 2 250 1.574 116s
+segment 2 500 1.434 232s
+segment 2 750 1.25 349s
+segment 2 1000 1.232 466s
+segment 2 1250 1.295 583s
+segment 2 1500 1.214 697s
+segment 2 1750 1.076 816s
+segment 2 2000 1.174 932s
+segment 2 2250 1.201 1051s
+segment 2 2500 1.048 1167s
+segment 2 2750 1.154 1286s
+{
+ "mode": "segment",
+ "seed": 2,
+ "experts": 4,
+ "params_total": 1158789,
+ "minutes": 23.4,
+ "ffn_params_total": 336384,
+ "ffn_params_active_per_byte": 84096,
+ "bits_per_byte": {
+  "Python": 1.5202,
+  "JavaScript": 1.0933,
+  "C": 1.8262
+ },
+ "bits_per_byte_mean": 1.4799,
+ "routing": {
+  "layer0": {
+   "MI(expert;domain)/H(domain)": 0.068,
+   "switches_per_1000_bytes": 7.2,
+   "confusion [expert x domain] (share of bytes)": [
+    [
+     0.1315,
+     0.0977,
+     0.0217
+    ],
+    [
+     0.0838,
+     0.0833,
+     0.0833
+    ],
+    [
+     0.0534,
+     0.1081,
+     0.1528
+    ],
+    [
+     0.0647,
+     0.0443,
+     0.0755
+    ]
+   ]
+  },
+  "layer1": {
+   "MI(expert;domain)/H(domain)": 0.3148,
+   "switches_per_1000_bytes": 5.7,
+   "confusion [expert x domain] (share of bytes)": [
+    [
+     0.0998,
+     0.0872,
+     0.1072
+    ],
+    [
+     0.2283,
+     0.0043,
+     0.0217
+    ],
+    [
+     0.0004,
+     0.0938,
+     0.0742
+    ],
+    [
+     0.0048,
+     0.148,
+     0.1302
+    ]
+   ]
+  },
+  "layer2": {
+   "MI(expert;domain)/H(domain)": 0.4769,
+   "switches_per_1000_bytes": 4.9,
+   "confusion [expert x domain] (share of bytes)": [
+    [
+     0.0833,
+     0.0833,
+     0.0833
+    ],
+    [
+     0.0143,
+     0.2418,
+     0.023
+    ],
+    [
+     0.2161,
+     0.0052,
+     0.0156
+    ],
+    [
+     0.0195,
+     0.003,
+     0.2114
+    ]
+   ]
+  },
+  "layer3": {
+   "MI(expert;domain)/H(domain)": 0.3431,
+   "switches_per_1000_bytes": 5.5,
+   "confusion [expert x domain] (share of bytes)": [
+    [
+     0.1693,
+     0.0113,
+     0.059
+    ],
+    [
+     0.0343,
+     0.2335,
+     0.0056
+    ],
+    [
+     0.0464,
+     0.0052,
+     0.1853
+    ],
+    [
+     0.0833,
+     0.0833,
+     0.0833
+    ]
+   ]
+  }
+ }
+}

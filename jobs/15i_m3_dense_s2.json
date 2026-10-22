@@ -1,0 +1,1 @@
+{"script": "train_m3.py", "args": ["dense", "2", "3000"], "env": {"WAITFOR": "15h_m3_segment_s1.done", "SPIKEK": "8", "DELTAKERN": "0", "SPIKE_MASK": "0", "FASTMEM": "1", "RECORD": "0"}, "device": "gpu"}

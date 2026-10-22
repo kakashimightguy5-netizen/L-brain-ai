@@ -1,0 +1,52 @@
+{
+ "device": "cuda",
+ "homeo": 1,
+ "name": "G_L5h8_4M_long_s0",
+ "model": "L5",
+ "seed": 0,
+ "steps": 6000,
+ "lam": 0.01,
+ "fuzzy": 1,
+ "block": 0,
+ "params": 3969181,
+ "train_minutes": 53.2,
+ "sec_per_step": 0.532,
+ "val_bits_per_byte": 1.0645,
+ "active_neurons_per_layer [state, ffn]": [
+  [
+   0.348,
+   0.044
+  ],
+  [
+   0.556,
+   0.051
+  ],
+  [
+   0.633,
+   0.071
+  ],
+  [
+   0.646,
+   0.084
+  ],
+  [
+   0.632,
+   0.084
+  ],
+  [
+   0.561,
+   0.113
+  ]
+ ],
+ "copy": {
+  "exact n=120": 0.9458,
+  "exact n=512": 0.958,
+  "exact n=2048": 0.9526,
+  "typos5% n=120": 0.941,
+  "typos5% n=512": 0.9178,
+  "typos5% n=2048": 0.8986,
+  "renamed n=120": 0.7686,
+  "renamed n=512": 0.8202,
+  "renamed n=2048": 0.8702
+ }
+}

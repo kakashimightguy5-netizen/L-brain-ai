@@ -1,0 +1,28 @@
+{
+ "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+ "params": 8855973,
+ "batch": [
+  32,
+  256
+ ],
+ "pytorch memory (old)": {
+  "ms_per_step": 618.3,
+  "max_loss_diff_vs_old": 0.0,
+  "final_loss": 2.1323
+ },
+ "fused kernel": {
+  "ms_per_step": 1163.7,
+  "max_loss_diff_vs_old": 0.0912,
+  "final_loss": 2.1334
+ },
+ "fused kernel + bf16": {
+  "ms_per_step": 1084.7,
+  "max_loss_diff_vs_old": 0.1053,
+  "final_loss": 2.1006
+ },
+ "forward breakdown ms": {
+  "delta memory (x6)": 101.2,
+  "spiking layer (x6)": 62.9,
+  "total": 200.8
+ }
+}

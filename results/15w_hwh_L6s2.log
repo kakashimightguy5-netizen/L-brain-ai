@@ -1,0 +1,15 @@
+lscan: compiled scan unavailable, using torch chunked scan: RuntimeError
+cal saved (50000, 6, 352) (50000, 6, 704) bpb 0.9860491156578064
+eval saved (50000, 6, 352) (50000, 6, 704) bpb 1.0128551721572876
+== h1_energy_proportionality
+{'model': 'L6s2', 'tokens': 50000.0, 'events_per_token_mean': 1395.1954, 'events_p5': 1178.0, 'events_p95': 1598.0, 'events_dynamic_range_p95_over_p5': 1.3565, 'spearman_events_vs_loss': 0.0059, 'spearman_events_vs_confidence': 0.0031, 'events_hardest_over_easiest_decile': 1.0167, 'work_fraction_of_dense_mean': 0.7896, 'work_hardest_over_easiest_decile': 1.0012, 'dense_share_of_work': 0.9248, 'loss_hardest_over_easiest_decile': 6371.3335, 'est_energy_nJ_per_token_mean': 9662.3469, 'est_energy_nJ_dense_ref': 12236.3085}
+== h2_prefetch
+{'model': 'L6s2', 'predictor': '(Jaccard A_t vs A_t-1)', 'hit': 0.1516, 'waste': '', 'fetched_per_token': '', 'needed_per_token': '', 'go': '', 'note': 'mean over tokens'}
+{'model': 'L6s2', 'predictor': 'last step', 'hit': np.float64(0.2166), 'waste': np.float64(0.7834), 'fetched_per_token': np.float64(228.3), 'needed_per_token': np.float64(228.3), 'go': False, 'note': ''}
+{'model': 'L6s2', 'predictor': 'union of last 2 steps', 'hit': np.float64(0.3111), 'waste': np.float64(1.4722), 'fetched_per_token': np.float64(407.1), 'needed_per_token': np.float64(228.3), 'go': False, 'note': ''}
+{'model': 'L6s2', 'predictor': 'union of last 4 steps', 'hit': np.float64(0.3816), 'waste': np.float64(2.1375), 'fetched_per_token': np.float64(575.0), 'needed_per_token': np.float64(228.3), 'go': False, 'note': ''}
+{'model': 'L6s2', 'predictor': 'union of last 8 steps', 'hit': np.float64(0.4324), 'waste': np.float64(2.7846), 'fetched_per_token': np.float64(734.3), 'needed_per_token': np.float64(228.3), 'go': False, 'note': ''}
+{'model': 'L6s2', 'predictor': 'byte table P>=0.1', 'hit': np.float64(0.569), 'waste': np.float64(2.5922), 'fetched_per_token': np.float64(721.6), 'needed_per_token': np.float64(228.3), 'go': False, 'note': 'fitted on CAL'}
+{'model': 'L6s2', 'predictor': 'byte table P>=0.2', 'hit': np.float64(0.346), 'waste': np.float64(0.9348), 'fetched_per_token': np.float64(292.4), 'needed_per_token': np.float64(228.3), 'go': False, 'note': 'fitted on CAL'}
+{'model': 'L6s2', 'predictor': 'byte table P>=0.3', 'hit': np.float64(0.2198), 'waste': np.float64(0.3943), 'fetched_per_token': np.float64(140.2), 'needed_per_token': np.float64(228.3), 'go': False, 'note': 'fitted on CAL'}
+{'model': 'L6s2', 'predictor': 'byte table P>=0.5', 'hit': np.float64(0.1037), 'waste': np.float64(0.0902), 'fetched_per_token': np.float64(44.3), 'needed_per_token': np.float64(228.3), 'go': False, 'note': 'fitted on CAL'}

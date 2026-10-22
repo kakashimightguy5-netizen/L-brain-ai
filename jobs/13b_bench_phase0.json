@@ -1,0 +1,1 @@
+{"script": "l_bench.py", "args": ["phase0_baseline"], "env": {"WAITFOR": "", "SPIKEK": "8", "DM": "352", "DELTAKERN": "0"}, "device": "gpu"}

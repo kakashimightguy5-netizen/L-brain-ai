@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "D:\AI\SpikingBrain-study\L-architecture\code\hwh_traces.py", line 11, in <module>
+    print('==', s, flush=True); sys.argv = [s + '.py', tag]; runpy.run_path(os.path.join(HERE, s + '.py'), run_name='__main__')
+                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\AI\SpikingBrain-study\L-architecture\code\h2_prefetch.py", line 34, in <module>
+    score('last step \u222a byte table P>=0.3', prev | (pb[E['inbyte']] >= 0.3), 'fitted on CAL')
+  File "D:\AI\SpikingBrain-study\L-architecture\code\h2_prefetch.py", line 18, in score
+    go=bool(inter / nA >= .7 and (pred - inter) / nA <= 1), note=extra)); print(rows[-1])
+                                                                          ^^^^^^^^^^^^^^^
+  File "C:\Users\kakas\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u222a' in position 42: character maps to <undefined>

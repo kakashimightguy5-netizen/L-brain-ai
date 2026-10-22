@@ -1,0 +1,300 @@
+{
+ "gpu_before": {
+  "name": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "power_limit_W": null,
+  "default_power_limit_W": 35.0,
+  "power_limit_range_W": [
+   1.0,
+   55.0
+  ],
+  "sm_clock_max_MHz": 2100,
+  "mem_clock_max_MHz": 5501,
+  "energy_counter_supported": true,
+  "rapl_readable": false,
+  "on_mains": null
+ },
+ "attempts": [
+  {
+   "cmd": "nvidia-smi -pl None",
+   "rc": 0,
+   "out": "Changing power management limit is not supported in current scope for GPU: 00000000:01:00.0.\nAll done."
+  }
+ ],
+ "mode": "pl",
+ "results": [
+  {
+   "setting": "pl 55",
+   "rc": 0,
+   "msg": "Changing power management limit is not supported in current scope for GPU: 00000000:01:00.0.\nAll done.",
+   "L training (6 steps x 32 x 256)": {
+    "n": 3,
+    "mJ_per_token_mean": 3.6237,
+    "mJ_per_token_std": 0.0536,
+    "mJ_per_token_above_idle_mean": 2.7508,
+    "mJ_per_token_above_idle_std": 0.0551,
+    "seconds_mean": 3.8275,
+    "avg_W_mean": 46.54,
+    "peak_W_max": 56.2,
+    "temp_max_C": 70,
+    "temp_rise_C": 3,
+    "counter_vs_samples_rel_diff_max": 0.0597,
+    "throttle_reasons": [
+     "SwPowerCap"
+    ]
+   },
+   "L batch-1 generation (512 bytes)": {
+    "n": 3,
+    "mJ_per_token_mean": 28.7624,
+    "mJ_per_token_std": 3.7422,
+    "mJ_per_token_above_idle_mean": 14.6302,
+    "mJ_per_token_above_idle_std": 3.6412,
+    "seconds_mean": 0.6454,
+    "avg_W_mean": 22.8,
+    "peak_W_max": 27.19,
+    "temp_max_C": 66,
+    "temp_rise_C": -1,
+    "counter_vs_samples_rel_diff_max": 0.2174,
+    "throttle_reasons": []
+   },
+   "Transformer training (6 x 32 x 256)": {
+    "n": 3,
+    "mJ_per_token_mean": 1.1692,
+    "mJ_per_token_std": 0.0875,
+    "mJ_per_token_above_idle_mean": 0.898,
+    "mJ_per_token_above_idle_std": 0.0869,
+    "seconds_mean": 1.1889,
+    "avg_W_mean": 48.33,
+    "peak_W_max": 53.99,
+    "temp_max_C": 71,
+    "temp_rise_C": 1,
+    "counter_vs_samples_rel_diff_max": 0.106,
+    "throttle_reasons": [
+     "SwPowerCap"
+    ]
+   }
+  },
+  {
+   "setting": "pl 44",
+   "rc": 0,
+   "msg": "Changing power management limit is not supported in current scope for GPU: 00000000:01:00.0.\nAll done.",
+   "L training (6 steps x 32 x 256)": {
+    "n": 3,
+    "mJ_per_token_mean": 3.662,
+    "mJ_per_token_std": 0.1458,
+    "mJ_per_token_above_idle_mean": 2.7898,
+    "mJ_per_token_above_idle_std": 0.1442,
+    "seconds_mean": 3.8245,
+    "avg_W_mean": 47.06,
+    "peak_W_max": 54.94,
+    "temp_max_C": 71,
+    "temp_rise_C": 2,
+    "counter_vs_samples_rel_diff_max": 0.1021,
+    "throttle_reasons": [
+     "SwPowerCap"
+    ]
+   },
+   "L batch-1 generation (512 bytes)": {
+    "n": 3,
+    "mJ_per_token_mean": 30.3672,
+    "mJ_per_token_std": 4.8172,
+    "mJ_per_token_above_idle_mean": 16.0677,
+    "mJ_per_token_above_idle_std": 4.7761,
+    "seconds_mean": 0.6531,
+    "avg_W_mean": 23.8,
+    "peak_W_max": 27.94,
+    "temp_max_C": 67,
+    "temp_rise_C": -1,
+    "counter_vs_samples_rel_diff_max": 0.2822,
+    "throttle_reasons": []
+   },
+   "Transformer training (6 x 32 x 256)": {
+    "n": 3,
+    "mJ_per_token_mean": 1.1661,
+    "mJ_per_token_std": 0.0465,
+    "mJ_per_token_above_idle_mean": 0.8971,
+    "mJ_per_token_above_idle_std": 0.0466,
+    "seconds_mean": 1.1794,
+    "avg_W_mean": 48.6,
+    "peak_W_max": 63.42,
+    "temp_max_C": 72,
+    "temp_rise_C": 1,
+    "counter_vs_samples_rel_diff_max": 0.114,
+    "throttle_reasons": [
+     "SwPowerCap"
+    ]
+   }
+  },
+  {
+   "setting": "pl 33",
+   "rc": 0,
+   "msg": "Changing power management limit is not supported in current scope for GPU: 00000000:01:00.0.\nAll done.",
+   "L training (6 steps x 32 x 256)": {
+    "n": 3,
+    "mJ_per_token_mean": 3.5551,
+    "mJ_per_token_std": 0.1767,
+    "mJ_per_token_above_idle_mean": 2.6832,
+    "mJ_per_token_above_idle_std": 0.1765,
+    "seconds_mean": 3.8228,
+    "avg_W_mean": 45.71,
+    "peak_W_max": 52.72,
+    "temp_max_C": 71,
+    "temp_rise_C": 1,
+    "counter_vs_samples_rel_diff_max": 0.1173,
+    "throttle_reasons": [
+     "SwPowerCap"
+    ]
+   },
+   "L batch-1 generation (512 bytes)": {
+    "n": 3,
+    "mJ_per_token_mean": 31.0228,
+    "mJ_per_token_std": 4.5692,
+    "mJ_per_token_above_idle_mean": 16.918,
+    "mJ_per_token_above_idle_std": 4.4593,
+    "seconds_mean": 0.6442,
+    "avg_W_mean": 24.64,
+    "peak_W_max": 27.68,
+    "temp_max_C": 68,
+    "temp_rise_C": -1,
+    "counter_vs_samples_rel_diff_max": 0.1694,
+    "throttle_reasons": []
+   },
+   "Transformer training (6 x 32 x 256)": {
+    "n": 3,
+    "mJ_per_token_mean": 1.0987,
+    "mJ_per_token_std": 0.0862,
+    "mJ_per_token_above_idle_mean": 0.8294,
+    "mJ_per_token_above_idle_std": 0.0869,
+    "seconds_mean": 1.1809,
+    "avg_W_mean": 45.74,
+    "peak_W_max": 58.1,
+    "temp_max_C": 72,
+    "temp_rise_C": 1,
+    "counter_vs_samples_rel_diff_max": 0.1838,
+    "throttle_reasons": [
+     "SwPowerCap"
+    ]
+   }
+  },
+  {
+   "setting": "pl 23",
+   "rc": 0,
+   "msg": "Changing power management limit is not supported in current scope for GPU: 00000000:01:00.0.\nAll done.",
+   "L training (6 steps x 32 x 256)": {
+    "n": 3,
+    "mJ_per_token_mean": 3.6566,
+    "mJ_per_token_std": 0.1008,
+    "mJ_per_token_above_idle_mean": 2.7832,
+    "mJ_per_token_above_idle_std": 0.0997,
+    "seconds_mean": 3.8296,
+    "avg_W_mean": 46.93,
+    "peak_W_max": 56.92,
+    "temp_max_C": 72,
+    "temp_rise_C": 2,
+    "counter_vs_samples_rel_diff_max": 0.0799,
+    "throttle_reasons": [
+     "SwPowerCap"
+    ]
+   },
+   "L batch-1 generation (512 bytes)": {
+    "n": 3,
+    "mJ_per_token_mean": 28.3522,
+    "mJ_per_token_std": 4.5489,
+    "mJ_per_token_above_idle_mean": 14.2083,
+    "mJ_per_token_above_idle_std": 4.5339,
+    "seconds_mean": 0.646,
+    "avg_W_mean": 22.47,
+    "peak_W_max": 27.66,
+    "temp_max_C": 68,
+    "temp_rise_C": -1,
+    "counter_vs_samples_rel_diff_max": 0.2935,
+    "throttle_reasons": []
+   },
+   "Transformer training (6 x 32 x 256)": {
+    "n": 3,
+    "mJ_per_token_mean": 1.1397,
+    "mJ_per_token_std": 0.0477,
+    "mJ_per_token_above_idle_mean": 0.8693,
+    "mJ_per_token_above_idle_std": 0.0483,
+    "seconds_mean": 1.1857,
+    "avg_W_mean": 47.25,
+    "peak_W_max": 59.45,
+    "temp_max_C": 72,
+    "temp_rise_C": 1,
+    "counter_vs_samples_rel_diff_max": 0.1294,
+    "throttle_reasons": [
+     "SwPowerCap"
+    ]
+   }
+  },
+  {
+   "setting": "pl 12",
+   "rc": 0,
+   "msg": "Changing power management limit is not supported in current scope for GPU: 00000000:01:00.0.\nAll done.",
+   "L training (6 steps x 32 x 256)": {
+    "n": 3,
+    "mJ_per_token_mean": 3.5963,
+    "mJ_per_token_std": 0.0845,
+    "mJ_per_token_above_idle_mean": 2.7208,
+    "mJ_per_token_above_idle_std": 0.0892,
+    "seconds_mean": 3.8389,
+    "avg_W_mean": 46.05,
+    "peak_W_max": 53.4,
+    "temp_max_C": 72,
+    "temp_rise_C": 2,
+    "counter_vs_samples_rel_diff_max": 0.0861,
+    "throttle_reasons": [
+     "SwPowerCap"
+    ]
+   },
+   "L batch-1 generation (512 bytes)": {
+    "n": 3,
+    "mJ_per_token_mean": 27.9154,
+    "mJ_per_token_std": 4.1079,
+    "mJ_per_token_above_idle_mean": 13.8164,
+    "mJ_per_token_above_idle_std": 4.2659,
+    "seconds_mean": 0.644,
+    "avg_W_mean": 22.22,
+    "peak_W_max": 27.65,
+    "temp_max_C": 68,
+    "temp_rise_C": -1,
+    "counter_vs_samples_rel_diff_max": 0.2257,
+    "throttle_reasons": []
+   },
+   "Transformer training (6 x 32 x 256)": {
+    "n": 3,
+    "mJ_per_token_mean": 1.1803,
+    "mJ_per_token_std": 0.1251,
+    "mJ_per_token_above_idle_mean": 0.9106,
+    "mJ_per_token_above_idle_std": 0.126,
+    "seconds_mean": 1.1826,
+    "avg_W_mean": 49.07,
+    "peak_W_max": 59.82,
+    "temp_max_C": 72,
+    "temp_rise_C": 1,
+    "counter_vs_samples_rel_diff_max": 0.1807,
+    "throttle_reasons": [
+     "SwPowerCap"
+    ]
+   }
+  }
+ ],
+ "idle_W": 11.21,
+ "restore": [
+  0,
+  "Changing power management limit is not supported in current scope for GPU: 00000000:01:00.0.\nAll done."
+ ],
+ "gpu_after": {
+  "name": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "power_limit_W": null,
+  "default_power_limit_W": 35.0,
+  "power_limit_range_W": [
+   1.0,
+   55.0
+  ],
+  "sm_clock_max_MHz": 2100,
+  "mem_clock_max_MHz": 5501,
+  "energy_counter_supported": true,
+  "rapl_readable": false,
+  "on_mains": null
+ }
+}

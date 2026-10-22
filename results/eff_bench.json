@@ -1,0 +1,537 @@
+{
+ "gpu": {
+  "name": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "power_limit_W": null,
+  "default_power_limit_W": 35.0,
+  "power_limit_range_W": [
+   1.0,
+   55.0
+  ],
+  "sm_clock_max_MHz": 2100,
+  "mem_clock_max_MHz": 5501,
+  "energy_counter_supported": true,
+  "rapl_readable": false,
+  "on_mains": null
+ },
+ "torch": "2.11.0+cu128",
+ "repeats": 5,
+ "labels": "all numbers MEASURED on this machine unless marked",
+ "idle_W": 11.08,
+ "idle_detail": {
+  "seconds": 8.0021,
+  "J_counter": 88.625,
+  "J_samples": 92.733,
+  "counter_vs_samples_rel_diff": -0.0443,
+  "n_power_samples": 1041,
+  "avg_W": 11.08,
+  "peak_W": 11.9,
+  "temp_start_C": 57,
+  "temp_end_C": 53,
+  "temp_max_C": 57,
+  "sm_clock_mean_MHz": 990,
+  "throttle_reasons": [
+   "GpuIdle"
+  ],
+  "cpu_package_J": null
+ },
+ "A_quality_matched_decode_ctx256_batch1": {
+  "L-6 9M (GraphStepper)": {
+   "bits_per_byte": 0.8721,
+   "top1_acc": 0.832,
+   "tokens_per_repeat": 3072,
+   "n": 5,
+   "mJ_per_token_mean": 30.8408,
+   "mJ_per_token_std": 0.6516,
+   "mJ_per_token_above_idle_mean": 16.6469,
+   "mJ_per_token_above_idle_std": 0.6171,
+   "seconds_mean": 3.9354,
+   "avg_W_mean": 24.08,
+   "peak_W_max": 26.88,
+   "temp_max_C": 61,
+   "temp_rise_C": 4,
+   "counter_vs_samples_rel_diff_max": 0.0927,
+   "throttle_reasons": [],
+   "mJ_per_correct_byte": 37.0669,
+   "mJ_per_correct_byte_above_idle": 20.0075,
+   "J_per_1000_output_bytes": 30.841,
+   "ms_per_token": 1.281
+  },
+  "Transformer 9M (KV cache, CUDA graph)": {
+   "bits_per_byte": 0.9134,
+   "top1_acc": 0.8298,
+   "tokens_per_repeat": 3072,
+   "n": 5,
+   "mJ_per_token_mean": 29.0576,
+   "mJ_per_token_std": 1.2109,
+   "mJ_per_token_above_idle_mean": 16.6176,
+   "mJ_per_token_above_idle_std": 1.1868,
+   "seconds_mean": 3.4491,
+   "avg_W_mean": 25.88,
+   "peak_W_max": 28.89,
+   "temp_max_C": 62,
+   "temp_rise_C": 1,
+   "counter_vs_samples_rel_diff_max": 0.095,
+   "throttle_reasons": [],
+   "mJ_per_correct_byte": 35.0196,
+   "mJ_per_correct_byte_above_idle": 20.0272,
+   "J_per_1000_output_bytes": 29.058,
+   "ms_per_token": 1.123
+  }
+ },
+ "B_batch_context_scaling": {
+  "ctx 256 | batch 1": {
+   "L": {
+    "n": 5,
+    "mJ_per_token_mean": 25.3141,
+    "mJ_per_token_std": 15.098,
+    "mJ_per_token_above_idle_mean": 11.0609,
+    "mJ_per_token_above_idle_std": 15.0312,
+    "seconds_mean": 0.1647,
+    "avg_W_mean": 19.66,
+    "peak_W_max": 26.73,
+    "temp_max_C": 61,
+    "temp_rise_C": 0,
+    "counter_vs_samples_rel_diff_max": 0.8414,
+    "throttle_reasons": [],
+    "ms_per_step": 1.287,
+    "walk_seconds": 0.5,
+    "state_MB_per_stream": 0.456
+   },
+   "T": {
+    "n": 5,
+    "mJ_per_token_mean": 55.2063,
+    "mJ_per_token_std": 9.1969,
+    "mJ_per_token_above_idle_mean": 26.0422,
+    "mJ_per_token_above_idle_std": 9.3166,
+    "seconds_mean": 0.3369,
+    "avg_W_mean": 20.99,
+    "peak_W_max": 24.95,
+    "temp_max_C": 61,
+    "temp_rise_C": 0,
+    "counter_vs_samples_rel_diff_max": 0.3892,
+    "throttle_reasons": [],
+    "ms_per_step": 2.632,
+    "kv_cache_MB": 19.6
+   }
+  },
+  "ctx 256 | batch 4": {
+   "L": {
+    "n": 5,
+    "mJ_per_token_mean": 6.3113,
+    "mJ_per_token_std": 4.7552,
+    "mJ_per_token_above_idle_mean": 2.693,
+    "mJ_per_token_above_idle_std": 4.7645,
+    "seconds_mean": 0.1672,
+    "avg_W_mean": 19.37,
+    "peak_W_max": 29.71,
+    "temp_max_C": 62,
+    "temp_rise_C": 0,
+    "counter_vs_samples_rel_diff_max": 0.8642,
+    "throttle_reasons": [],
+    "ms_per_step": 1.306,
+    "walk_seconds": 0.5,
+    "state_MB_per_stream": 0.456
+   },
+   "T": {
+    "n": 5,
+    "mJ_per_token_mean": 20.8816,
+    "mJ_per_token_std": 0.5402,
+    "mJ_per_token_above_idle_mean": 12.8871,
+    "mJ_per_token_above_idle_std": 0.5033,
+    "seconds_mean": 0.3694,
+    "avg_W_mean": 28.94,
+    "peak_W_max": 35.07,
+    "temp_max_C": 63,
+    "temp_rise_C": 0,
+    "counter_vs_samples_rel_diff_max": 0.1681,
+    "throttle_reasons": [],
+    "ms_per_step": 2.886,
+    "kv_cache_MB": 78.4
+   }
+  },
+  "ctx 256 | batch 16": {
+   "L": {
+    "n": 5,
+    "mJ_per_token_mean": 3.4233,
+    "mJ_per_token_std": 1.097,
+    "mJ_per_token_above_idle_mean": 2.1395,
+    "mJ_per_token_above_idle_std": 1.0996,
+    "seconds_mean": 0.2373,
+    "avg_W_mean": 29.56,
+    "peak_W_max": 36.06,
+    "temp_max_C": 63,
+    "temp_rise_C": 1,
+    "counter_vs_samples_rel_diff_max": 0.5306,
+    "throttle_reasons": [],
+    "ms_per_step": 1.854,
+    "walk_seconds": 0.9,
+    "state_MB_per_stream": 0.456
+   },
+   "T": {
+    "n": 5,
+    "mJ_per_token_mean": 17.4646,
+    "mJ_per_token_std": 1.9008,
+    "mJ_per_token_above_idle_mean": 11.7266,
+    "mJ_per_token_above_idle_std": 1.9267,
+    "seconds_mean": 1.0606,
+    "avg_W_mean": 33.74,
+    "peak_W_max": 38.53,
+    "temp_max_C": 65,
+    "temp_rise_C": 1,
+    "counter_vs_samples_rel_diff_max": 0.1789,
+    "throttle_reasons": [],
+    "ms_per_step": 8.286,
+    "kv_cache_MB": 313.6
+   }
+  },
+  "ctx 256 | batch 64": {
+   "L": {
+    "n": 5,
+    "mJ_per_token_mean": 2.4262,
+    "mJ_per_token_std": 0.1755,
+    "mJ_per_token_above_idle_mean": 1.7417,
+    "mJ_per_token_above_idle_std": 0.1784,
+    "seconds_mean": 0.5061,
+    "avg_W_mean": 39.28,
+    "peak_W_max": 42.1,
+    "temp_max_C": 65,
+    "temp_rise_C": 1,
+    "counter_vs_samples_rel_diff_max": 0.1428,
+    "throttle_reasons": [],
+    "ms_per_step": 3.954,
+    "walk_seconds": 2.6,
+    "state_MB_per_stream": 0.456
+   },
+   "T": {
+    "n": 5,
+    "mJ_per_token_mean": 15.7147,
+    "mJ_per_token_std": 0.5489,
+    "mJ_per_token_above_idle_mean": 11.3774,
+    "mJ_per_token_above_idle_std": 0.5432,
+    "seconds_mean": 3.2068,
+    "avg_W_mean": 40.14,
+    "peak_W_max": 44.32,
+    "temp_max_C": 68,
+    "temp_rise_C": 1,
+    "counter_vs_samples_rel_diff_max": 0.0756,
+    "throttle_reasons": [],
+    "ms_per_step": 25.053,
+    "kv_cache_MB": 1254.4
+   }
+  },
+  "ctx 2048 | batch 1": {
+   "L": {
+    "n": 5,
+    "mJ_per_token_mean": 31.475,
+    "mJ_per_token_std": 11.6485,
+    "mJ_per_token_above_idle_mean": 17.2875,
+    "mJ_per_token_above_idle_std": 11.7634,
+    "seconds_mean": 0.1639,
+    "avg_W_mean": 24.65,
+    "peak_W_max": 26.32,
+    "temp_max_C": 63,
+    "temp_rise_C": 0,
+    "counter_vs_samples_rel_diff_max": 0.4166,
+    "throttle_reasons": [],
+    "ms_per_step": 1.28,
+    "walk_seconds": 2.8,
+    "state_MB_per_stream": 0.456
+   },
+   "T": {
+    "n": 5,
+    "mJ_per_token_mean": 109.2953,
+    "mJ_per_token_std": 8.4288,
+    "mJ_per_token_above_idle_mean": 50.3219,
+    "mJ_per_token_above_idle_std": 8.2788,
+    "seconds_mean": 0.6813,
+    "avg_W_mean": 20.53,
+    "peak_W_max": 24.47,
+    "temp_max_C": 63,
+    "temp_rise_C": 0,
+    "counter_vs_samples_rel_diff_max": 0.2347,
+    "throttle_reasons": [],
+    "ms_per_step": 5.323,
+    "kv_cache_MB": 49.9
+   }
+  },
+  "ctx 2048 | batch 4": {
+   "L": {
+    "n": 5,
+    "mJ_per_token_mean": 8.7809,
+    "mJ_per_token_std": 2.2774,
+    "mJ_per_token_above_idle_mean": 5.2062,
+    "mJ_per_token_above_idle_std": 2.2604,
+    "seconds_mean": 0.1652,
+    "avg_W_mean": 27.19,
+    "peak_W_max": 29.79,
+    "temp_max_C": 63,
+    "temp_rise_C": 0,
+    "counter_vs_samples_rel_diff_max": 0.3887,
+    "throttle_reasons": [],
+    "ms_per_step": 1.291,
+    "walk_seconds": 2.7,
+    "state_MB_per_stream": 0.456
+   },
+   "T": {
+    "n": 5,
+    "mJ_per_token_mean": 43.2371,
+    "mJ_per_token_std": 2.7541,
+    "mJ_per_token_above_idle_mean": 27.9672,
+    "mJ_per_token_above_idle_std": 2.7306,
+    "seconds_mean": 0.7056,
+    "avg_W_mean": 31.37,
+    "peak_W_max": 38.42,
+    "temp_max_C": 65,
+    "temp_rise_C": 0,
+    "counter_vs_samples_rel_diff_max": 0.2224,
+    "throttle_reasons": [],
+    "ms_per_step": 5.513,
+    "kv_cache_MB": 199.5
+   }
+  },
+  "ctx 2048 | batch 16": {
+   "L": {
+    "n": 5,
+    "mJ_per_token_mean": 3.828,
+    "mJ_per_token_std": 0.7995,
+    "mJ_per_token_above_idle_mean": 2.5443,
+    "mJ_per_token_above_idle_std": 0.8045,
+    "seconds_mean": 0.2373,
+    "avg_W_mean": 33.06,
+    "peak_W_max": 36.61,
+    "temp_max_C": 65,
+    "temp_rise_C": 0,
+    "counter_vs_samples_rel_diff_max": 0.2447,
+    "throttle_reasons": [],
+    "ms_per_step": 1.854,
+    "walk_seconds": 4.1,
+    "state_MB_per_stream": 0.456
+   },
+   "T": {
+    "n": 5,
+    "mJ_per_token_mean": 41.9851,
+    "mJ_per_token_std": 2.353,
+    "mJ_per_token_above_idle_mean": 28.9117,
+    "mJ_per_token_above_idle_std": 2.3469,
+    "seconds_mean": 2.4165,
+    "avg_W_mean": 35.58,
+    "peak_W_max": 40.59,
+    "temp_max_C": 67,
+    "temp_rise_C": 1,
+    "counter_vs_samples_rel_diff_max": 0.1383,
+    "throttle_reasons": [],
+    "ms_per_step": 18.879,
+    "kv_cache_MB": 798.0
+   }
+  },
+  "ctx 2048 | batch 64": {
+   "L": {
+    "n": 5,
+    "mJ_per_token_mean": 2.4684,
+    "mJ_per_token_std": 0.4316,
+    "mJ_per_token_above_idle_mean": 1.7871,
+    "mJ_per_token_above_idle_std": 0.4317,
+    "seconds_mean": 0.5037,
+    "avg_W_mean": 40.15,
+    "peak_W_max": 42.52,
+    "temp_max_C": 67,
+    "temp_rise_C": 0,
+    "counter_vs_samples_rel_diff_max": 0.2282,
+    "throttle_reasons": [],
+    "ms_per_step": 3.935,
+    "walk_seconds": 9.5,
+    "state_MB_per_stream": 0.456
+   },
+   "T": {
+    "n": 5,
+    "mJ_per_token_mean": 37.8407,
+    "mJ_per_token_std": 2.2396,
+    "mJ_per_token_above_idle_mean": 27.5794,
+    "mJ_per_token_above_idle_std": 2.2385,
+    "seconds_mean": 7.5867,
+    "avg_W_mean": 40.86,
+    "peak_W_max": 45.14,
+    "temp_max_C": 70,
+    "temp_rise_C": 2,
+    "counter_vs_samples_rel_diff_max": 0.1703,
+    "throttle_reasons": [],
+    "ms_per_step": 59.271,
+    "kv_cache_MB": 3192.1
+   }
+  },
+  "ctx 16384 | batch 1": {
+   "L": {
+    "n": 5,
+    "mJ_per_token_mean": 30.2562,
+    "mJ_per_token_std": 9.7952,
+    "mJ_per_token_above_idle_mean": 15.8531,
+    "mJ_per_token_above_idle_std": 9.4958,
+    "seconds_mean": 0.1664,
+    "avg_W_mean": 23.17,
+    "peak_W_max": 26.42,
+    "temp_max_C": 64,
+    "temp_rise_C": 0,
+    "counter_vs_samples_rel_diff_max": 0.4084,
+    "throttle_reasons": [],
+    "ms_per_step": 1.3,
+    "walk_seconds": 21.1,
+    "state_MB_per_stream": 0.456
+   },
+   "T": {
+    "n": 5,
+    "mJ_per_token_mean": 596.6344,
+    "mJ_per_token_std": 11.8913,
+    "mJ_per_token_above_idle_mean": 303.3063,
+    "mJ_per_token_above_idle_std": 12.0885,
+    "seconds_mean": 3.3886,
+    "avg_W_mean": 22.54,
+    "peak_W_max": 24.3,
+    "temp_max_C": 63,
+    "temp_rise_C": -1,
+    "counter_vs_samples_rel_diff_max": 0.0665,
+    "throttle_reasons": [],
+    "ms_per_step": 26.473,
+    "kv_cache_MB": 292.1
+   }
+  },
+  "ctx 16384 | batch 4": {
+   "L": {
+    "n": 5,
+    "mJ_per_token_mean": 8.4711,
+    "mJ_per_token_std": 3.2073,
+    "mJ_per_token_above_idle_mean": 4.9102,
+    "mJ_per_token_above_idle_std": 3.2326,
+    "seconds_mean": 0.1645,
+    "avg_W_mean": 26.42,
+    "peak_W_max": 29.56,
+    "temp_max_C": 64,
+    "temp_rise_C": 0,
+    "counter_vs_samples_rel_diff_max": 0.4695,
+    "throttle_reasons": [],
+    "ms_per_step": 1.285,
+    "walk_seconds": 21.0,
+    "state_MB_per_stream": 0.456
+   },
+   "T": {
+    "n": 5,
+    "mJ_per_token_mean": 251.5008,
+    "mJ_per_token_std": 4.212,
+    "mJ_per_token_above_idle_mean": 177.6465,
+    "mJ_per_token_above_idle_std": 4.3389,
+    "seconds_mean": 3.4128,
+    "avg_W_mean": 37.74,
+    "peak_W_max": 41.1,
+    "temp_max_C": 68,
+    "temp_rise_C": 1,
+    "counter_vs_samples_rel_diff_max": 0.0899,
+    "throttle_reasons": [],
+    "ms_per_step": 26.662,
+    "kv_cache_MB": 1168.4
+   }
+  },
+  "ctx 16384 | batch 16": {
+   "L": {
+    "n": 5,
+    "mJ_per_token_mean": 4.1582,
+    "mJ_per_token_std": 0.9602,
+    "mJ_per_token_above_idle_mean": 2.8712,
+    "mJ_per_token_above_idle_std": 0.9616,
+    "seconds_mean": 0.2379,
+    "avg_W_mean": 35.8,
+    "peak_W_max": 37.12,
+    "temp_max_C": 68,
+    "temp_rise_C": 0,
+    "counter_vs_samples_rel_diff_max": 0.2405,
+    "throttle_reasons": [],
+    "ms_per_step": 1.859,
+    "walk_seconds": 30.6,
+    "state_MB_per_stream": 0.456
+   },
+   "T": "skipped (KV cache > 3.5 GB of the 6 GB card)"
+  },
+  "ctx 16384 | batch 64": {
+   "L": {
+    "n": 5,
+    "mJ_per_token_mean": 2.3887,
+    "mJ_per_token_std": 0.3572,
+    "mJ_per_token_above_idle_mean": 1.7064,
+    "mJ_per_token_above_idle_std": 0.3596,
+    "seconds_mean": 0.5045,
+    "avg_W_mean": 38.81,
+    "peak_W_max": 43.12,
+    "temp_max_C": 70,
+    "temp_rise_C": 0,
+    "counter_vs_samples_rel_diff_max": 0.1875,
+    "throttle_reasons": [],
+    "ms_per_step": 3.941,
+    "walk_seconds": 67.4,
+    "state_MB_per_stream": 0.456
+   },
+   "T": "skipped (KV cache > 3.5 GB of the 6 GB card)"
+  }
+ },
+ "B_skipped": [
+  {
+   "point": "ctx 16384 | batch 16",
+   "model": "transformer",
+   "kv_cache_GB_needed": 4.67
+  },
+  {
+   "point": "ctx 16384 | batch 64",
+   "model": "transformer",
+   "kv_cache_GB_needed": 18.69
+  }
+ ],
+ "C_training_energy_batch32x256": {
+  "L": {
+   "n": 5,
+   "mJ_per_token_mean": 3.548,
+   "mJ_per_token_std": 0.1217,
+   "mJ_per_token_above_idle_mean": 2.7183,
+   "mJ_per_token_above_idle_std": 0.1221,
+   "seconds_mean": 6.1348,
+   "avg_W_mean": 47.38,
+   "peak_W_max": 53.92,
+   "temp_max_C": 72,
+   "temp_rise_C": 3,
+   "counter_vs_samples_rel_diff_max": 0.0891,
+   "throttle_reasons": [
+    "SwPowerCap"
+   ],
+   "ms_per_step": 613.5,
+   "peak_VRAM_GB": 6.66
+  },
+  "T": {
+   "n": 5,
+   "mJ_per_token_mean": 1.2449,
+   "mJ_per_token_std": 0.0514,
+   "mJ_per_token_above_idle_mean": 0.9792,
+   "mJ_per_token_above_idle_std": 0.0509,
+   "seconds_mean": 1.9651,
+   "avg_W_mean": 51.9,
+   "peak_W_max": 56.27,
+   "temp_max_C": 74,
+   "temp_rise_C": 1,
+   "counter_vs_samples_rel_diff_max": 0.0684,
+   "throttle_reasons": [
+    "SwPowerCap"
+   ],
+   "ms_per_step": 196.5,
+   "peak_VRAM_GB": 1.6
+  }
+ },
+ "gpu_after": {
+  "name": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "power_limit_W": null,
+  "default_power_limit_W": 35.0,
+  "power_limit_range_W": [
+   1.0,
+   55.0
+  ],
+  "sm_clock_max_MHz": 2100,
+  "mem_clock_max_MHz": 5501,
+  "energy_counter_supported": true,
+  "rapl_readable": false,
+  "on_mains": null
+ }
+}

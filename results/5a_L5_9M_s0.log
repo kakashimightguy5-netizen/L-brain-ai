@@ -1,0 +1,183 @@
+lscan: compiled scan unavailable, using torch chunked scan: RuntimeError
+cuscan self-test max error 1.91e-06 -> ON
+L5_9M_s0 0 4.296 6s gpu_mem_GB 2.13
+L5_9M_s0 50 2.444 106s gpu_mem_GB 2.20
+L5_9M_s0 100 1.939 206s gpu_mem_GB 2.20
+L5_9M_s0 150 1.601 304s gpu_mem_GB 2.20
+L5_9M_s0 200 1.403 403s gpu_mem_GB 2.20
+L5_9M_s0 250 1.117 502s gpu_mem_GB 2.20
+L5_9M_s0 300 1.286 601s gpu_mem_GB 2.20
+L5_9M_s0 350 1.049 700s gpu_mem_GB 2.20
+L5_9M_s0 400 1.037 799s gpu_mem_GB 2.20
+L5_9M_s0 450 0.894 898s gpu_mem_GB 2.20
+L5_9M_s0 500 1.132 997s gpu_mem_GB 2.20
+L5_9M_s0 550 0.987 1096s gpu_mem_GB 2.20
+L5_9M_s0 600 1.041 1195s gpu_mem_GB 2.20
+L5_9M_s0 650 0.937 1293s gpu_mem_GB 2.20
+L5_9M_s0 700 0.942 1394s gpu_mem_GB 2.20
+L5_9M_s0 750 0.898 1495s gpu_mem_GB 2.20
+L5_9M_s0 800 1.039 1594s gpu_mem_GB 2.20
+L5_9M_s0 850 0.869 1695s gpu_mem_GB 2.20
+L5_9M_s0 900 0.922 1795s gpu_mem_GB 2.20
+L5_9M_s0 950 0.972 1894s gpu_mem_GB 2.20
+L5_9M_s0 1000 0.909 1994s gpu_mem_GB 2.20
+L5_9M_s0 1050 0.87 2094s gpu_mem_GB 2.20
+L5_9M_s0 1100 0.854 2193s gpu_mem_GB 2.20
+L5_9M_s0 1150 0.921 2293s gpu_mem_GB 2.20
+L5_9M_s0 1200 0.883 2393s gpu_mem_GB 2.20
+L5_9M_s0 1250 0.833 2492s gpu_mem_GB 2.20
+L5_9M_s0 1300 0.744 2591s gpu_mem_GB 2.20
+L5_9M_s0 1350 0.81 2691s gpu_mem_GB 2.20
+L5_9M_s0 1400 0.896 2790s gpu_mem_GB 2.20
+L5_9M_s0 1450 0.912 2889s gpu_mem_GB 2.20
+L5_9M_s0 1500 0.896 2988s gpu_mem_GB 2.20
+L5_9M_s0 1550 0.871 3087s gpu_mem_GB 2.20
+L5_9M_s0 1600 0.989 3187s gpu_mem_GB 2.20
+L5_9M_s0 1650 0.694 3286s gpu_mem_GB 2.20
+L5_9M_s0 1700 0.891 3359s gpu_mem_GB 2.20
+L5_9M_s0 1750 0.741 3411s gpu_mem_GB 2.20
+L5_9M_s0 1800 0.689 3463s gpu_mem_GB 2.20
+L5_9M_s0 1850 0.914 3513s gpu_mem_GB 2.20
+L5_9M_s0 1900 0.768 3563s gpu_mem_GB 2.20
+L5_9M_s0 1950 0.747 3614s gpu_mem_GB 2.20
+L5_9M_s0 2000 0.832 3664s gpu_mem_GB 2.20
+L5_9M_s0 2050 0.726 3714s gpu_mem_GB 2.20
+L5_9M_s0 2100 0.741 3765s gpu_mem_GB 2.20
+L5_9M_s0 2150 0.787 3815s gpu_mem_GB 2.20
+L5_9M_s0 2200 0.773 3867s gpu_mem_GB 2.20
+L5_9M_s0 2250 0.777 3917s gpu_mem_GB 2.20
+L5_9M_s0 2300 0.761 3967s gpu_mem_GB 2.20
+L5_9M_s0 2350 0.758 4026s gpu_mem_GB 2.20
+L5_9M_s0 2400 0.711 4097s gpu_mem_GB 2.20
+L5_9M_s0 2450 0.819 4160s gpu_mem_GB 2.20
+L5_9M_s0 2500 0.811 4219s gpu_mem_GB 2.20
+L5_9M_s0 2550 0.742 4278s gpu_mem_GB 2.20
+L5_9M_s0 2600 0.715 4343s gpu_mem_GB 2.20
+L5_9M_s0 2650 0.644 4402s gpu_mem_GB 2.20
+L5_9M_s0 2700 0.743 4461s gpu_mem_GB 2.20
+L5_9M_s0 2750 0.863 4519s gpu_mem_GB 2.20
+L5_9M_s0 2800 0.787 4582s gpu_mem_GB 2.20
+L5_9M_s0 2850 0.719 4646s gpu_mem_GB 2.20
+L5_9M_s0 2900 0.802 4711s gpu_mem_GB 2.20
+L5_9M_s0 2950 0.651 4772s gpu_mem_GB 2.20
+L5_9M_s0 3000 0.723 4830s gpu_mem_GB 2.20
+L5_9M_s0 3050 0.782 4883s gpu_mem_GB 2.20
+L5_9M_s0 3100 0.71 5134s gpu_mem_GB 2.20
+L5_9M_s0 3150 0.845 5218s gpu_mem_GB 2.20
+L5_9M_s0 3200 0.842 5270s gpu_mem_GB 2.20
+L5_9M_s0 3250 0.737 5322s gpu_mem_GB 2.20
+L5_9M_s0 3300 0.767 5372s gpu_mem_GB 2.20
+L5_9M_s0 3350 0.698 5420s gpu_mem_GB 2.20
+L5_9M_s0 3400 0.631 5468s gpu_mem_GB 2.20
+L5_9M_s0 3450 0.78 5515s gpu_mem_GB 2.20
+L5_9M_s0 3500 0.766 5563s gpu_mem_GB 2.20
+L5_9M_s0 3550 0.816 5618s gpu_mem_GB 2.20
+L5_9M_s0 3600 0.857 5671s gpu_mem_GB 2.20
+L5_9M_s0 3650 0.676 5722s gpu_mem_GB 2.20
+L5_9M_s0 3700 0.765 5777s gpu_mem_GB 2.20
+L5_9M_s0 3750 0.714 5828s gpu_mem_GB 2.20
+L5_9M_s0 3800 0.665 5874s gpu_mem_GB 2.20
+L5_9M_s0 3850 0.666 5919s gpu_mem_GB 2.20
+L5_9M_s0 3900 0.707 5965s gpu_mem_GB 2.20
+L5_9M_s0 3950 0.712 6011s gpu_mem_GB 2.20
+L5_9M_s0 4000 0.691 6059s gpu_mem_GB 2.20
+L5_9M_s0 4050 0.846 6107s gpu_mem_GB 2.20
+L5_9M_s0 4100 0.86 6155s gpu_mem_GB 2.20
+L5_9M_s0 4150 0.723 6202s gpu_mem_GB 2.20
+L5_9M_s0 4200 0.651 6249s gpu_mem_GB 2.20
+L5_9M_s0 4250 0.723 6296s gpu_mem_GB 2.20
+L5_9M_s0 4300 0.757 6342s gpu_mem_GB 2.20
+L5_9M_s0 4350 0.64 6388s gpu_mem_GB 2.20
+L5_9M_s0 4400 0.663 6433s gpu_mem_GB 2.20
+L5_9M_s0 4450 0.634 6480s gpu_mem_GB 2.20
+L5_9M_s0 4500 0.752 6529s gpu_mem_GB 2.20
+L5_9M_s0 4550 0.67 6576s gpu_mem_GB 2.20
+L5_9M_s0 4600 0.683 6623s gpu_mem_GB 2.20
+L5_9M_s0 4650 0.715 6667s gpu_mem_GB 2.20
+L5_9M_s0 4700 0.708 6716s gpu_mem_GB 2.20
+L5_9M_s0 4750 0.694 6767s gpu_mem_GB 2.20
+L5_9M_s0 4800 0.618 6817s gpu_mem_GB 2.20
+L5_9M_s0 4850 0.653 6867s gpu_mem_GB 2.20
+L5_9M_s0 4900 0.67 6915s gpu_mem_GB 2.20
+L5_9M_s0 4950 0.613 6966s gpu_mem_GB 2.20
+L5_9M_s0 5000 0.625 7016s gpu_mem_GB 2.20
+L5_9M_s0 5050 0.681 7063s gpu_mem_GB 2.20
+L5_9M_s0 5100 0.628 7109s gpu_mem_GB 2.20
+L5_9M_s0 5150 0.751 7156s gpu_mem_GB 2.20
+L5_9M_s0 5200 0.533 7204s gpu_mem_GB 2.20
+L5_9M_s0 5250 0.687 7250s gpu_mem_GB 2.20
+L5_9M_s0 5300 0.503 7298s gpu_mem_GB 2.20
+L5_9M_s0 5350 0.538 7345s gpu_mem_GB 2.20
+L5_9M_s0 5400 0.657 7394s gpu_mem_GB 2.20
+L5_9M_s0 5450 0.69 7443s gpu_mem_GB 2.20
+L5_9M_s0 5500 0.664 7490s gpu_mem_GB 2.20
+L5_9M_s0 5550 0.65 7543s gpu_mem_GB 2.20
+L5_9M_s0 5600 0.72 7590s gpu_mem_GB 2.20
+L5_9M_s0 5650 0.589 7640s gpu_mem_GB 2.20
+L5_9M_s0 5700 0.665 7696s gpu_mem_GB 2.20
+L5_9M_s0 5750 0.708 7750s gpu_mem_GB 2.20
+L5_9M_s0 5800 0.808 7805s gpu_mem_GB 2.20
+L5_9M_s0 5850 0.609 7861s gpu_mem_GB 2.20
+L5_9M_s0 5900 0.658 7909s gpu_mem_GB 2.20
+L5_9M_s0 5950 0.568 7955s gpu_mem_GB 2.20
+L5_9M_s0 exact 120 0.925
+L5_9M_s0 exact 512 0.9609
+L5_9M_s0 exact 2048 0.9479
+L5_9M_s0 typos5% 120 0.9389
+L5_9M_s0 typos5% 512 0.9133
+L5_9M_s0 typos5% 2048 0.8953
+L5_9M_s0 renamed 120 0.8004
+L5_9M_s0 renamed 512 0.8205
+L5_9M_s0 renamed 2048 0.8679
+{
+ "device": "cuda",
+ "homeo": 1,
+ "name": "L5_9M_s0",
+ "model": "L5",
+ "seed": 0,
+ "steps": 6000,
+ "lam": 0.01,
+ "fuzzy": 1,
+ "block": 0,
+ "params": 8809861,
+ "train_minutes": 133.4,
+ "sec_per_step": 1.334,
+ "val_bits_per_byte": 1.0218,
+ "active_neurons_per_layer [state, ffn]": [
+  [
+   0.222,
+   0.023
+  ],
+  [
+   0.524,
+   0.029
+  ],
+  [
+   0.614,
+   0.041
+  ],
+  [
+   0.612,
+   0.057
+  ],
+  [
+   0.59,
+   0.063
+  ],
+  [
+   0.511,
+   0.089
+  ]
+ ],
+ "copy": {
+  "exact n=120": 0.925,
+  "exact n=512": 0.9609,
+  "exact n=2048": 0.9479,
+  "typos5% n=120": 0.9389,
+  "typos5% n=512": 0.9133,
+  "typos5% n=2048": 0.8953,
+  "renamed n=120": 0.8004,
+  "renamed n=512": 0.8205,
+  "renamed n=2048": 0.8679
+ }
+}

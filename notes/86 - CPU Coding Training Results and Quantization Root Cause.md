@@ -1,0 +1,23 @@
+# CPU coding training results — 2026-10-06
+
+## Actual work
+Downloaded official Apache-2.0 Qwen2.5-Coder-0.5B-Instruct pinned source; 494,032,768 base parameters. Trained 270,336 LoRA parameters across 48 attention projections on CPU. V1: 37 examples/one epoch/~52 seconds. V2: 63 examples/two epochs/126 steps/~746 seconds. Dataset includes Python, Java, C, C++, React, HTML, CSS, JavaScript, Node, Express, simple agent loops and tool calls. This is a very small pilot dataset, not comprehensive training or a new spiking LLM. Existing frontend selectors remain a separate model.
+
+## Tests and root cause
+Initial strict format score was misleading; semantic executable grading gave base 6/6 and V1 4/6. V2 with PyTorch dynamic INT8 scored 2/6. A float32 diagnostic restored both failed JavaScript functions; tool JSON retained an unwanted prefix. CPU quantization implementation was a major regression source.
+Converted full merged V2 weights to FP16 GGUF and Q8_0 with official llama.cpp b11429 Windows CPU tools. Base and trained Q8 each use 531,068,384-byte files (about 506 MiB). No GPU layers.
+With an alternate JSON instruction prompt, base Q8 2/6 versus trained Q8 6/6; this contrast reflects prompt sensitivity and must not be used as a broad superiority claim. Repeating with the original training system prompt gave base Q8 6/6 and trained Q8 4/6: trained model passes four executable Python/JavaScript tests but fails both exact tool calls. Same six tasks are development checks, not a held-out standardized benchmark. No comparison to 4B–48B models was completed.
+Trained Q8 generation samples: 63.1–72.7 tokens/second; median 71.5; short six-task CPU samples with prompt processing reported separately in raw timings. Baseline short JavaScript smoke: 68.8 generation tokens/second. No general speed guarantee.
+
+## OpenCode
+Installed official Windows binary 1.18.30 entirely on D:, because existing C: launcher was invalid. Provider registration succeeds. Standard-library adapter validates generated JSON against supplied tool name and required argument fields and translates into OpenAI tool_calls; it never invents argument values. After tool result a bounded answer instruction removes tools to reduce loops. This is orchestration, not learned self-correction.
+Baseline read-only OpenCode smoke executes read on workspace marker file, then includes real marker content in an imperfect JSON response. Exact-answer quality gate fails. Without bounded instruction it loops until configured step cap. Trained V2 OpenCode smoke does not successfully execute read and replies with a filename fragment; agent gate fails. Therefore baseline remains default and adapters are experimental. Read/glob/grep enabled, edits and shell commands denied in pilot configuration. Full autonomous coding agent is not ready.
+
+## Local use and saved records
+All task-created datasets, checkpoints, downloads, runtime packages, caches, logs, temporary directories and notes reside on D:. Existing Python/Node libraries are read from installed locations; normal operating system background writes are outside task control.
+Working directory: D:\AI\SpikingBrain-study\experiments\cpu-coder
+Run start-cpu.ps1, then opencode-local.ps1. Local baseline API http://127.0.0.1:8770/v1 via CPU server 8771; experimental trained server 8772. Launch script starts hidden Windows processes and checks ports. Do not mistake experimental tool support for reliable autonomous execution.
+Sources: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct ; https://github.com/ggml-org/llama.cpp ; https://opencode.ai/docs/providers/ ; https://opencode.ai/docs/config/ . Dataset, training history, raw completions, failures, launcher/configuration, SHA256 manifests and small adapters are archived in SpikingBrain Assets/cpu-coder. Large model files are referenced by path/hash rather than duplicated.
+
+## Next research stage
+Expand and validate a licensed corpus, use held-out language-specific executable tasks, include real multi-turn tool-result trajectories and stopping behavior, and select checkpoints by retention and exact tool-call accuracy across prompt variants. Java/C/C++ compiler execution has not been validated; compilers were unavailable. React/Express integration tests remain to be added for this generative branch. Keep base frozen and isolate adapters. A lightweight model outperforming every 4B–48B model is not established; specialization and tool orchestration are measurable targets. A dense 48B model's 4-bit weight payload alone is about 24 GB decimal, exceeding this laptop's 16 GB RAM before overhead.

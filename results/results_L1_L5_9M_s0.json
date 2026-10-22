@@ -1,0 +1,52 @@
+{
+ "device": "cuda",
+ "homeo": 1,
+ "name": "L5_9M_s0",
+ "model": "L5",
+ "seed": 0,
+ "steps": 6000,
+ "lam": 0.01,
+ "fuzzy": 1,
+ "block": 0,
+ "params": 8809861,
+ "train_minutes": 133.4,
+ "sec_per_step": 1.334,
+ "val_bits_per_byte": 1.0218,
+ "active_neurons_per_layer [state, ffn]": [
+  [
+   0.222,
+   0.023
+  ],
+  [
+   0.524,
+   0.029
+  ],
+  [
+   0.614,
+   0.041
+  ],
+  [
+   0.612,
+   0.057
+  ],
+  [
+   0.59,
+   0.063
+  ],
+  [
+   0.511,
+   0.089
+  ]
+ ],
+ "copy": {
+  "exact n=120": 0.925,
+  "exact n=512": 0.9609,
+  "exact n=2048": 0.9479,
+  "typos5% n=120": 0.9389,
+  "typos5% n=512": 0.9133,
+  "typos5% n=2048": 0.8953,
+  "renamed n=120": 0.8004,
+  "renamed n=512": 0.8205,
+  "renamed n=2048": 0.8679
+ }
+}

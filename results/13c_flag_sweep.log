@@ -1,0 +1,3 @@
+lscan: compiled scan unavailable, using torch chunked scan: RuntimeError
+cuscan self-test max error 1.91e-06 -> ON
+reference {'ms_per_step': 636.2, 'peak_VRAM_GB': 4.661, 'max_loss_diff_vs_reference': 0.0, 'final_loss': 2.5106}
