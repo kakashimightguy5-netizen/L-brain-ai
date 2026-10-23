@@ -1,0 +1,63 @@
+"""L-pure byte LM test (note 149/151): mixing question isolated. No memory block / no hippocampus here (loop too slow, separate test).
+Variants: MIX=sparse (StructTern wiring, K) | dense (nn.Linear control). Same width/depth. bits/byte on the fixed 6x1024 eval windows of the project (second half of py_big_val)."""
+import os, sys, math, json, time, torch, torch.nn as nn, torch.nn.functional as F
+sys.path[:0] = [os.path.dirname(os.path.abspath(__file__))]
+from lpure import StructTern, round_ste, tern_ste, pow2_ste
+DEV = 'cuda' if torch.cuda.is_available() else 'cpu'
+MIX = os.environ.get('MIX', 'sparse'); K = int(os.environ.get('K', 32)); D = int(os.environ.get('D', 128)); NL = int(os.environ.get('NL', 4)); STEPS = int(sys.argv[1]) if len(sys.argv) > 1 else 3000
+SEED = int(os.environ.get('SEED', 0)); TAG = os.environ.get('TAG', f'lp_{MIX}_K{K}_d{D}_s{SEED}'); BS, T = 16, 256; LR = float(os.environ.get('LR', 2e-3))
+torch.manual_seed(SEED)
+mk = (lambda a, b: nn.Linear(a, b, bias=False)) if MIX == 'dense' else (lambda a, b: StructTern(a, b, K, seed=a * 3 + b))
+class LeakScan(nn.Module):
+    """h_t = a h_{t-1} + u_t, a = 1 - 2^-shift (power-of-two leak), computed in parallel as a causal kernel a^(t-s). Then spike count with pow2 threshold."""
+    def __init__(s, d, Ksp=8):
+        super().__init__(); s.sh = nn.Parameter(torch.linspace(1.0, 6.5, d)); s.p = nn.Parameter(torch.zeros(d)); s.Ksp = Ksp
+    def forward(s, u):
+        B, Tn, Dd = u.shape; a = 1 - torch.exp2(-round_ste(s.sh).clamp(1.0, 7.0)); la = torch.log(a)
+        ar = torch.arange(Tn, device=u.device); dt = (ar[:, None] - ar[None]).float(); mask = dt >= 0; dtc = dt.clamp(min=0); cs = 16 if Tn > 512 else Dd
+        hs = []
+        for c0 in range(0, Dd, cs):
+            Km = torch.exp(la[c0:c0 + cs, None, None] * dtc[None]) * mask[None]                        # (cs, T, T)
+            hs.append(torch.einsum('bsc,cts->btc', u[..., c0:c0 + cs], Km))
+        h = torch.cat(hs, -1); th = torch.exp2(round_ste(s.p))
+        return torch.clamp(round_ste(h / th), -s.Ksp, s.Ksp) * th
+class Taps(nn.Module):
+    """causal 4-tap delay line with ternary taps (add-only)."""
+    def __init__(s, d, n=4):
+        super().__init__(); s.w = nn.Parameter(torch.randn(d, n) * 0.5); s.logg = nn.Parameter(torch.zeros(d)); s.n = n
+    def forward(s, x):
+        t = tern_ste(s.w) * pow2_ste(s.logg)[:, None]; xp = F.pad(x, (0, 0, s.n - 1, 0)); return sum(xp[:, s.n - 1 - k: xp.size(1) - k] * t[:, k] for k in range(s.n))
+class Blk(nn.Module):
+    def __init__(s, d):
+        super().__init__(); s.inp, s.out = mk(d, d), mk(d, d); s.sc = LeakScan(d); s.taps = Taps(d); s.f1, s.f2 = mk(d, 2 * d), mk(2 * d, d)
+    def forward(s, x):
+        x = x + s.out(s.sc(s.inp(x))) + s.taps(x)
+        return x + s.f2(torch.clamp(round_ste(F.relu(s.f1(x))), 0, 8))
+class LM(nn.Module):
+    def __init__(s):
+        super().__init__(); s.emb = nn.Embedding(256, D); s.b = nn.ModuleList([Blk(D) for _ in range(NL)]); s.head = nn.Linear(D, 256, bias=False) if MIX == 'dense' else StructTern(D, 256, K * 2, seed=9)
+        s.n = nn.ModuleList([nn.LayerNorm(D) for _ in range(NL)])
+    def forward(s, x):
+        z = s.emb(x)
+        for b, n in zip(s.b, s.n): z = z + (b(n(z)) - n(z))
+        return s.head(z)
+if __name__ == '__main__':
+    DATA = os.environ.get('LDATA', '/home/claude/data'); ld = lambda p: torch.tensor(list(open(p, 'rb').read()), dtype=torch.long)
+    tr, va = ld(os.path.join(DATA, 'py_big_train.txt')), ld(os.path.join(DATA, 'py_big_val.txt')); half = len(va) // 2
+    X = torch.stack([va[half + i * 1024: half + i * 1024 + 1025] for i in range(6)]).to(DEV)
+    m = LM().to(DEV); npar = sum(p.numel() for p in m.parameters())
+    adds = sum(x.adds() for x in m.modules() if isinstance(x, StructTern)) if MIX != 'dense' else None
+    print(TAG, 'params', npar, 'adds/token', adds, flush=True)
+    opt = torch.optim.AdamW(m.parameters(), LR, weight_decay=0.01); sch = torch.optim.lr_scheduler.OneCycleLR(opt, LR, total_steps=STEPS, pct_start=0.1)
+    def bpb():
+        m.eval()
+        with torch.no_grad(): lg = m(X[:, :-1]); r = F.cross_entropy(lg.reshape(-1, 256), X[:, 1:].reshape(-1)).item() / math.log(2)
+        m.train(); return r
+    t0 = time.time(); log = []
+    for it in range(STEPS):
+        ix = torch.randint(0, len(tr) - T - 1, (BS,)); x = torch.stack([tr[i:i + T + 1] for i in ix]).to(DEV)
+        loss = F.cross_entropy(m(x[:, :-1]).reshape(-1, 256), x[:, 1:].reshape(-1)); opt.zero_grad(); loss.backward(); nn.utils.clip_grad_norm_(m.parameters(), 1.0); opt.step(); sch.step()
+        if (it + 1) % max(1, STEPS // 6) == 0 or it == STEPS - 1:
+            b = bpb(); log.append((it + 1, b)); print(TAG, 'step', it + 1, 'train_loss_bits', round(loss.item() / math.log(2), 3), 'val_bpb', round(b, 4), f'{time.time() - t0:.0f}s', flush=True)
+    os.makedirs(os.environ.get('LOUT', '.'), exist_ok=True)
+    json.dump({'tag': TAG, 'mix': MIX, 'K': K, 'D': D, 'NL': NL, 'steps': STEPS, 'seed': SEED, 'params': npar, 'adds_per_token': adds, 'final_bpb': log[-1][1], 'log': log, 'sec_per_step': (time.time() - t0) / STEPS, 'device': DEV}, open(os.path.join(os.environ.get('LOUT', '.'), TAG + '.json'), 'w'))
